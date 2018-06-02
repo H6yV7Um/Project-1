@@ -1,0 +1,22 @@
+.component-Dingding-Remind{
+    .am-list-item.choose:active {
+        background-color: #ddd;
+    }
+    .users-clear-border{
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        color: #C6C6C6;
+        font-size: 16px;
+        transition: color 200ms;
+        cursor: pointer;
+        &:active{
+            color: #333;
+        }
+    }
+    .users.am-list-item .am-list-line .am-list-extra{
+        flex-basis: 15%;
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+}

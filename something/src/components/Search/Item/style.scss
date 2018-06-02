@@ -1,0 +1,37 @@
+$name: component-Search-Item;
+
+.#{$name}{
+	position: relative;
+	padding: 8px 5px 8px 0;
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+	.#{$name}-num{
+        width: 15px;
+        height: 15px;
+        float: left;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        margin-right: 20px;
+        font-size: 10px;
+		color: white;
+		background-color: rgb(192,193,193);
+		text-align: center;
+	}
+	.#{$name}-content{
+        float: left;
+        margin-top: -3px;
+		color: #000;
+        transition: color 200ms;
+        font-size: 14px;
+        line-height: 22px;
+	}
+    &:active{
+        .#{$name}-content{
+            color: #999;
+        }
+    }
+}

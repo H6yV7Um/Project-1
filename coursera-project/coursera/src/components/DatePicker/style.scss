@@ -1,0 +1,11 @@
+.component-DatePicker{
+    .am-list-item .am-list-line .am-list-extra{
+        color: #000;
+    }
+    &-readonly{
+        //.am-list-item .am-list-line .am-list-content,.am-list-item .am-list-line .am-list-extra{
+        .am-list-item .am-list-line .am-list-content{
+            color: #bbb;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "standard",
+        "standard-react"
+    ],
+    "plugins": [
+        "babel",
+        "react",
+        "promise"
+    ],
+    "env": {
+        "browser": true
+    },
+    "globals": {
+        "__DEV__": false,
+        "__TEST__": false,
+        "__PROD__": false,
+        "__COVERAGE__": false
+    },
+    "rules": {
+        "indent": [
+            2,
+            4
+        ],
+        "key-spacing": 0,
+        "jsx-quotes": [
+            2,
+            "prefer-single"
+        ],
+        "react/jsx-indent": [
+            2,
+            4
+        ],
+        "react/jsx-indent-props": [
+            2,
+            4
+        ],
+        "max-len": [
+            2,
+            {
+                "code": 160,
+                "ignoreComments": true,
+                "ignoreStrings": true
+            }
+        ]
+    }
+}

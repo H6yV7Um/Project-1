@@ -1,0 +1,132 @@
+.BookLayout-Footer{
+    border-top: 0.8px solid #B5B5B5;
+    background-color: #F8F8F8;
+    .menu{
+        width: 20%;
+        text-align: center;
+        margin-bottom: 2px;
+        font-size: 12px;
+        .icon-border {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        i,span{
+            color: #373737;
+            display: block;
+            font-size: 26px;
+        }
+        a{
+            font-size: 12px;
+            color: #000;
+        }
+    }
+    .menu.index{
+        i,span{
+            font-size: 22px;
+        }
+    }
+    .menu.books{
+        i,span{
+            font-size: 27px;
+            margin-top: 3px;
+        }
+    }
+    .menu.add{
+        margin-bottom: 0;
+        .icon-border{
+            height: 55px;
+        }
+        .icon-bg{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #FF3433;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        i,span{
+            height: 27px;
+            font-size: 30px;
+            color: #f8f8f8;
+        }
+    }
+    .menu.think{
+        i,span{
+            font-size: 27px;
+            margin-top: 1px;
+        }
+    }
+    .menu.home{
+        i,span{
+            font-size: 29px;
+            margin-top: 2px;
+        }
+    }
+}
+
+.book-add-border{
+    .add-menu-border{
+        height: 170px;
+        display: flex;
+        justify-content:center;
+        .add-menu-comment,.add-menu-find{
+            margin-top: 60px;
+        }
+        .add-menu-recommend{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .add-menu-bg-border{
+            background-color: rgba(255, 52, 51, 0.3);
+            padding: 7px;
+            border-radius: 42px;
+            .add-menu-bg{
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+                background-color: #FF3433;
+                text-align: center;
+                i,span{
+                    height: 36px;
+                    margin-top: 2px;
+                    display: inline-block;
+                    font-size: 26px;
+                    color: #f8f8f8;
+                }
+                >div{
+                    text-align: center;
+                    font-size: 12px;
+                    color: #f2f2f2;
+                }
+            }
+        }
+        .add-menu-recommend .add-menu-bg-border i{
+            height: 30px;
+            margin-top: 8px;
+        }
+    }
+    .add-button-border{
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .add-button-bg{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #FF3433;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i,span{
+                height: 27px;
+                font-size: 30px;
+                color: #f8f8f8;
+            }
+        }
+    }
+}

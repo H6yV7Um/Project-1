@@ -1,0 +1,343 @@
+$name: register;
+@font-face {
+    font-family: pictos;
+    src:url('../../../assets/success/hbrnb.ttf')
+}
+.#{$name} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    .container {
+        width: 406px;
+        height: 420px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 9px 30px -6px rgba(0,0,0,.2), 0 18px 20px -10px rgba(0,0,0,.04), 0 18px 20px -10px rgba(0,0,0,.04), 0 10px 20px -10px rgba(0,0,0,.04);
+        background: url('../../../assets/login/containerBg.png');
+        .logo {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 40px;
+            .#{$name}-logo-title{
+                font-size: 24px;
+                margin-top: 20px;
+                font-family: pictos;
+            }
+        }
+        .form-container {
+            padding-left: 36px;
+            padding-right: 36px;
+            .line{
+                border: 1px solid #ddd;
+                width: 334px;
+                margin-top: 33px;
+            }
+            .btn {
+                margin-top: 50px;
+                .am-button{
+                    width: 334px;
+                    background: url('../../../assets/login/button.png');
+                    font-size: 18px;
+                }
+                .am-icon-md {
+                    width: 22px;
+                    height: 22px;
+                }
+                .btnRegister{
+                    opacity: 0.9;
+                }
+                a.btnRegister.am-button:hover{
+                    cursor: pointer;
+                    opacity: 1;
+                }
+
+            }
+            .am-list-body {
+                background-color: transparent;
+                border-top: none;
+                .message {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 12px;
+                    .messageContainer{
+                        position: relative;
+                        .code-warning{
+                            background: #d16d62;
+                            border-radius: 4px;
+                            color: #fff;
+                            font-size: 12px;
+                            font-weight: 400;
+                            height: 26px;
+                            line-height: 26px;
+                            margin: 10px 0 0;
+                            padding: 0 10px;
+                            position: absolute;
+                            right: 10px;
+                            top: 0;
+                            z-index: 10;
+                        }
+                        .am-list-item.am-input-item.codeWarningFocus{
+                            border: 1px solid #d16d62;
+                        }
+                    }
+                    .am-button {
+                        width: 100px;
+                        //background: url('../../../assets/login/icon.png');
+                        background: #ececec;
+                        border: 1px solid #ddd;
+                        background: -moz-linear-gradient(#fafafa,#f5f5f5);
+                        background: -ms-linear-gradient(#fafafa,#f5f5f5);
+                        background: -o-linear-gradient(#fafafa,#f5f5f5);
+                        background: linear-gradient(#fafafa,#f5f5f5);
+                        box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+                        color: #666;
+                        text-shadow: #fff 0 1px 0;
+                        /* transition: background-color .3s ease; */
+                        >span{
+                            color: #AAAAAA;
+                        }
+                    }
+                    .am-button.sendBtn{
+                        opacity: 1;
+                    }
+                    .am-button.sendBtn:hover{
+                        background: linear-gradient(to top, #ececec, white);
+                        cursor: pointer;
+                    }
+                    .delay {
+                        border-radius: 5px;
+                        height: 44px;
+                        font-size: 12px;
+                        color: white;
+                        width: 100px;
+                        text-align: center;
+                        line-height: 44px;
+                        background: url('../../../assets/login/icon.png');
+                        border: 1px solid #ddd;
+                        color: #AAAAAA;
+                        opacity: 0.5;
+                    }
+                    .#{$name}-messeage-label{
+                        display: inline-block;
+                        background-image: url("../../../assets/login/dialog-input-icons.png");
+                        background-position: -99px -1px;
+                        background-size: 500px 45px;
+                        width:46px;
+                        height:46px;
+                    }
+                    .am-list-item.am-input-item:last-child {
+                        width: 224px;
+                    }
+
+
+                }
+
+                .#{$name}-email-container{
+                    position: relative;
+                    .#{$name}-warning{
+                        background: #d16d62;
+                        border-radius: 4px;
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 400;
+                        height: 26px;
+                        line-height: 26px;
+                        margin: 10px 0 0;
+                        padding: 0 10px;
+                        position: absolute;
+                        right: 10px;
+                        top: 0;
+                        z-index: 10;
+                    }
+                    .#{$name}-email-label{
+                        display: inline-block;
+                        background-image: url("../../../assets/login/dialog-input-icons.png");
+                        background-position: -146px -1px;
+                        background-size: 500px 45px;
+                        width:46px;
+                        height:46px;
+                    }
+                }
+                .am-list-item.am-input-item:first-child {
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                    height: 44px;
+                }
+                .am-list-item.am-input-item.emailFocus{
+                    border: 1px solid #6b93f2;
+                }
+                .am-list-item.am-input-item.warningFocus{
+                    border: 1px solid #d16d62;
+                }
+                .am-list-item.am-input-item.emailFocus .am-input-label{
+                    opacity: 1;
+                }
+                .am-list-item.am-input-item.emailNumber .am-input-label{
+                    opacity: 1;
+                }
+                .am-list-item {
+                    min-height: 44px;
+                }
+                .am-list-item img {
+                    width: 15px;
+                    height: 15px;
+                    vertical-align: middle;
+                }
+
+                .am-list-item.am-input-item.am-button:hover{
+                    cursor: pointer;
+                }
+
+                .am-list-item.am-input-item.messageFocus{
+                    border: 1px solid #6b93f2;
+                }
+                .am-list-item.am-input-item.messageFocus .am-input-label{
+                    opacity: 1;
+                }
+                .am-list-item.am-input-item.messageCode .am-input-label{
+                    opacity: 1;
+                }
+                .am-list-item.am-input-item {
+                    padding-left: 0;
+                    padding-right: 0;
+                    box-shadow: 0 3px 5px -4px rgba(0,0,0,.4) inset, -1px 0 3px -2px rgba(0,0,0,.1) inset;
+                }
+                .am-list-item .am-input-control input {
+                    font-size: 14px;
+                    color: #333;;
+                    caret-color: #d2d2d2;
+                }
+                .am-list-item .am-input-control {
+                    font-size: 14px;
+                    flex: 1;
+                }
+                .am-list-item.am-input-item:after {
+                    border-bottom: none;
+                }
+                .am-input-label{
+                    text-align: center;
+                    width:44px;
+                    height: 44px;
+                    border-right: 1px solid #ddd;
+                    background: url('../../../assets/login/icon.png');
+                    opacity: 0.5;
+                    padding: 0;
+                }
+            }
+            .am-list-body:after {
+                border-bottom: none;
+            }
+            .am-button {
+                border-radius: 5px;
+                height: 44px;
+                font-size: 14px;
+                color: white;
+                line-height: 44px;
+                opacity: 0.5;
+            }
+        }
+    }
+    .demoTitle:before,
+    .demoTitle:after {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 736px) and (max-device-width: 736px){
+    .#{$name} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        .container {
+            width: auto;
+            height: auto;
+            background: none;
+            box-shadow: none;
+            .form-container {
+                padding-left: 0;
+                padding-right: 0;
+                .line{
+                    width: auto;
+                    border: none;
+                }
+                .btn {
+                    .am-button{
+                        width: auto;
+                    }
+
+                }
+                .am-list-body {
+                    .message {
+
+                        .am-button {
+                            width: 25%;
+                        }
+
+                        .delay {
+                            width: 25%;
+                        }
+                        .messageContainer {
+                            width: 65%;
+                            position: relative;
+                            .am-list-item.am-input-item:first-child {
+                                width: 100%;
+                                margin-right: 12px;
+                            }
+
+                            .code-warning {
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+//@media screen and (orientation: landscape) {
+//    /*横屏 css*/
+//    .#{$name} {
+//        width: 390px;
+//        .container {
+//
+//            .logo {
+//                padding-top: 20px;
+//                padding-bottom: 10px;
+//                .#{$name}-logo-title{
+//                }
+//            }
+//            .form-container {
+//
+//                .btn {
+//                    margin-top: 20px;
+//                    margin-bottom: 20px;
+//                }
+//            }
+//        }
+//    }
+//}
+
+// PC端样式
+@media (min-width: 1440px) {
+    .#{$name}{
+        width: 1410px;
+    }
+}
+
+

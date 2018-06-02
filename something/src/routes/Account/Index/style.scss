@@ -1,0 +1,21 @@
+.Account{
+    width: 100%;
+    height: auto;
+    .bg{
+        width:100%;
+        height: auto;
+        position: relative;
+        .personal{
+            position: absolute;
+            top: 65%;
+            width: 30%;
+            left: 14%;
+        }
+        .group{
+            position: absolute;
+            top: 65%;
+            width: 30%;
+            left: 56%;
+        }
+    }
+}

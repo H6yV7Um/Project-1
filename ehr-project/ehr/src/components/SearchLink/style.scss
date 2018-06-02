@@ -1,0 +1,115 @@
+$name: component-SearchLink;
+
+$searchBgColor: #e9e9e9;
+@mixin clear{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.#{$name}{
+    .#{$name}-searchLinkContainer{
+        display: flex;
+        height: 32px;
+        background-color: #fff;
+        border-radius: 20px;
+        // 公司logo和搜索logo
+        .#{$name}-logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95px;
+            height: 100%;
+            .#{$name}-logo{
+                width: 70px;
+                padding-left: 5px;
+                >img{
+                    display: block;
+                    width: 65px;
+                    height: 17px;
+                }
+            }
+            .#{$name}-search-logo{
+                width: 15px;
+                padding-left: 5px;
+            }
+        }
+        // 右侧模拟输入框
+        .#{$name}-input-container{
+            width: calc(100% - 100px);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .#{$name}-input {
+                padding-left: 5px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow:hidden;
+            }
+        }
+    }
+    &:after{
+        @include clear;
+    }
+}
+
+// 搜索模态框
+.#{$name}-searchModal{
+    position: relative;
+    >div{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+    }
+    .#{$name}-searchModal-searchContainer{
+        display: flex;
+        height: 32px;
+        background-color: $searchBgColor;
+        border-radius: 20px;
+        // 搜索logo
+        .#{$name}-logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 100%;
+            .#{$name}-search-logo{
+                width: 15px;
+                padding-left: 10px;
+                margin-top: -2px;
+            }
+        }
+        // 右侧输入框
+        .#{$name}-input-container{
+            width: calc(100% - 80px);
+            height: 100%;
+            display: flex;
+            padding-left: 5px;
+            align-items: center;
+            .#{$name}-input {
+                width: 100%;
+                height: 10px;
+                padding: 10px 0 10px 5px;
+                font-size: 12px;
+                border: none;
+                margin-top: 1px;
+                background-color: $searchBgColor;
+            }
+        }
+        // 取消按钮
+        .#{$name}-cancel-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+    }
+    .#{$name}-searchModal-header{
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        top: 0;
+    }
+}

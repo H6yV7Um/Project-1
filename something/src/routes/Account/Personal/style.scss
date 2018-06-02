@@ -1,0 +1,34 @@
+.Personal{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background-color: #fff;
+    .bg{
+        width:100%;
+        max-width: 1200px;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        @media screen and (min-width:750px){
+            .url{
+                position: absolute;
+                width: 50%;
+                top: 45%;
+                left: 69%;
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+        @media screen and (max-width:749px){
+            .url{
+                position: absolute;
+                width: 50%;
+                top: 45%;
+                left: 66%;
+                a{
+                }
+            }
+        }
+    }
+}

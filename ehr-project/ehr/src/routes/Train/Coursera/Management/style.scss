@@ -1,0 +1,48 @@
+$name: coursera-management;
+.#{$name}{
+    width: 960px;
+    padding: 20px;
+    margin:0 auto;
+    background: white;
+    overflow: hidden;
+    .dynamic-delete-button {
+        cursor: pointer;
+        position: relative;
+        top: 4px;
+        font-size: 24px;
+        color: #999;
+        transition: all .3s;
+    }
+    .dynamic-delete-button:hover {
+        color: #777;
+    }
+    .dynamic-delete-button[disabled] {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+
+    .#{$name}-back
+    {
+        padding: 20px 0 20px 0;
+        >a
+        {
+            display: inline-block;
+            width: 64.67px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #5FB5D8;
+            color: white;
+            border-radius: 2px;
+        }
+    }
+    .ant-pagination-item-active {
+        background-color: #5FB5D8;
+        border-color: #5FB5D8;
+    }
+    .ant-table-pagination {
+        margin: 16px 5px;
+        float: right;
+    }
+}

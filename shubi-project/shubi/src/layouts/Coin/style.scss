@@ -1,0 +1,10 @@
+$name: LayoutCion;
+body{
+    margin: 0;
+}
+.#{$name}{
+    height: 100%;
+    .#{$name}-body{
+        min-height: 100%;
+    }
+}

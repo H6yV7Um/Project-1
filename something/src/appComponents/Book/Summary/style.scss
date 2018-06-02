@@ -1,0 +1,73 @@
+@import url('../../../styles/_base.scss');
+
+$name: appComponent-Book-Summary;
+@mixin clear{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.#{$name}{
+	padding: 15px 15px 10px 15px;
+	margin-bottom: 15px;
+	background-color: white;
+	&:first-child{
+		border-bottom: 0.8px solid #ddd;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&:not(first-child){
+		border-top: 0.8px solid #ddd;
+		border-bottom: 0.8px solid #ddd;
+	}
+	.#{$name}-cover{
+		float: left;
+	}
+	.#{$name}-content{
+		float: left;
+		height: auto;
+		width: calc(100% - 100px);
+		h4{
+			font-size: 14px;
+			padding: 0 15px;
+			margin-top: -1px;
+			font-weight: normal;
+			color: #000;
+		}
+		.#{$name}-author{
+			font-size: 12px;
+			padding: 2px 0 8px 15px;
+			color: #999;
+			text-align: right;
+			.#{$name}-divider{
+				text-decoration: line-through;
+			}
+		}
+		.#{$name}-profile-content{
+			transition: background-color 600ms;
+			&:active{
+				background-color: #eee;
+			}
+		}
+		.#{$name}-profile{
+			padding: 2px 0 8px 15px;
+			min-height: 86px;
+		}
+		.#{$name}-footer{
+			height: 1px;
+			margin-top: -7px;
+			padding: 2px 0 8px 15px;
+			.#{$name}-time{
+				margin-top: 3px;
+				font-size: 12px;
+				color: #999;
+				float: right;
+			}
+
+		}
+	}
+	&:after{
+        @include clear;
+    }
+}

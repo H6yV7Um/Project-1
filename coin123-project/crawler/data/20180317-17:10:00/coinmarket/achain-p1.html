@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>A-Achain (ACT)--_1</title>
+    <meta name="keywords" content="Achain,ACT,A,A,A,A,A,A,A,A,Achain Ico" />
+    <meta name="description" content="AAA" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <link rel="canonical" href="//www.feixiaohao.com/coinmarket/achain/" />
+    <link rel="shortcut icon" href="//static.feixiaohao.com/themes/default/images/fav.ico" />
+    <link href="//static.feixiaohao.com/themes/default/css/stylesheet_nav.css?v=1.31" rel="stylesheet">
+    <link href="//static.feixiaohao.com/themes/default/css/tablesort.css" rel="stylesheet">
+    <script src="//static.feixiaohao.com/Scripts/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <nav class="">
+    <div class="navsub">
+        <div class="minWidth" id="globalinfo">
+            
+        </div>
+    </div>
+    <div class="minWidth">
+        <ul class="leftNav">
+            <li class="logo"><a href="/"><img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="Logo"></a></li>
+            <li class="navSlide">
+                
+                <ul class="subNav">
+                    <li><a href="/"></a></li>
+                    <li><a href="/currencies/"></a></li>
+                    <li><a href="/assets/"></a></li>
+                    <li><a href="/newcoin/"></a></li>
+                    <li><a href="/concept/"></a></li>
+ <li>
+                        <a href="/charts/">
+                            
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navSlide">
+               
+                <ul class="subNav">
+                    <li><a href="/maxchange/"></a></li> 
+                    <li><a href="/vol/">24()</a></li>
+                    <li><a href="/vol/exchange/">24()</a></li>
+                    <li><a href="/vol/monthrank/"></a></li>
+                </ul>
+            </li>
+            
+            <li><a  href="/exchange/"></a></li> 
+            <li><a href="/app/">APP</a> </li>
+        </ul>
+        <ul class="rightNav">
+            <li class="searchForm"  style="float: right">
+                <form action="">
+                    <input type="text" id="input-sm" placeholder="...">
+                    <i class="icon-search"  onclick="search(document.getElementById('input-sm').value)"></i> 
+            </form>
+            </li>
+            <li class="showmarket" style="float: right">
+ 
+                   
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_btc_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">BTC/Bitfinex</a></div>
+                                <div class="num">52531.39</div>
+                                <div class="char">
+                                    <span class="line">58982,59504,55589,54658,54908,58325,59996,60386,62195,58627,57612,59295,56639,58608,58107,57576,55090,52162,51842,49667,51598,51079,52336,51779,51370,53723,53824,51824,52531.39</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_poloniex_btc_usdt" href="https://poloniex.com/exchange/#usdt_btc" target="_blank" rel="nofollow">BTC/P</a></div>
+                                <div class="num">52678.22</div>
+                                <div class="char">
+                                    <span class="line">59444,59738,55986,54639,55344,58396,60147,60281,62740,58698,57742,59451,56680,58538,58177,57711,54959,53174,51465,50084,51336,51143,52601,51811,51315,53888,53677,51894,52678.22</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_eth_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">ETH/Bitfinex</a></div>
+                                <div class="num">3849.68</div>
+                                <div class="char">
+                                    <span class="line">4593,4629,4334,4300,4331,4491,4548,4570,4648,4441,4391,4477,4356,4409,4354,4359,4193,3920,3817,3719,3864,3789,3866,3835,3783,3897,3869,3786,3849.68</span>
+                                </div>
+                            </div>
+
+
+
+</li>
+
+        </ul>
+    </div>
+</nav>
+<div class="m30"></div>
+
+
+    <div class="m30"></div>
+    <div id="headad" style="width: 1200px;margin:0 auto;"> 
+    </div>
+    <div class="m15"></div>
+    <div class="w1200" >
+        <div class="col" >
+            <div class="box box860" id="tickerlist" style="min-height: 877px;">
+                <div class="boxTit" >
+                    <h2>ACT</h2>
+                    <div class="pageList">
+                        <a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a  href='#' class='btn btn-white'    >></a>
+                    </div>
+                </div>
+
+                 <div class="unit2">
+                        <a  href="#native" class="price-toggle" data-currency="native"></a> 
+                                <a href="#CNY" title="(CNY)" class="price-toggle active" data-currency="cny">(CNY)</a>
+                                <a href="#USD" title="(USD)" class="price-toggle" data-currency="usd">(USD)</a>
+                                <a href="#BTC" title="(BTC)" class="price-toggle" data-currency="btc">(BTC)</a>
+                                <a href="#ETH" title="(ETH)" class="price-toggle" data-currency="eth">(ETH)</a>
+                                <a href="#JPY" title="(JPY)" class="price-toggle" data-currency="jpy">(JPY)</a>
+                                <a href="#KRW" title="(KRW)" class="price-toggle" data-currency="krw">(KRW)</a>
+                                <a href="#HKD" title="(HKD)" class="price-toggle" data-currency="hkd">(HKD)</a>
+                                <a href="#INR" title="(INR)" class="price-toggle" data-currency="inr">(INR)</a>
+                        <span class="moreUnit2">
+                        <span></span>
+                        <ul style="width:200px">
+                                <li style="float:left"><a href="#RUB" title="(RUB)" class="price-toggle" data-currency="rub">(RUB)</a></li>
+                                <li style="float:left"><a href="#AUD" title="(AUD)" class="price-toggle" data-currency="aud">(AUD)</a></li>
+                                <li style="float:left"><a href="#EUR" title="(EUR)" class="price-toggle" data-currency="eur">(EUR)</a></li>
+                                <li style="float:left"><a href="#CHF" title="(CHF)" class="price-toggle" data-currency="chf">(CHF)</a></li>
+                                <li style="float:left"><a href="#GBP" title="(GBP)" class="price-toggle" data-currency="gbp">(GBP)</a></li>
+                                <li style="float:left"><a href="#CAD" title="(CAD)" class="price-toggle" data-currency="cad">(CAD)</a></li>
+                                <li style="float:left"><a href="#IDR" title="(IDR)" class="price-toggle" data-currency="idr">(IDR)</a></li>
+                                <li style="float:left"><a href="#BRL" title="(BRL)" class="price-toggle" data-currency="brl">(BRL)</a></li>
+                                <li style="float:left"><a href="#TWD" title="(TWD)" class="price-toggle" data-currency="twd">(TWD)</a></li>
+                                <li style="float:left"><a href="#MXN" title="(MXN)" class="price-toggle" data-currency="mxn">(MXN)</a></li>
+                        </ul>
+                        </span>
+                </div>
+                 <div style="display:none" id="currency-exchange-rates"
+                  data-cny="0.15793796196853876"  data-usd="1"  data-btc="8317.1572573577796"  data-eth="608.96483801777174"  data-jpy="0.009432627458378532"  data-krw="0.0009346667912889054"  data-hkd="0.1274949161402189"  data-inr="0.01536688436419516"  data-rub="0.01738507595539685"  data-aud="0.7716031521531972"  data-eur="1.2296266238756601"  data-chf="1.0490504519833872"  data-gbp="1.394700139470014"  data-cad="0.7632713811395642"  data-idr="7.267804320021872e-05"  data-brl="0.3048687540014024"  data-twd="0.034332406358361656"  data-mxn="0.053505693005735815"                  ></div>
+                <div class="m15"></div>
+                <div class="boxContain">
+                    <table class="table3" id="markets">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                 <th></th>
+                                <th></th>
+                                <th data-sort-method='none'></th>
+                                <th data-sort-method='none'></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="adList">
+                                <td>1 </td> 
+                                
+                                <td> <a href="https://www.okex.cn/?channelId=1162544" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171229/436b21096b4f4853ac26802c1b29a132_15_15.png"   alt="OKEX" >
+                                    OKEX 
+                                    </a>  
+                                </td>
+                                <td><a href="https://www.okex.cn/?channelId=1162544" target="_blank" > ACT/USDT </a> </td>
+                                <td class="price" data-usd="0.2005" data-cny="1.27" data-btc="0.00002411" data-native="0.2005">1.27</td>
+                                <td>68</td>
+                                <td class="volume" data-usd="135867" data-cny="860256" data-btc="16.34" data-native="677641">86 </td>
+                                <td>1.20%</td>
+                                <td>5</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>2 </td> 
+                                
+                                <td> <a href="/exchange/union-coins/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171025/c05793356a1746829cfae32a4b32d64b_15_15.png"   alt="U-U-COIN" >
+                                    U-U-COIN 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2154" data-cny="1.36" data-btc="0.0000248" data-native="0.0000248">1.36</td>
+                                <td>1,995</td>
+                                <td class="volume" data-usd="4297089" data-cny="27207452" data-btc="495" data-native="19946812">2,721 </td>
+                                <td>38.08%</td>
+                                <td>55</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>3 </td> 
+                                
+                                <td> <a href="/exchange/coinegg/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170923/a3bb1ba5a4f04ed78e5316cf3a6339d3_15_15.png"   alt="-CoinEgg" >
+                                    -CoinEgg 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2127" data-cny="1.35" data-btc="0.00002364" data-native="0.00002364">1.35</td>
+                                <td>905</td>
+                                <td class="volume" data-usd="1924897" data-cny="12187679" data-btc="214" data-native="9049281">1,219 </td>
+                                <td>17.46%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>4 </td> 
+                                
+                                <td> <a href="/exchange/huobipro/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png"   alt="Pro-Huobi" >
+                                    Pro-Huobi 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.205" data-cny="1.3" data-btc="0.00002455" data-native="0.00002455">1.3</td>
+                                <td>721</td>
+                                <td class="volume" data-usd="1478317" data-cny="9360109" data-btc="177" data-native="7212033">936 </td>
+                                <td>13.13%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>5 </td> 
+                                
+                                <td> <a href="/exchange/huobipro/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png"   alt="Pro-Huobi" >
+                                    Pro-Huobi 
+                                    </a>  
+                                </td>
+                                <td>ACT/ETH </td>
+                                <td class="price" data-usd="0.2048" data-cny="1.3" data-btc="0.0000244" data-native="0.000334">1.3</td>
+                                <td>702</td>
+                                <td class="volume" data-usd="1437655" data-cny="9102657" data-btc="171" data-native="7018328">910 </td>
+                                <td>12.74%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>6 </td> 
+                                
+                                <td> <a href="/exchange/coinegg/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170923/a3bb1ba5a4f04ed78e5316cf3a6339d3_15_15.png"   alt="-CoinEgg" >
+                                    -CoinEgg 
+                                    </a>  
+                                </td>
+                                <td>ACT/USC </td>
+                                <td class="price" data-usd="0.2119" data-cny="1.34" data-btc="?" data-native="0.2119">1.34</td>
+                                <td>556</td>
+                                <td class="volume" data-usd="1177492" data-cny="7455409" data-btc="?" data-native="5556829">746 </td>
+                                <td>9.88%</td>
+                                <td>3</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>7 </td> 
+                                
+                                <td> <a href="/exchange/btctrade-im/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171106/7818960229254d049bed0f811e501b3c_15_15.png"   alt="-BTCTRADE.IM" >
+                                    -BTCTRADE.IM 
+                                    </a>  
+                                </td>
+                                <td>ACT/USC </td>
+                                <td class="price" data-usd="0.19" data-cny="1.2" data-btc="?" data-native="0.19">1.2</td>
+                                <td>135</td>
+                                <td class="volume" data-usd="256256" data-cny="1622513" data-btc="?" data-native="1348718">162 </td>
+                                <td>2.03%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>8 </td> 
+                                
+                                <td> <a href="/exchange/btctrade-im/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171106/7818960229254d049bed0f811e501b3c_15_15.png"   alt="-BTCTRADE.IM" >
+                                    -BTCTRADE.IM 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.1924" data-cny="1.22" data-btc="0.000023" data-native="0.000023">1.22</td>
+                                <td>111</td>
+                                <td class="volume" data-usd="213392" data-cny="1351112" data-btc="25.51" data-native="1109134">135 </td>
+                                <td>1.89%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>9 </td> 
+                                
+                                <td> <a href="/exchange/coolcoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170922/61ec0c330f604ddab7e37c4d3bcd5ec1_15_15.png"   alt="-CoolCoin" >
+                                    -CoolCoin 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2404" data-cny="1.52" data-btc="0.00002879" data-native="0.00002879">1.52</td>
+                                <td>45</td>
+                                <td class="volume" data-usd="107167" data-cny="678538" data-btc="12.84" data-native="445821">68 </td>
+                                <td>0.95%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>10 </td> 
+                                
+                                <td> <a href="/exchange/okex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171229/436b21096b4f4853ac26802c1b29a132_15_15.png"   alt="OKEX" >
+                                    OKEX 
+                                    </a>  
+                                </td>
+                                <td><a href="https://www.okex.com/?channelId=1162544" target="_blank" > ACT/BTC </a> </td>
+                                <td class="price" data-usd="0.1999" data-cny="1.27" data-btc="0.0000241" data-native="0.0000241">1.27</td>
+                                <td>40</td>
+                                <td class="volume" data-usd="80250" data-cny="508109" data-btc="9.67" data-native="401402">51 </td>
+                                <td>0.71%</td>
+                                <td>4</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>11 </td> 
+                                
+                                <td> <a href="/exchange/kucoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171012/abe6f121516549289e5e629f0e7b0afb_15_15.png"   alt="-Kucoin" >
+                                    -Kucoin 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2027" data-cny="1.28" data-btc="0.00002442" data-native="0.00002442">1.28</td>
+                                <td>34</td>
+                                <td class="volume" data-usd="69484" data-cny="439943" data-btc="8.37" data-native="342856">44 </td>
+                                <td>0.62%</td>
+                                <td>8</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>12 </td> 
+                                
+                                <td> <a href="/exchange/btc98/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171212/a932e8ff396c43faa34a20d71bf0771c_15_15.jpg"   alt="-BTC98" >
+                                    -BTC98 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2138" data-cny="1.35" data-btc="0.00002372" data-native="0.00002372">1.35</td>
+                                <td>18</td>
+                                <td class="volume" data-usd="38382" data-cny="243041" data-btc="4.26" data-native="179491">24 </td>
+                                <td>0.34%</td>
+                                <td>11</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>13 </td> 
+                                
+                                <td> <a href="/exchange/kucoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171012/abe6f121516549289e5e629f0e7b0afb_15_15.png"   alt="-Kucoin" >
+                                    -Kucoin 
+                                    </a>  
+                                </td>
+                                <td>ACT/ETH </td>
+                                <td class="price" data-usd="0.201" data-cny="1.27" data-btc="0.0000244" data-native="0.000334">1.27</td>
+                                <td>18</td>
+                                <td class="volume" data-usd="35690" data-cny="225975" data-btc="4.33" data-native="177588">23 </td>
+                                <td>0.32%</td>
+                                <td>16</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>14 </td> 
+                                
+                                <td> <a href="/exchange/okex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171229/436b21096b4f4853ac26802c1b29a132_15_15.png"   alt="OKEX" >
+                                    OKEX 
+                                    </a>  
+                                </td>
+                                <td><a href="https://www.okex.com/?channelId=1162544" target="_blank" > ACT/ETH </a> </td>
+                                <td class="price" data-usd="0.2033" data-cny="1.29" data-btc="0.00002456" data-native="0.000335">1.29</td>
+                                <td>11</td>
+                                <td class="volume" data-usd="22650" data-cny="143412" data-btc="2.74" data-native="111388">14 </td>
+                                <td>0.20%</td>
+                                <td>39</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>15 </td> 
+                                
+                                <td> <a href="/exchange/fatbtc/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171209/e2f3d2d88cb74a0eb4666a2cbb450a50_15_15.png"   alt="-FatBTC" >
+                                    -FatBTC 
+                                    </a>  
+                                </td>
+                                <td>ACT/FCNY </td>
+                                <td class="price" data-usd="0.2167" data-cny="1.37" data-btc="0.00002502" data-native="1.37">1.37</td>
+                                <td>78,812</td>
+                                <td class="volume" data-usd="17078" data-cny="108129" data-btc="1.97" data-native="78812">11 </td>
+                                <td>0.15%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>16 </td> 
+                                
+                                <td> <a href="/exchange/kex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171109/e0079eef7c48455aa5087fd8b1b0663f_15_15.png"   alt="K-KEX" >
+                                    K-KEX 
+                                    </a>  
+                                </td>
+                                <td>ACT/DC </td>
+                                <td class="price" data-usd="0.2521" data-cny="1.6" data-btc="0.00002839" data-native="1.6">1.6</td>
+                                <td>52,762</td>
+                                <td class="volume" data-usd="13300" data-cny="84208" data-btc="1.5" data-native="52762">84,208 </td>
+                                <td>0.12%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>17 </td> 
+                                
+                                <td> <a href="/exchange/hitbtc/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170808/fcb233d34bc74c4994d47ca084f7eaf5_15_15.png"   alt="HitBTC" >
+                                    HitBTC 
+                                    </a>  
+                                </td>
+                                <td>ACT/USD </td>
+                                <td class="price" data-usd="0.2391" data-cny="1.51" data-btc="0.00002797" data-native="0.2391">1.51</td>
+                                <td>28,340</td>
+                                <td class="volume" data-usd="6776" data-cny="42905" data-btc="0.7927" data-native="28340">42,905 </td>
+                                <td>0.06%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>18 </td> 
+                                
+                                <td> <a href="/exchange/hitbtc/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170808/fcb233d34bc74c4994d47ca084f7eaf5_15_15.png"   alt="HitBTC" >
+                                    HitBTC 
+                                    </a>  
+                                </td>
+                                <td>ACT/ETH </td>
+                                <td class="price" data-usd="0.2421" data-cny="1.53" data-btc="0.00002828" data-native="0.000386">1.53</td>
+                                <td>22,350</td>
+                                <td class="volume" data-usd="5411" data-cny="34262" data-btc="0.632" data-native="22350">34,262 </td>
+                                <td>0.05%</td>
+                                <td>2</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>19 </td> 
+                                
+                                <td> <a href="/exchange/hitbtc/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170808/fcb233d34bc74c4994d47ca084f7eaf5_15_15.png"   alt="HitBTC" >
+                                    HitBTC 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.2299" data-cny="1.46" data-btc="0.0000269" data-native="0.0000269">1.46</td>
+                                <td>22,550</td>
+                                <td class="volume" data-usd="5185" data-cny="32831" data-btc="0.6066" data-native="22550">32,831 </td>
+                                <td>0.05%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>20 </td> 
+                                
+                                <td> <a href="/exchange/bigone/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171227/c350e2c4a0e54c9baab7d6cabaf24e1d_15_15.png"   alt="BigOne" >
+                                    BigOne 
+                                    </a>  
+                                </td>
+                                <td>ACT/BTC </td>
+                                <td class="price" data-usd="0.1914" data-cny="1.21" data-btc="0.00002392" data-native="0.00002392">1.21</td>
+                                <td>11,270</td>
+                                <td class="volume" data-usd="2157" data-cny="13655" data-btc="0.2696" data-native="11270">13,655 </td>
+                                <td>0.02%</td>
+                                <td>5</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>21 </td> 
+                                
+                                <td> <a href="/exchange/coinnest/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171110/72398eb5935444cfa5bba20ffdabdec6_15_15.png"   alt="COINNEST" >
+                                    COINNEST 
+                                    </a>  
+                                </td>
+                                <td>ACT/KRW </td>
+                                <td class="price" data-usd="0.1542" data-cny="0.9765" data-btc="0.00002092" data-native="165">0.9765</td>
+                                <td>961</td>
+                                <td class="volume" data-usd="148" data-cny="939" data-btc="0.0201" data-native="961">939 </td>
+                                <td>0.00%</td>
+                                <td>3</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>22 </td> 
+                                
+                                <td> <a href="/exchange/kucoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171012/abe6f121516549289e5e629f0e7b0afb_15_15.png"   alt="-Kucoin" >
+                                    -Kucoin 
+                                    </a>  
+                                </td>
+                                <td>ACT/BCH </td>
+                                <td class="price" data-usd="0.2067" data-cny="1.31" data-btc="0.00002434" data-native="0.000201">1.31</td>
+                                <td>717</td>
+                                <td class="volume" data-usd="148" data-cny="938" data-btc="0.0175" data-native="717">938 </td>
+                                <td>0.00%</td>
+                                <td>5</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>23 </td> 
+                                
+                                <td> <a href="/exchange/okex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171229/436b21096b4f4853ac26802c1b29a132_15_15.png"   alt="OKEX" >
+                                    OKEX 
+                                    </a>  
+                                </td>
+                                <td><a href="https://www.okex.com/?channelId=1162544" target="_blank" > ACT/BCH </a> </td>
+                                <td class="price" data-usd="0.1951" data-cny="1.24" data-btc="0.00002356" data-native="0.000195">1.24</td>
+                                <td>105</td>
+                                <td class="volume" data-usd="20.46" data-cny="130" data-btc="0.002471" data-native="105">130 </td>
+                                <td>0.00%</td>
+                                <td>2</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>24 </td> 
+                                
+                                <td> <a href="/exchange/allcoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170806/cd9d67dc8a734765ae9be75f85e03d89_15_15.png"   alt="Allcoin" >
+                                    Allcoin 
+                                    </a>  
+                                </td>
+                                <td><a href="https://allcoin.com/markets/ACT-BTC/0/" target="_blank" > ACT/BTC </a> </td>
+                                <td class="price" data-usd="0.185" data-cny="1.17" data-btc="0.00002176" data-native="0.00002176">1.17</td>
+                                <td>40</td>
+                                <td class="volume" data-usd="7.4" data-cny="46.84" data-btc="0.00087" data-native="40">47 </td>
+                                <td>0.00%</td>
+                                <td>17</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pageList">
+                        <a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a  href='#' class='btn btn-white'    >></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box325">
+                <div class="padding5 backbox">
+                    <h2>
+                            <img src="//static.feixiaohao.com/coin/20171103/fad3cc3b83a94cd794638287cc6b09bf_2.png" alt="AchainLogo">
+Achain
+                        <input type="hidden" id="coincode" value="achain"><input type="hidden" id="coinname" value="Achain">
+A                    </h2>                    <div class="coinprice">
+                        1.34<span class="tags-green">4.52%</span>
+                    </div>
+                    <div>$0.2117&nbsp;&nbsp;0.00002148BTC</div>
+                    <div class="m15"></div>
+                    <ul class="info">
+                        <li>24H<span>1.37</span></li>
+                        <li>24H<span>1.26</span></li>
+                        <li>24H<span>71,819,931<span class="tag-vol">64</span></span></li>
+                    </ul>
+                    <a href="/currencies/achain/"></a>
+                </div>
+            </div>
+            <div class="box box325">
+                <div class="plantListsSpread">
+
+                </div>
+            </div>
+            <div class="box box325">
+                <div class="boxTit">
+                    <h2>ACT</h2>
+                </div>
+                <div class="padding5">
+                    <ul class="baseInfoList">
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">Achain/ACT</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">A</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">14</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">2017-08-27</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+<a href='https://www.achain.com/Achain%20Whitepaper%202.0_CHS.pdf' target='_blank' rel='nofollow'>https://www.achain.com/Achain%20Whitepaper%202.0_CHS.pdf</a><a href='{0}' target='_blank' rel='nofollow'></a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+                                        <a href="https://www.achain.com/"  rel="nofollow"  target="_blank">1</a>                            </span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+                                        <a href="https://browser.achain.com/" rel="nofollow" target="_blank">1</a>                              </span>
+                        </li>
+
+                            <li>
+                                <span class="tit"></span><span class="value">
+                                    <a href="#ico">
+                                        0.18
+                                    </a>
+                                        <span class="tags-ico">7.45</span>
+                                </span>
+                            </li>
+                                                    <li style="width:100%">
+                                <span class="tit"></span><span class="value" style="width:auto">
+                                        <a href="/conceptcoin/9/" target="_blank"> </a>
+                                </span>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m30"></div>
+    <footer class="clear">
+    <div class="w1200">
+        <a class="logo2" href="/">
+            <img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="Logo">
+        </a>
+        <div class="info">
+            <div>
+                 <a href="/aboutus/" target="_blank"></a><i class="space2"></i>
+                <a  href="/contact/" target="_blank"></a><i class="space2"></i>
+                <a href="/faq/" target="_blank">f&q</a><i class="space2"></i>
+                <a href="/declare/" target="_blank"></a>
+            </div>
+            <div><p>Copyright  feixiaohao.com 2018 | <a href="//www.miibeian.gov.cn/" target="_blank">ICP16116847-8</a></p></div>
+        </div>
+        <div class="media">
+            <div class="weCat">
+                <div class="detal">
+                    <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="" width="120"
+                         height="120">
+                </div>
+            </div>
+            
+            <a class="qq"  href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank"> 
+            </a>
+            <a class="sina" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+        </div>
+    </div>
+</footer>
+
+<div class="totop">
+ 
+    <div class="wCat2">
+        <div class="detal">
+            <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="">
+            <img src="//static.feixiaohao.com/themes/default/images/wxdyh.png"  alt="">
+            <div style="text-align: center;width: 116px;float: left;color: #fff"></div>
+            <div style="text-align: center;width: 116px;float: left;color: #fff"></div>
+        </div>
+    </div>
+    <a class="qq2" href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank">
+    </a>
+    <a class="sina2" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+    <div class="top"></div>
+</div>
+<script src="//static.feixiaohao.com/Scripts/common-1.1.js?v=1.16"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.signalR-2.2.1.min.js"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.peity.min.js"></script>
+<script src="/lcc/js"></script>
+<script type="text/javascript">
+
+    $('.line').peity("line", { width: 50, height: 15, fill: '#f5f5f5', min: 99999, strokeWidth: 1 });
+    loadglobalinfo_new();
+    startSocketHub(false);
+    $('body').on('click', '.showmarket a', function () {
+        var thiscode = $(this).attr("id");
+        $.ajax({
+            url:apiHots+ 'sitestat/?code=' + thiscode,
+            type: "GET",
+            success: function (data) {
+                return;
+            },
+            error: function () {
+                return;
+            }
+        })
+    });
+
+</script>
+
+
+ <script type="text/javascript"> 
+   autoComplete($('#input-sm'));
+</script>
+ 
+<div style="display:none"><script src="https://s19.cnzz.com/z_stat.php?id=1263003344&web_id=1263003344" language="JavaScript"></script></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?192e611c7ffa4b2f8a5047e5cf45403f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script src="//static.feixiaohao.com/Scripts/coinoutlink.js?v=1.35"></script>
+    <script src="//static.feixiaohao.com/Scripts/tablesort.js"></script>
+    <script type="text/javascript">
+        new Tablesort(document.getElementById('markets'));
+    </script>
+    <script type="text/javascript"> 
+        loadCoinMarket();//
+            //loadConcept();
+            $('.unit2 a').click(function () {
+                if ($(this).hasClass('active')) {
+                    return;
+                }
+                $('.unit2 a').removeClass('active');
+                $(this).addClass('active')
+            })
+    </script>
+</body>
+</html>

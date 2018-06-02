@@ -1,0 +1,14 @@
+$name: routeRecruitDdOfferSend;
+
+.#{$name}{
+    padding-bottom: 60px;
+    position: relative;
+    .#{$name}-send-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -60px;
+    }
+}

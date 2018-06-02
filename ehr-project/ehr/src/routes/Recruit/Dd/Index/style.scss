@@ -1,0 +1,150 @@
+.Recruit-Index{
+    overflow: auto;
+    position: relative;
+    .RecruitList-search{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        background-attachment: fixed;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .back{
+            height: 26px;
+            line-height: 26px;
+            margin-left: 15px;
+        }
+    }
+
+    // 响应设计
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        .RecruitList-list{
+            width: 100%;
+            margin-top: 40px;
+            padding-bottom: 15px;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1920px) {
+        .RecruitList-list{
+            width: 65%;
+            padding-top: 40px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+    }
+
+    .notfound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >img{
+            width: 205px;
+            height: 190px;
+        }
+    }
+
+    .logo-container{
+        position: relative;
+        width: 100%;
+        height: 110px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        .logo{
+            //height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            >img{
+                width: 122px;
+                height: 54px;
+            }
+        }
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+        .am-list{
+            .am-list-header{
+                color: #fff;
+            }
+            .am-list-item{
+                .am-input-item{
+
+                }
+            }
+        }
+    }
+
+    .Show-Recruit-Container{
+        height: 100%;
+        .Show-Recruit-Menu{
+            float: left;
+            width: 19%;
+            height: 100%;
+            background-color: #fff;
+        }
+        .Show-Recruit-Content{
+            float: right;
+            width: 79%;
+            height: 100%;
+            background-color: #fff;
+        }
+    }
+}
+
+// 重置antd-mobile模态框样式
+.am-modal{
+    .am-modal-content{
+        .am-modal-footer{
+            .am-modal-button-group-v{
+                .am-modal-button{
+                    color: #fff;
+                    background-color: #108ee9;
+                }
+            }
+        }
+    }
+    .lists{
+
+    }
+}
+
+
+.am-modal.am-modal-android{
+    .am-modal-content{
+        border-radius: 8px;
+        .am-modal-header{
+            .am-modal-title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .am-modal-footer{
+            margin-bottom: -12px;
+            .am-modal-button-group-v{
+                background-color: #108ee9;
+                .am-modal-button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    width: 100%;
+                    background-color: #108ee9;
+                }
+            }
+        }
+    }
+    .lists{
+        width: 130%;
+        margin-left: -30px;
+    }
+}

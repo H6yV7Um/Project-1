@@ -1,0 +1,11 @@
+.layoutDdPc{
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}

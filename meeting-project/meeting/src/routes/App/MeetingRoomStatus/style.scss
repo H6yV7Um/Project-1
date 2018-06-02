@@ -1,0 +1,40 @@
+$name: meeting-room-status;
+.#{$name}{
+    position: relative;
+    height: 100%;
+    .#{$name}-meet-calender-container{
+        height: 100%;
+    }
+    .#{$name}-add-meeting-container{
+        position: fixed;
+        top: 200px;
+        right: 48px;
+        height: 500px;
+        width: 400px;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            display: none
+        }
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .#{$name}{
+        position: relative;
+        width: 1080px;
+        .#{$name}-add-meeting-container{
+            position: absolute;
+            top: 120px;
+            right: 48px;
+            height: 500px;
+            width: 400px;
+            &::-webkit-scrollbar{
+                display: none
+            }
+        }
+    }
+
+}
+.ant-tabs-tabpan::-webkit-scrollbar{
+    display: none;
+}

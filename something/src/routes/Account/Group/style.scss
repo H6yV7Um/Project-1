@@ -1,0 +1,47 @@
+.Group{
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background-color: #fff;
+    .bg{
+        width:100%;
+        max-width: 1200px;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+        @media screen and (min-width:750px){
+            .url-get{
+                position: absolute;
+                width: 50%;
+                top: 24.01%;
+                left: 23%;
+                a{
+                    font-size: 22px;
+                }
+            }
+            .url{
+                position: absolute;
+                width: 50%;
+                top: 56.2%;
+                left: 68%;
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+        @media screen and (max-width:749px){
+            .url-get{
+                position: absolute;
+                width: 50%;
+                top: 23.8%;
+                left: 23%;
+            }
+            .url{
+                position: absolute;
+                width: 50%;
+                top: 56.2%;
+                left: 65%;
+            }
+        }
+    }
+}

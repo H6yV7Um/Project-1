@@ -1,0 +1,107 @@
+.Something-Index{
+    .ad{
+        //max-height: 180px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .app-list{
+        background-color: #fff;
+        padding-bottom: 15px;
+        border-bottom: 0.8px solid #DDDDDD;
+    }
+    .app{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        .icon-border{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        i,span{
+            display: block;
+            font-size: 26px;
+        }
+        a{
+            color: #000;
+        }
+    }
+    .app.car{
+        .icon{
+            font-size: 23px;
+            color: #307AA7;
+            transition: color 200ms;
+        }
+        &:active .icon{
+            color: #1B4660;
+        }
+    }
+    .app.suggest{
+        .icon{
+            font-size: 26px;
+            color: #B2644A;
+        }
+        &:active .icon{
+            color: #774331;
+        }
+    }
+    .app.book{
+        .icon{
+            color: #289361;
+        }
+        &:active .icon{
+            color: #1D6C47;
+        }
+    }
+    .app.say{
+        .icon{
+            color: #92518D;
+        }
+        &:active .icon{
+            color: #633760;
+        }
+    }
+    .app.conference{
+        .icon{
+            color: #B74161;
+        }
+        &:active .icon{
+            color: #7A2B41;
+        }
+    }
+    .app.recommend{
+        .icon{
+            color: #5757B8;
+        }
+        &:active .icon{
+            color: #3F3F86;
+        }
+    }
+    .app.house{
+        .icon{
+            font-size: 30px;
+            color: #A9950C;
+        }
+        &:active .icon{
+            color: #7A6B08;
+        }
+    }
+    .app.activity{
+        .icon{
+            font-size: 25px;
+            color: #2793A1;
+        }
+        &:active .icon{
+            color: #1C6973;
+        }
+    }
+
+    .message-none{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}

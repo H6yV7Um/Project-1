@@ -1,0 +1,15 @@
+.Subscription-CvEdit{
+    //.lists{
+    //    .am-list-item .am-list-line{
+    //        border-bottom: 0.8px solid #ddd;
+    //    }
+    //}
+    .confirm-btn-container{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .am-button{
+            border-radius: 0;
+        }
+    }
+}

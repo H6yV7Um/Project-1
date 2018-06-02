@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-object-assign",
+        [
+            "import", [
+            {
+                "libraryName": "antd",
+                "style": true
+            },
+            {
+                "libraryName": "antd-mobile",
+                "style": true
+            }
+        ]
+        ]
+    ],
+    "presets": ["es2015", "stage-0", "react"]
+}

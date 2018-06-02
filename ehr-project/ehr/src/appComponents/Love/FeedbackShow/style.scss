@@ -1,0 +1,93 @@
+$name: appComponentsLoveFeedbackShow;
+
+.#{$name}{
+    .#{$name}-header{
+        display: flex;
+        margin-bottom: 10px;
+        .#{$name}-avatar{
+            margin-right: 15px;
+        }
+        .#{$name}-info{
+            flex: 1;
+            display: flex;
+            .#{$name}-user{
+                .#{$name}-user-position{
+                    display: inline-block;
+                    background-color:#ff7171 ;
+                    color:white;
+                    margin-top: 1px;
+                    padding: 1px 3px;
+                    border-radius: 5px;
+                }
+                .#{$name}-user-score{
+                    display: inline-block;
+                    color:#D57E70;
+                    margin-top: 1px;
+                    margin-left:5px;
+                    font-size: 15px;
+                }
+            }
+            .#{$name}-title-border{
+                flex: 1;
+                text-align: right;
+            }
+            .#{$name}-title{
+                margin-right: 0;
+            }
+        }
+    }
+    .#{$name}-achievements-border{
+        .#{$name}-feedback{
+            border: none;
+            margin-bottom: 15px;
+            .#{$name}-message{
+                margin:15px auto;
+                font-size: 12px;
+            }
+            .#{$name}-achievements{
+                margin-top: 5px;
+                padding-left: 17px;
+
+                .#{$name}-objectives-key-results-rank{
+                    color: #d92c2b;
+                    font-size: 10px;
+                    margin-left: -17px;
+                    float:left;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .#{$name}-score-border{
+        text-align: center;
+        margin-top: 8px;
+        border-top: 0.8px dashed #ddd;
+        &:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .#{$name}-score-info{
+            display: inline-block;
+            width: 50%;
+            height: 30px;
+            padding: 6px;
+            //color: #888;
+            color: #000;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .#{$name}-score-name{
+                margin-right: 5px;
+            }
+            .#{$name}-score{
+
+            }
+        }
+    }
+}

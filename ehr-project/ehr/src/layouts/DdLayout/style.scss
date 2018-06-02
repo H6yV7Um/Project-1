@@ -1,0 +1,30 @@
+.DdLayout{
+    overflow: hidden;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    >.ant-back-top{
+        width: 30px;
+        height: 30px;
+        right: 13px;
+        bottom: 73px;
+        .ant-back-top-content{
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            .ant-back-top-icon {
+                font-size: 16px;
+                margin-top: 6px;
+            }
+        }
+    }
+    .mainPage{
+        .main-pages{
+            width: 100%;
+            min-height: 100%;
+            float: left;
+        }
+    }
+}

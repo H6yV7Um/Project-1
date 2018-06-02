@@ -1,0 +1,17 @@
+$name: SidebarLayout;
+
+.#{$name}{
+    .#{$name}-left{
+        z-index: 1002;
+    }
+    .#{$name}-middle{
+        .#{$name}-middle-border{
+            position: fixed;
+            z-index: 1001;
+            transition: background-color 200ms;
+        }
+    }
+    .#{$name}-right{
+        z-index: 1002;
+    }
+}

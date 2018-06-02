@@ -1,0 +1,30 @@
+$name: Coursera-Table;
+
+.#{$name}{
+
+	.userProfile{
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+		>p
+		{
+			flex: 0 0 10%;
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+		};
+		>div.Grid-cell
+		{
+			flex:0 0 90%;
+			padding-left: 5%;
+			.certificate
+			{
+				width: 10px;
+				display: inline-block;
+				word-wrap: break-word;
+				font-size: 6px
+			}
+		}
+
+	}
+}

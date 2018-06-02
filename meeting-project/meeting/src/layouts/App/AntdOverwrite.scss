@@ -1,0 +1,77 @@
+// 覆写antd样式
+
+
+// 把导航底部的底线去掉
+.ant-tabs-bar {
+    border-bottom: 1px solid #e8e8e8;
+    border-bottom: none;
+    //margin-bottom: 16px;
+    margin-bottom: 0;
+    outline: none;
+    transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    //own
+    height: 80px;
+    .ant-tabs-extra-content {
+        //line-height: 40px;
+        line-height: 80px;
+    }
+    .ant-tabs-nav-container {
+        overflow: hidden;
+        font-size: 14px;
+        //line-height: 1.5;
+        box-sizing: border-box;
+        position: relative;
+        white-space: nowrap;
+        margin-bottom: -1px;
+        transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        zoom: 1;
+        padding-left: 50px;
+        height:80px;
+        line-height: 80px;
+        .ant-tabs-nav-scroll
+        {
+            height:80px;
+            .ant-tabs-nav
+            {
+                height: 80px;
+            }
+            .ant-tabs-tab
+            {
+                height: 80px;
+            }
+            .ant-tabs-tab {
+                display: inline-block;
+                margin-right: 52px;
+                box-sizing: border-box;
+                position: relative;
+                padding: 10px 10px;
+                transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                cursor: pointer;
+                text-decoration: none;
+                line-height: 60px;
+            }
+        }
+    }
+}
+.ant-tabs-nav-wrap
+{
+    padding-left: 50px;
+    //line-height: 70px;
+}
+.ant-form-item {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.65);
+    vertical-align: top;
+}
+.ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content > .ant-tabs-tabpane {
+    flex-shrink: 0;
+    width: 100%;
+    transition: opacity .45s;
+    opacity: 1;
+    height: 100%;
+}
+
+.ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content > .ant-tabs-tabpane::-webkit-scrollbar{
+    display: none;
+}

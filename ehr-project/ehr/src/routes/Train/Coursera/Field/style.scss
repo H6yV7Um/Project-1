@@ -1,0 +1,85 @@
+$name: Coursera-Field;
+.#{$name}{
+	.btn-submit
+	{
+		/*position: fixed;
+		width: 100%;
+		bottom: 0;
+		text-align: center;
+		padding: 10px;
+		background-color: white;
+		z-index: 0;*/
+		.#{$name}-footer
+		{
+			height: 45px;
+			text-align: center;
+			line-height: 45px;
+			font-size: 18px;
+			background: #5FB5D8;
+			width: 100%;
+			color: white;
+			position: fixed;
+		}
+	
+	}
+
+
+}
+
+.#{$name}-pc
+{
+    .#{$name}-back
+    {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        padding: 10px;
+        >a
+        {
+            display: inline-block;
+            width: 64.67px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #5FB5D8;
+            color: white;
+            border-radius: 4px;
+            position: absolute;
+        }
+    }
+    .#{$name}-form
+    {
+
+    }
+    .#{$name}-pc-spin
+    {
+
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+
+    }
+	width: 960px;
+	padding: 20px;
+	margin:0 auto;
+	background: white;
+	overflow: hidden;
+    .ant-btn-primary {
+        color: #fff;
+        background-color: #5FB5D8;
+        border-color: #5FB5D8;
+    }
+    .ant-btn-lg {
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 32px;
+}
+}

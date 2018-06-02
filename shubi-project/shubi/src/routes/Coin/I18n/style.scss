@@ -1,0 +1,85 @@
+$name: routeAppIndex;
+.#{$name} {
+    .title {
+        width: 100%;
+        text-align: center;
+        color: #e68f35;
+    }
+    .form-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        .message {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            .am-button {
+                width: 28%;
+            }
+            .delay {
+                background-color: #d2d2d2;
+                border-radius: 5px;
+                height: 90px;
+                font-size: 24px;
+                color: white;
+                width: 28%;
+                text-align: center;
+                line-height: 90px;
+            }
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        .am-list-body {
+            background-color: transparent;
+            border-top: none;
+        }
+        .am-list-item.am-input-item {
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+            min-width: 60%;
+        }
+        .am-list-item.am-input-item:last-child {
+            width: 58%;
+        }
+        .am-button {
+            background-color: #d2d2d2;
+            border-radius: 5px;
+            height: 45px;
+            font-size: 14px;
+            color: white;
+        }
+        .am-list-item .am-input-control input {
+            font-size: 28px;
+            color: #d2d2d2;
+            caret-color: #d2d2d2;
+        }
+    }
+    .demoTitle:before,
+    .demoTitle:after {
+        border-bottom: none;
+    }
+}
+
+// PC端样式
+@media (min-width: 736px) {
+    .#{$name} {
+        background: red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background: red;
+        }
+    }
+}

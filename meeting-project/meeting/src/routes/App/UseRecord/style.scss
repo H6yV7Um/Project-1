@@ -1,0 +1,82 @@
+$name: app-use-record;
+.#{$name}{
+    min-width: 1000px;
+    background-color: #f5f5f5;
+    .#{$name}-meet-calender-container{
+        height: 700px;
+        overflow: hidden;
+    }
+    .#{$name}-use-record-container{
+        background-color: #f5f5f5;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .#{$name}-add-meeting-container{
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.#{$name}-cancel-btn{
+    position: relative;
+    top: -40px;
+}
+
+.#{$name}-operation-btns{
+    position: relative;
+    top: -41px;
+    width: 300px;
+    > Button:nth-child(2){
+        margin-left: 10px;
+        color: #fff;
+        background-color: #009e70;
+        border-color: #009e70;
+    }
+    > Button:nth-child(3){
+        margin-left: 10px;
+    }
+}
+
+.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
+    background-color: transparent;
+    color: #000;
+}
+
+.ant-pagination-item{
+    background-color: transparent;
+    a{
+        color: #000;
+    }
+    &:focus a{
+        color: #fff;
+    }
+}
+
+.ant-table-filter-dropdown .ant-dropdown-menu-item > label + span{
+    margin-left: 5px;
+    color: #000;
+}
+
+.ant-pagination-item-active{
+    background-color: #108ee9;
+    a{
+        color: #fff;
+    }
+}
+.ant-pagination-item-active:hover{
+    a{
+        color: #fff;
+    }
+}
+
+tbody, thead > tr > th > span, .ant-pagination-total-text{
+    color: #000;
+}
+
+.ant-table-thead > tr > th .anticon-filter, .ant-table-thead > tr > th .ant-table-filter-icon{
+    color: #000 !important;
+}

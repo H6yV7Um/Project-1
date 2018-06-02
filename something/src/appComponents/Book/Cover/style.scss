@@ -1,0 +1,8 @@
+$name: appComponent-Book-Cover;
+
+.#{$name}{
+    overflow: hidden;
+    >img{
+        width: 100%;
+    }
+}

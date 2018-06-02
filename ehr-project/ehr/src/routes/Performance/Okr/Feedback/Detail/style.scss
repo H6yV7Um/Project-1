@@ -1,0 +1,150 @@
+$name: routePerformanceOkrFeedbackDetail;
+
+.#{$name}{
+    background-color:#F1F1F1;
+    height: auto;
+    width: 100%;
+    position: relative;
+    .#{$name}-header{
+        width: 100%;
+        display: flex;
+        .#{$name}-header-avatar{
+            display: inline-block;
+        }
+        .#{$name}-header-info{
+            display: inline-block;
+            margin-left: 16px;
+            .#{$name}-header-name{
+                font-size: 14px;
+            }
+            .#{$name}-header-department{
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+    .#{$name}-period{
+        background-color:#4e394c;
+        color: #fff;
+        font-size: 14px;
+        margin-left: -7px;
+        height: 44px;
+        margin-bottom: 0;
+        .component-ModularContainer-title-sign{
+            display: none;
+        }
+        .#{$name}-period-link{
+            font-size: 14px;
+            cursor: pointer;
+            color: #fff;
+            display: inline-block;
+            .#{$name}-period-link-extra{
+                margin-left: 20px;
+            }
+        }
+    }
+    .#{$name}-objective-key-results-content,.#{$name}-keyResults-content,.#{$name}-feedback-content,.#{$name}-grade-content{
+        border-top: .8px solid #ddd;
+        padding-top: 15px;
+        font-size: 12px;
+        line-height: 1.6;
+        .#{$name}-feedback-content-total{
+            font-size: 14px;
+        }
+        .#{$name}-feedback-content-info{
+            margin: 5px 10px 0 0px;
+            font-size: 10px;
+            color: #d92c2b;
+            float: left;
+        }
+        .#{$name}-feedback-content-desc{
+            padding-left: 18px;
+        }
+    }
+    .#{$name}-objectives{
+        .#{$name}-objectives-objective{
+            margin-top: 6px;
+            border-top: .8px solid #ddd;
+            padding: 10px 0 0 20px;
+            &:after{
+                display: block;
+                content: "";
+                clear: both;
+            }
+            .#{$name}-objectives-objective-rank{
+                float: left;
+                margin-top: 3px;
+                margin-left: -20px;
+                color: #d92c2b;
+                font-size: 14px;
+            }
+            .#{$name}-objectives-objective-info{
+                width: 100%;
+                font-weight: 500;
+                float: left;
+                padding-bottom: 10px;
+                border-bottom: 0.8px dashed #ddd;
+            }
+        }
+
+        .#{$name}-objectives-key-results{
+            padding: 6px 0 2px 30px;
+            font-size: 12px;
+            &:after{
+                display: block;
+                content: "";
+                clear: both;
+            }
+            .#{$name}-objectives-key-results-rank{
+                color: #d92c2b;
+                font-size: 10px;
+                margin-left: -17px;
+                float:left;
+                margin-top: 3px;
+            }
+            .#{$name}-objectives-key-results-desc{
+                float: left;
+                width: 100%;
+            }
+        }
+
+        .#{$name}-feedback-okrs{
+            margin-left: 12px;
+            .#{$name}-feedback-okrs-box{
+                border-top: .8px dashed #ddd;
+                font-size: 12px;
+                margin: 6px 0 0 0;
+                padding-top: 6px;
+                .#{$name}-feedback-okrs-box-title{
+                    font-weight: 500;
+                    color: #d92c2b;
+                }
+                .#{$name}-feedback-okrs-box-content{
+                    margin: 2px 0 0 18px;
+                }
+            }
+        }
+    }
+    .#{$name}-editContent{
+        font-size: 12px;
+        .#{$name}-editContent-icon{
+            margin-right: 3px;
+        }
+    }
+    .#{$name}-feedback-title{
+        margin-top: -2px;
+    }
+
+    .#{$name}-grade{
+        .#{$name}-grade-bar-chart{
+            color: #000;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
+
+

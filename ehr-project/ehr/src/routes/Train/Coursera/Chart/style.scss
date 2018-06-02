@@ -1,0 +1,86 @@
+$name: Coursera-Chart;
+.#{$name}{
+	background: white;
+	.noData
+	{
+		width:100%;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.#{$name}-current-chart-all
+	{
+        .#{$name}-spin
+        {
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            outline: 0;
+            text-align: center;
+        }
+	}
+
+}
+.#{$name}-pc
+{
+    width: 960px;
+    padding: 20px;
+    margin:0 auto;
+    background: white;
+    overflow: hidden;
+    .#{$name}-spin
+    {
+        text-align: center;
+    }
+    .#{$name}-back
+    {
+        padding: 20px 0 20px 0;
+        >a
+        {
+            display: inline-block;
+            width: 64.67px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #5FB5D8;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        color: #5FB5D8;
+    }
+    .ant-tabs-tab:hover {
+        color: #5FB5D8;
+    }
+    .ant-tabs-ink-bar {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        box-sizing: border-box;
+        height: 2px;
+        background-color: #5FB5D8;
+        transform-origin: 0 0;
+    }
+}
+@media screen and (min-width: 768px) {
+	.#{$name}{
+		width: 960px;
+		margin: 0 auto
+	}
+    .#{$name}-current-chart-department
+	{
+		>div
+		{
+			display: inline-block;
+			width: 100%
+		}
+	}
+}

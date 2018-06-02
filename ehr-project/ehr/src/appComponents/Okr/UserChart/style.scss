@@ -1,0 +1,11 @@
+$name: appComponentsOkrUserChart;
+
+.#{$name}{
+    .#{$name}-chart>div:nth-child(1){
+        width: 100%!important;
+    }
+    .#{$name}-message{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

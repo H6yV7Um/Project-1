@@ -1,0 +1,14 @@
+.component-TextareaItem{
+    .am-textarea-label{
+        font-size: 15px;
+    }
+    &-readonly{
+        //.am-textarea-label,.am-textarea-control textarea{
+        .am-textarea-label{
+            color: #bbb;
+        }
+    }
+    .am-textarea-control textarea{
+        margin-top: 1px;
+    }
+}

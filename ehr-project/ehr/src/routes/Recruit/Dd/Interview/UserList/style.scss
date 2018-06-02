@@ -1,0 +1,88 @@
+$name: RecruitDdInterviewUserList;
+
+.#{$name} {
+    // 搜索
+    .#{$name}-header{
+        .#{$name}-search{
+            width: 85%;
+            margin: 0 auto;
+            padding: 15px 0;
+            .#{$name}-search-item{
+                &:not(first-child){
+                    margin-top: 16px;
+                }
+                .#{$name}-name-search{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    // 列表
+    .#{$name}-container{
+        .#{$name}-list{
+            width: 85%;
+            margin: 0 auto;
+            .#{$name}-not-found{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                >img{
+                    width: 205px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// 重置antd-mobile模态框样式
+.am-modal{
+    .am-modal-content{
+        .am-modal-footer{
+            .am-modal-button-group-v{
+                .am-modal-button{
+                    color: #fff;
+                    background-color: #108ee9;
+                }
+            }
+        }
+    }
+    .lists{
+
+    }
+}
+
+
+.am-modal.am-modal-android{
+    .am-modal-content{
+        border-radius: 8px;
+        .am-modal-header{
+            .am-modal-title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .am-modal-footer{
+            margin-bottom: -12px;
+            .am-modal-button-group-v{
+                background-color: #108ee9;
+                .am-modal-button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    height: 50px;
+                    width: 100%;
+                    background-color: #108ee9;
+                }
+            }
+        }
+    }
+    .lists{
+        width: 130%;
+        margin-left: -30px;
+    }
+}

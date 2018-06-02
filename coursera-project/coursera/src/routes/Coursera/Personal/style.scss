@@ -1,0 +1,214 @@
+$name: Coursera-Personal;
+.#{$name}{
+    .#{$name}-userProfileContainerParent
+    {
+        margin-top: 10px;
+        .#{$name}-userProfileContainer
+        {
+            /*overflow: auto;*/
+            margin-bottom: 10px;
+            .#{$name}-userProfile{
+                width: 100%;
+                .#{$name}-userProfileTop
+                {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    .#{$name}-userInfo
+                    {
+                        padding-left: 5%;
+                        width: 100%;
+                        .#{$name}-userInfoTop,.#{$name}-userInfoBottom
+                        {
+                            clear:both;
+                            p:nth-child(1)
+                            {
+                                float: left;
+                            };
+                            p:nth-child(2)
+                            {
+                                float: right;
+                            }
+                        }
+                        .#{$name}-userInfoTop
+                        {
+                            p:nth-child(2)
+                            {
+                                font-size: 12px;
+                            }
+                        }
+                    };
+                };
+                .#{$name}-userProfileBottom
+                {
+                    width: 90%;
+                    background: #F4F7F8;
+                    /*border: 1px solid #F4F8F9;*/
+                    margin: 0 auto;
+                    border-radius: 1px;
+                    position: relative;
+                    .#{$name}-icon
+                    {
+                        position: absolute;
+                        width: 20%;
+                        display: flex;
+                        //padding-right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top:0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        .#{$name}-iconContainer
+                        {
+                            font-size: 8px;
+                            color: #ED9230;
+                            text-align: center;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            >img
+                            {
+                                width: 26px;
+                                height: 30px;
+                            }
+                        }
+                    };
+                    .#{$name}-certificate
+                    {
+                        float: right;
+                        width: 80%;
+                        .#{$name}-certificateContainer
+                        {
+                            >p{
+                                font-size: 14px;
+                                width: 100%;
+                                word-wrap: break-word;
+                                word-break:break-all;
+                                padding-top: 10px;
+                            };
+                            >a
+                            {
+                                font-size: 14px;
+                                display: inline-block;
+                                width: 100%;
+                                word-wrap: break-word;
+                                word-break:break-all;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                            }
+                        }
+                        .#{$name}-certificatePreview
+                        {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+	/*覆盖ant mobile样式*/
+    /*覆盖ant mobile样式*/
+    .am-list-body {
+        position: relative;
+        background-color: #F4F4F4;
+        /*border-top: 0.8px solid #ddd;*/
+    }
+    .ant-select-selection{
+        border-radius: 3px;
+        border: 1px solid #d9d9d9;
+    }
+    .am-list-content {
+        -ms-flex: 1;
+        flex: 1;
+        color: #000;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 10px;
+    }
+    .am-list-line .am-list-content {
+        flex: 1;
+        color: #000;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        padding-top: 9px;
+        /*padding-bottom: 9px;*/
+    }
+    .am-list-item .am-list-line-multiple {
+        padding: 0;
+    };
+    .am-list-item {
+        position: relative;
+        display: flex;
+        padding-left: 0;
+        min-height: 45px;
+        background-color: #fff;
+        vertical-align: middle;
+        overflow: hidden;
+        transition: background-color 200ms;
+        align-items: center;
+    }
+    .am-list-body div:not(:last-child) .am-list-line:after
+    {
+        border-bottom: none;
+    }
+    .am-list-body:after
+    {
+        border-bottom: none;
+    }
+}
+.#{$name}-pc
+{
+    width: 960px;
+    padding: 20px;
+    margin:0 auto;
+    background: white;
+    overflow: hidden;
+    .#{$name}-preview
+    {
+        >div
+        {
+            text-align: center;
+        }
+    }
+    .#{$name}-back
+    {
+        padding: 20px 0 20px 0;
+        >a
+        {
+            display: inline-block;
+            width: 64.67px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #5FB5D8;
+            color: white;
+            border-radius: 2px;
+        }
+    }
+    .ant-pagination-item-active {
+        background-color: #5FB5D8;
+        border-color: #5FB5D8;
+    }
+    .ant-table-pagination {
+        margin: 16px 5px;
+        float: right;
+    }
+}
+
+

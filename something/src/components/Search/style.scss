@@ -1,0 +1,49 @@
+$name: component-Search;
+@mixin clear{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.#{$name}{
+    .#{$name}-search-box{
+        padding: 10px 15px 15px 15px;
+        background-color: #fff;
+        .#{$name}-search-content{
+            position: relative;
+            float: left;
+            width: calc(100% - 65px);
+            .#{$name}-icon{
+                position: absolute;
+                z-index: 5;
+                left: 10px;
+                top: 4px;
+                color: #666;
+            }
+            >input{
+                background-color: rgb(234,234,234);
+                border: none;
+                line-height: 30px;
+                border-radius: 5px;
+                height: 30px;
+                width: 100%;
+                padding-left: 30px;
+                padding-top: 1px;
+            }
+        }
+        .#{$name}-search-button{
+            float: right;
+            line-height: 30px;
+            font-size: 10px;
+            width: 50px;
+            margin-top: -10px;
+        }
+        &:after{
+            @include clear;
+        }
+    }
+    .#{$name}-module-content{
+        background-color: white;
+        padding: 0 5px 15px 15px;
+    }
+}

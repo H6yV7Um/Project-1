@@ -1,0 +1,15 @@
+$name: CarLayout;
+
+.#{$name}{
+    .#{$name}-body{
+        width: 100%;
+        min-height: 100%;
+        float: left;
+    }
+    .#{$name}-footer{
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        bottom: -1px;
+    }
+}

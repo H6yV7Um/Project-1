@@ -1,0 +1,19 @@
+$name: routeMobile;
+
+.#{$name}{
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #84B5E0;
+    .#{$name}-image-border{
+        text-align: center;
+        img.#{$name}-image{
+            width: 236px;
+        }
+    }
+    .#{$name}-message{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+}

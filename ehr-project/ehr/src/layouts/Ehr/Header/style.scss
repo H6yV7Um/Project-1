@@ -1,0 +1,56 @@
+$name: layoutEhrHeader;
+
+.#{$name}{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    z-index: 2;
+    top: 0;
+    //margin-bottom: 15px;
+    margin-bottom: -1px;
+    padding: 0 15px;
+    background-color: #f8f8f8;
+    border-bottom: 0.8px solid #b5b5b5;
+    .#{$name}-select{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4E394C;
+        color: #fff;
+        font-size: 22px;
+    }
+    .#{$name}-search-border{
+        flex: 1;
+        .#{$name}-search{
+            max-width: 500px;
+            margin: 8px auto 0 auto;
+            display: flex;
+            //justify-content: center;
+            background-color: transparent;
+            padding: 0;
+            .am-search-input{
+                border: 0.8px solid #ddd;
+                border-radius: 0;
+            }
+            .am-search-input .am-search-synthetic-ph-placeholder{
+                font-size: 12px;
+            }
+            .am-search-input input[type="search"]{
+                font-size: 12px;
+            }
+            .am-search-cancel{
+                font-size: 14px;
+                color: #666;
+            }
+        }
+    }
+    .#{$name}-menu{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}

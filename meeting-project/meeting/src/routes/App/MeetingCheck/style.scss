@@ -1,0 +1,191 @@
+$name: app-meeting-check;
+.#{$name}{
+    height: 100%;
+    position: relative;
+    padding-bottom: 62px;
+    .#{$name}-container{
+        background-color: #fff;
+        padding: 0 20px;
+        .#{$name}-header{
+            padding-top: 13px;
+            margin-bottom: 13px;
+            padding-left: 69px;
+            height: 73px;
+            .#{$name}-header-avatar{
+                margin-left: -69px;
+                float: left;
+                > span > span{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            > div:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                > p:nth-child(1){
+                    margin-top: 6px;
+                    color: #222;
+                    font-size: 18px;
+                }
+                > p:nth-child(2){
+                    font-size: 15px;
+                    margin-top: 2px;
+                }
+            }
+            > img{
+                width: 120px;
+                height: 94px;
+                position: absolute;
+                top: 50px;
+                right: 20px;
+            }
+            .#{$name}-header-passed{
+                color: #259f6c;
+            }
+            .#{$name}-header-refused{
+                color: #F46E65;
+            }
+            .#{$name}-header-pending{
+                color: #ff9800;
+            }
+            .#{$name}-header-cancelled{
+                color: #999;
+            }
+        }
+        .#{$name}-details{
+            border-top: .8px solid #ccc;
+            > div{
+                line-height: 2em;
+                font-size: 14px;
+                color: #000;
+                > span{
+                    color: #858e99;
+                    margin-right: .5em;
+                }
+            }
+            > div:nth-child(1){
+                margin-top: 10px;
+            }
+            > div:nth-last-child(2){
+                margin-top: 10px;
+                border-top: .8px solid #ccc;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .#{$name}-details-avatar{
+                display: inline-block;
+                > span{
+                    display: inline-block;
+                }
+                > div{
+                    display: inline-block;
+                    position: relative;
+                    top: 3px;
+                    margin-right: 5px;
+                }
+            }
+            .#{$name}-details-box{
+                padding-left: 39px;
+                > span:nth-child(1){
+                    margin-left: -39px;
+                    float: left;
+                }
+                > span:nth-child(2){
+                    width: 100%;
+                    color: #000;
+                }
+            }
+            .#{$name}-details-gray{
+                color: #858e99!important;
+            }
+        }
+    }
+    .#{$name}-header-refused-details-refuse{
+        span:nth-child(1){
+            color: #ee2d2d!important;
+        }
+        span:nth-child(2){
+            color: #858e99;
+        }
+        padding-bottom: 10px;
+        margin-top: -10px;
+    }
+    .#{$name}-participants-avatar-list{
+        display: inline-block;
+        > div{
+            display: inline-block;
+        }
+
+        .#{$name}-participants-avatar{
+            display: inline-block;
+            margin-right: 5px;
+            > span{
+                display: inline-block;
+                color: #000;
+            }
+            > div{
+                display: inline-block;
+                position: relative;
+                top: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .#{$name}-detail-participants{
+        margin-bottom: 9px;
+        margin-top: 9px;
+        background: #f6f6f6;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > span{
+            color: #858e99;
+            font-size: 12px;
+            line-height: 1.3em;
+        }
+    }
+
+    .#{$name}-header-pending-footer{
+        background-color: #fff;
+        display: flex;
+        margin-top: 20px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        height: 47px;
+        align-items: center;
+        justify-content: center;
+        border-top: .8px solid #ccc;
+        > div{
+            color: #40affc;
+            flex: 1;
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+        }
+        > div:active{
+            color: #60bdff;
+            background-color: #fff;
+        }
+        > span{
+            color: #999;
+        }
+    }
+    .#{$name}-meeting-time{
+        margin-top: 15px;
+        color: #AEAEAE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        background-color: #f2f2f2;
+        >span:nth-child(2){
+            margin-right: 5px;
+            margin-left: 4px;
+        }
+    }
+}
+textarea.ant-input{
+    margin-top: 10px;
+}

@@ -1,0 +1,20 @@
+$name: coursera-iframe;
+.#{$name} {
+    padding:10px;
+    .#{$name}-back
+    {
+        padding: 20px 0 20px 0;
+        >a
+        {
+            display: inline-block;
+            width: 64.67px;
+            height: 32px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #5FB5D8;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+}

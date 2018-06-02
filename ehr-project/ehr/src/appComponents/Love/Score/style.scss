@@ -1,0 +1,37 @@
+$name: componentScore;
+
+.#{$name}{
+    &.#{$name}-red{
+        color: #d92c2b;
+    }
+    &.#{$name}-blue{
+        color: #108ee9;
+    }
+    &.#{$name}-purple{
+        color: purple;
+    }
+    &.#{$name}-pink{
+        color: pink;
+    }
+    &.#{$name}-lg{
+        font-size: 16px;
+    }
+    &.#{$name}-md{
+        font-size: 14px;
+    }
+    &.#{$name}-sm{
+        font-size: 12px;
+    }
+    &.#{$name}-x-sm{
+        font-size: 10px;
+    }
+    &.#{$name}-score.#{$name}-true{
+        color: #D92C2B;
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
+
+
+
+

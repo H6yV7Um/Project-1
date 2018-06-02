@@ -1,0 +1,93 @@
+.Think-Detail{
+    padding-bottom: 60px;
+    .operation{
+        width: 100%;
+        position: fixed;
+        bottom: -1px;
+        .icon{
+            color: #333;
+            &.choose{
+                color: #ee302f;
+            }
+        }
+        .name{
+            display: inline-block;
+        }
+        .num{
+            display: inline-block;
+            margin-left: 5px;
+            //color: #888;
+        }
+        .line{
+            .name{
+                margin-left: 10px;
+            }
+            .num{
+                font-size: 12px;
+            }
+        }
+        .like{
+            .icon{
+                font-size: 15px;
+            }
+        }
+        .vote{
+            margin-top: 0;
+            .icon{
+                font-size: 15px;
+            }
+        }
+        .review{
+            margin-top: 0;
+        }
+    }
+
+    .news{
+        margin-top: 15px;
+    }
+
+    .vote{
+        margin-top: 15px;
+    }
+
+    .review{
+        margin-top: 15px;
+        .component-Review:last-child .component-Review-reply-get-border{
+            margin-bottom: -15px;
+        }
+        .review-list-loading{
+            margin-bottom: -15px;
+        }
+        .review-extra-order{
+            float: left;
+            margin-top: 4.5px;
+            font-size: 13px;
+            padding-left: 15px;
+            cursor: pointer;
+            color: #B4B4B4;
+            transition: color 200ms;
+            &:active{
+                color: #000;
+            }
+            >i{
+                display: block;
+            }
+        }
+    }
+
+    .review-modal{
+        .review-border{
+            .review-button{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .reply-modal{
+        .reply-border{
+            .reply-button{
+                margin-top: 15px;
+            }
+        }
+    }
+}

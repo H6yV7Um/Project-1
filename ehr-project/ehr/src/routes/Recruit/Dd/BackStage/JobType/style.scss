@@ -1,0 +1,21 @@
+.Recruit-BackStage-JobType{
+    .btns-job-type-container{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .table-job-type-container{
+        height: 350px;
+        //background-color: #fff;
+        //margin: 0 auto;
+        //width: 80%;
+    }
+}
+
+.hrInfoModal{
+    .ant-input:not(:first-child){
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,26 @@
+.Recruitment{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    .ni{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+    .container{
+        width: 50%;
+        z-index: 5;
+        margin: 0 auto;
+        padding-top: 91%;
+        padding-left: 15px;
+        .wrapper{
+            &:not(:first-child){
+                margin-top: 15px;
+            }
+            img{
+                width: 100%;
+                z-index: 5;
+            }
+        }
+    }
+}

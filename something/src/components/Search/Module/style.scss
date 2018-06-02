@@ -1,0 +1,27 @@
+$name: component-Search-Module;
+
+.#{$name}{
+    margin-bottom: 10px;
+	.#{$name}-title{
+        padding: 5px 0;
+        font-size: 12px;
+        color: #999;
+	}
+	.#{$name}-content{
+		column-count: 2;
+		.component-Search-Item{
+			&:first-child .component-Search-Item-num{
+                background-color: #E03E3E;
+			}
+			&:nth-child(2) .component-Search-Item-num{
+                background-color: #DF701C;
+			}
+			&:nth-child(3) .component-Search-Item-num{
+                background-color: #EFA030;
+			}
+		}
+	}
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

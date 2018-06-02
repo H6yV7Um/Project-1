@@ -1,0 +1,14 @@
+.component-InputItem{
+    &.am-list-item .am-input-control{
+        margin-top: -3px;
+    }
+    &.am-list-item .am-input-label{
+        font-size: 15px;
+    }
+    &-readonly{
+        //.am-input-label,.am-input-control input{
+        .am-input-label{
+            color: #bbb;
+        }
+    }
+}

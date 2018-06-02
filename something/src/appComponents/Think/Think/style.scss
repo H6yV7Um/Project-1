@@ -1,0 +1,7 @@
+$name: appComponent-Think-Think;
+
+.#{$name}{
+    .#{$name}-content,.#{$name}-attr,.#{$name}-admin,.#{$name}-see,.#{$name}-anonymous{
+        margin-bottom: 15px;
+    }
+}

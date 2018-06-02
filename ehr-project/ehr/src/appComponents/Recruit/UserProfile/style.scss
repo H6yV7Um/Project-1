@@ -1,0 +1,41 @@
+$name: appComponent-Recruit-UserProfile;
+
+.#{$name}{
+    height: 100%;
+    &:not(first-child){
+        border-bottom: 0.8px solid #ddd;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+    &:last-child{
+        border: none;
+    }
+    .#{$name}-avatar{
+
+    }
+    .#{$name}-userinfo{
+        display: block;
+        margin-left: 10px;
+        font-size: 12px;
+        color: #999;
+    }
+    .#{$name}-position{
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .#{$name}-phone{
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .#{$name}-status{
+        display: flex;
+        align-items: center;
+    }
+    .#{$name}-btn{
+        display: flex;
+        align-items: center;
+    }
+}

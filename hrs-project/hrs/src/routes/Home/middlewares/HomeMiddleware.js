@@ -1,0 +1,1 @@
+import {SERVER} from 'config';

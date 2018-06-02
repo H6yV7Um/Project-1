@@ -1,0 +1,70 @@
+.example {
+  text-align: center;
+  background: rgba(0,0,0,0.05);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+
+.customFieldProfile{
+	
+	padding-top:20px;
+	transition: background 0.2s;
+}
+.customFieldProfile .ant-form-explain
+{
+  line-height: 35px
+}
+.customFieldProfile:hover
+{
+  background:#f6f6f6;
+  transition: background 0.2s
+}
+
+#homeBorder{
+    .test{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.steps-content {
+  margin-top: 16px;
+  border: 1px dashed #e9e9e9;
+  border-radius: 6px;
+  background-color: #fafafa;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+.customFieldStep
+{
+  padding-top:15px;
+  cursor:move;
+  transition: background 0.2s;
+  color:red
+}
+
+.avatar-uploader,
+.avatar-uploader-trigger,
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+.avatar-uploader {
+  display: block;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.avatar-uploader-trigger {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #999s
+}

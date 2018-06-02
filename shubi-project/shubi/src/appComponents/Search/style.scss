@@ -1,0 +1,10 @@
+$name: app-components-search;
+.#{$name} {
+    .ant-input{
+        border: 2px solid #dddddd;
+        border-radius: 15px;
+        background: transparent;
+        font-size: 10px;
+        color: white;
+    }
+}

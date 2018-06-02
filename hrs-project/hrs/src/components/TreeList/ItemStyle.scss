@@ -1,0 +1,140 @@
+.x-treeList-item-border{
+    margin-bottom: 20px;
+    .x-treeList-children-line1{
+        width: 15px;
+        height: 1px;
+        float: left;
+        margin-top: 13px;
+        background-color: #333;
+    }
+    .x-treeList-item{
+        height: 27px;
+        float: left;
+        padding: 3px 8px 2px 8px;
+        border: 1px solid #333;
+        .x-treeList-item-name{
+            float: left;
+        }
+        .x-treeList-item-edit{
+            float: left;
+            margin-left: 7px;
+            color: #CD8929;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .x-treeList-item-delete{
+            float: left;
+            margin-left: 7px;
+            color: #d9534f;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .x-treeList-item-set{
+            float: left;
+            margin-left: 7px;
+            color: #8E58D9;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+    .x-treeList-children-border{
+        float: left;
+        .x-treeList-children-line2{
+            width: 15px;
+            height: 1px;
+            float: left;
+            margin-top: 13px;
+            background-color: #333;
+        }
+        .x-treeList-children-show{
+            float: left;
+            margin-top: 3.5px;
+            cursor: pointer;
+            display: inline-block;
+            .x-treeList-children-show-icon{
+
+            }
+        }
+        .x-treeList-children-hide{
+            float: left;
+            margin-top: 3.5px;
+            cursor: pointer;
+            display: inline-block;
+            .x-treeList-children-hide-icon{
+
+            }
+        }
+        .x-treeList-children-main{
+            float: left;
+            .x-treeList-children-action-border{
+                float: left;
+                .x-treeList-children-name{
+                    height: 18px;
+                    margin-top: -4px;
+                    margin-left: -1px;
+                    padding-left: 16px;
+                    padding-right: 15px;
+                    border-bottom: 1px solid #333;
+                    font-size: 12px;
+                }
+                .x-treeList-children-action{
+                    height: 0;
+                    text-align: center;
+                    .x-treeList-children-add{
+                        margin-right: 5px;
+                        color: #337ab7;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+                    .x-treeList-children-refresh{
+                        color: #03a003;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+                }
+            }
+            .x-treeList-children{
+                float: left;
+                border-left: 1px solid #333;
+            }
+        }
+    }
+}
+.x-treeList-item-border:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.x-treeList-item-border:last-child{
+    margin-bottom: 0;
+    margin-left: -1px;
+    border-left: 1px solid #fff;
+}
+.x-treeList-item-border:first-child>.x-treeList-children-line1:before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13px;
+    float: left;
+    margin-left: -1px;
+    margin-top: -13px;
+    background-color: #fff;
+}
+.x-treeList-item-border:last-child>.x-treeList-children-line1:before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    float: left;
+    margin-left: -1px;
+    margin-top: -13px;
+    background-color: #333;
+}
+
+.x-treeList-border>.x-treeList-item-border>.x-treeList-children-line1{
+    display: none;
+}
+.x-treeList-border>.x-treeList-item-border>.x-treeList-item .x-treeList-item-edit,
+.x-treeList-border>.x-treeList-item-border>.x-treeList-item .x-treeList-item-delete{
+    display: none;
+}

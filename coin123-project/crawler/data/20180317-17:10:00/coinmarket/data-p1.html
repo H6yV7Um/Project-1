@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>DATA (DTA)--_1</title>
+    <meta name="keywords" content="DTA,DATA,DATA,DATA,DATA,DATA,DATA,DATA,DATA,DATA Ico" />
+    <meta name="description" content="DATADATADATA" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <link rel="canonical" href="//www.feixiaohao.com/coinmarket/data/" />
+    <link rel="shortcut icon" href="//static.feixiaohao.com/themes/default/images/fav.ico" />
+    <link href="//static.feixiaohao.com/themes/default/css/stylesheet_nav.css?v=1.31" rel="stylesheet">
+    <link href="//static.feixiaohao.com/themes/default/css/tablesort.css" rel="stylesheet">
+    <script src="//static.feixiaohao.com/Scripts/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <nav class="">
+    <div class="navsub">
+        <div class="minWidth" id="globalinfo">
+            
+        </div>
+    </div>
+    <div class="minWidth">
+        <ul class="leftNav">
+            <li class="logo"><a href="/"><img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="Logo"></a></li>
+            <li class="navSlide">
+                
+                <ul class="subNav">
+                    <li><a href="/"></a></li>
+                    <li><a href="/currencies/"></a></li>
+                    <li><a href="/assets/"></a></li>
+                    <li><a href="/newcoin/"></a></li>
+                    <li><a href="/concept/"></a></li>
+ <li>
+                        <a href="/charts/">
+                            
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navSlide">
+               
+                <ul class="subNav">
+                    <li><a href="/maxchange/"></a></li> 
+                    <li><a href="/vol/">24()</a></li>
+                    <li><a href="/vol/exchange/">24()</a></li>
+                    <li><a href="/vol/monthrank/"></a></li>
+                </ul>
+            </li>
+            
+            <li><a  href="/exchange/"></a></li> 
+            <li><a href="/app/">APP</a> </li>
+        </ul>
+        <ul class="rightNav">
+            <li class="searchForm"  style="float: right">
+                <form action="">
+                    <input type="text" id="input-sm" placeholder="...">
+                    <i class="icon-search"  onclick="search(document.getElementById('input-sm').value)"></i> 
+            </form>
+            </li>
+            <li class="showmarket" style="float: right">
+ 
+                   
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_btc_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">BTC/Bitfinex</a></div>
+                                <div class="num">52530.12</div>
+                                <div class="char">
+                                    <span class="line">58982,59504,55589,54658,54908,58325,59996,60386,62195,58627,57612,59295,56639,58608,58107,57576,55090,52162,51842,49667,51598,51079,52336,51779,51370,53723,53824,51824,52530.12</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_poloniex_btc_usdt" href="https://poloniex.com/exchange/#usdt_btc" target="_blank" rel="nofollow">BTC/P</a></div>
+                                <div class="num">52756.35</div>
+                                <div class="char">
+                                    <span class="line">59444,59738,55986,54639,55344,58396,60147,60281,62740,58698,57742,59451,56680,58538,58177,57711,54959,53174,51465,50084,51336,51143,52601,51811,51315,53888,53677,51894,52756.35</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_eth_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">ETH/Bitfinex</a></div>
+                                <div class="num">3848.35</div>
+                                <div class="char">
+                                    <span class="line">4593,4629,4334,4300,4331,4491,4548,4570,4648,4441,4391,4477,4356,4409,4354,4359,4193,3920,3817,3719,3864,3789,3866,3835,3783,3897,3869,3786,3848.35</span>
+                                </div>
+                            </div>
+
+
+
+</li>
+
+        </ul>
+    </div>
+</nav>
+<div class="m30"></div>
+
+
+    <div class="m30"></div>
+    <div id="headad" style="width: 1200px;margin:0 auto;"> 
+    </div>
+    <div class="m15"></div>
+    <div class="w1200" >
+        <div class="col" >
+            <div class="box box860" id="tickerlist" style="min-height: 877px;">
+                <div class="boxTit" >
+                    <h2>DTA</h2>
+                    <div class="pageList">
+                        <a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a  href='#' class='btn btn-white'    >></a>
+                    </div>
+                </div>
+
+                 <div class="unit2">
+                        <a  href="#native" class="price-toggle" data-currency="native"></a> 
+                                <a href="#CNY" title="(CNY)" class="price-toggle active" data-currency="cny">(CNY)</a>
+                                <a href="#USD" title="(USD)" class="price-toggle" data-currency="usd">(USD)</a>
+                                <a href="#BTC" title="(BTC)" class="price-toggle" data-currency="btc">(BTC)</a>
+                                <a href="#ETH" title="(ETH)" class="price-toggle" data-currency="eth">(ETH)</a>
+                                <a href="#JPY" title="(JPY)" class="price-toggle" data-currency="jpy">(JPY)</a>
+                                <a href="#KRW" title="(KRW)" class="price-toggle" data-currency="krw">(KRW)</a>
+                                <a href="#HKD" title="(HKD)" class="price-toggle" data-currency="hkd">(HKD)</a>
+                                <a href="#INR" title="(INR)" class="price-toggle" data-currency="inr">(INR)</a>
+                        <span class="moreUnit2">
+                        <span></span>
+                        <ul style="width:200px">
+                                <li style="float:left"><a href="#RUB" title="(RUB)" class="price-toggle" data-currency="rub">(RUB)</a></li>
+                                <li style="float:left"><a href="#AUD" title="(AUD)" class="price-toggle" data-currency="aud">(AUD)</a></li>
+                                <li style="float:left"><a href="#EUR" title="(EUR)" class="price-toggle" data-currency="eur">(EUR)</a></li>
+                                <li style="float:left"><a href="#CHF" title="(CHF)" class="price-toggle" data-currency="chf">(CHF)</a></li>
+                                <li style="float:left"><a href="#GBP" title="(GBP)" class="price-toggle" data-currency="gbp">(GBP)</a></li>
+                                <li style="float:left"><a href="#CAD" title="(CAD)" class="price-toggle" data-currency="cad">(CAD)</a></li>
+                                <li style="float:left"><a href="#IDR" title="(IDR)" class="price-toggle" data-currency="idr">(IDR)</a></li>
+                                <li style="float:left"><a href="#BRL" title="(BRL)" class="price-toggle" data-currency="brl">(BRL)</a></li>
+                                <li style="float:left"><a href="#TWD" title="(TWD)" class="price-toggle" data-currency="twd">(TWD)</a></li>
+                                <li style="float:left"><a href="#MXN" title="(MXN)" class="price-toggle" data-currency="mxn">(MXN)</a></li>
+                        </ul>
+                        </span>
+                </div>
+                 <div style="display:none" id="currency-exchange-rates"
+                  data-cny="0.15793796196853876"  data-usd="1"  data-btc="8313.4761691704152"  data-eth="607.93494863109618"  data-jpy="0.009432627458378532"  data-krw="0.0009346667912889054"  data-hkd="0.1274949161402189"  data-inr="0.01536688436419516"  data-rub="0.01738507595539685"  data-aud="0.7716031521531972"  data-eur="1.2296266238756601"  data-chf="1.0490504519833872"  data-gbp="1.394700139470014"  data-cad="0.7632713811395642"  data-idr="7.267804320021872e-05"  data-brl="0.3048687540014024"  data-twd="0.034332406358361656"  data-mxn="0.053505693005735815"                  ></div>
+                <div class="m15"></div>
+                <div class="boxContain">
+                    <table class="table3" id="markets">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                 <th></th>
+                                <th></th>
+                                <th data-sort-method='none'></th>
+                                <th data-sort-method='none'></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td>1 </td> 
+                                
+                                <td> <a href="/exchange/huobipro/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png"   alt="Pro-Huobi" >
+                                    Pro-Huobi 
+                                    </a>  
+                                </td>
+                                <td>DTA/BTC </td>
+                                <td class="price" data-usd="0.008181" data-cny="0.0517" data-btc="0.000001" data-native="0.000001">0.0517</td>
+                                <td>27,515</td>
+                                <td class="volume" data-usd="2250979" data-cny="14231025" data-btc="276" data-native="275150736">1,423 </td>
+                                <td>36.42%</td>
+                                <td>1</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>2 </td> 
+                                
+                                <td> <a href="/exchange/huobipro/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png"   alt="Pro-Huobi" >
+                                    Pro-Huobi 
+                                    </a>  
+                                </td>
+                                <td>DTA/USDT </td>
+                                <td class="price" data-usd="0.007904" data-cny="0.05" data-btc="9.51E-07" data-native="0.007904">0.05</td>
+                                <td>24,195</td>
+                                <td class="volume" data-usd="1912343" data-cny="12108190" data-btc="230" data-native="241948038">1,211 </td>
+                                <td>30.94%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>3 </td> 
+                                
+                                <td> <a href="/exchange/huobipro/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png"   alt="Pro-Huobi" >
+                                    Pro-Huobi 
+                                    </a>  
+                                </td>
+                                <td>DTA/ETH </td>
+                                <td class="price" data-usd="0.007981" data-cny="0.0505" data-btc="9.53E-07" data-native="0.00001303">0.0505</td>
+                                <td>23,255</td>
+                                <td class="volume" data-usd="1855948" data-cny="11751120" data-btc="222" data-native="232553239">1,175 </td>
+                                <td>30.06%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>4 </td> 
+                                
+                                <td> <a href="/exchange/bibox/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171230/1611356d2aad440ab7ec00bb4d123c85_15_15.png"   alt="Bibox" >
+                                    Bibox 
+                                    </a>  
+                                </td>
+                                <td>DTA/ETH </td>
+                                <td class="price" data-usd="0.007981" data-cny="0.0505" data-btc="9.64E-07" data-native="0.00001315">0.0505</td>
+                                <td>1,762</td>
+                                <td class="volume" data-usd="140658" data-cny="890591" data-btc="16.99" data-native="17624870">89 </td>
+                                <td>2.27%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>5 </td> 
+                                
+                                <td> <a href="/exchange/bibox/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171230/1611356d2aad440ab7ec00bb4d123c85_15_15.png"   alt="Bibox" >
+                                    Bibox 
+                                    </a>  
+                                </td>
+                                <td>DTA/BTC </td>
+                                <td class="price" data-usd="0.007876" data-cny="0.0499" data-btc="9.5E-07" data-native="9.5E-07">0.0499</td>
+                                <td>106</td>
+                                <td class="volume" data-usd="8340" data-cny="52804" data-btc="1.01" data-native="1058940">52,804 </td>
+                                <td>0.14%</td>
+                                <td></td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>6 </td> 
+                                
+                                <td> <a href="/exchange/kucoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171012/abe6f121516549289e5e629f0e7b0afb_15_15.png"   alt="-Kucoin" >
+                                    -Kucoin 
+                                    </a>  
+                                </td>
+                                <td>DTA/BTC </td>
+                                <td class="price" data-usd="0.008129" data-cny="0.0515" data-btc="9.8E-07" data-native="9.8E-07">0.0515</td>
+                                <td>59</td>
+                                <td class="volume" data-usd="4822" data-cny="30530" data-btc="0.5813" data-native="593166">30,530 </td>
+                                <td>0.08%</td>
+                                <td>8</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>7 </td> 
+                                
+                                <td> <a href="/exchange/kucoin/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171012/abe6f121516549289e5e629f0e7b0afb_15_15.png"   alt="-Kucoin" >
+                                    -Kucoin 
+                                    </a>  
+                                </td>
+                                <td>DTA/ETH </td>
+                                <td class="price" data-usd="0.008589" data-cny="0.0544" data-btc="0.00000103" data-native="0.0000141">0.0544</td>
+                                <td>21</td>
+                                <td class="volume" data-usd="1790" data-cny="11332" data-btc="0.2147" data-native="208370">11,332 </td>
+                                <td>0.03%</td>
+                                <td>17</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>8 </td> 
+                                
+                                <td> <a href="/exchange/tidex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20170809/6207f8640d4d4b19a6e4544a33e1c285_15_15.png"   alt="Tidex" >
+                                    Tidex 
+                                    </a>  
+                                </td>
+                                <td>DTA/ETH </td>
+                                <td class="price" data-usd="0.008575" data-cny="0.0543" data-btc="0.00000102" data-native="0.000014">0.0543</td>
+                                <td>61,000</td>
+                                <td class="volume" data-usd="523" data-cny="3312" data-btc="0.0625" data-native="61000">3,312 </td>
+                                <td>0.01%</td>
+                                <td>2</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>9 </td> 
+                                
+                                <td> <a href="/exchange/idex/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20180120/8a576f87b8bf48f89efcfbdd09b39e93_15_15.png"   alt="IDEX" >
+                                    IDEX 
+                                    </a>  
+                                </td>
+                                <td><a href="https://idex.market/eth/dta" target="_blank" > DTA/ETH </a> </td>
+                                <td class="price" data-usd="0.008511" data-cny="0.0539" data-btc="0.00000102" data-native="0.000014">0.0539</td>
+                                <td>53,298</td>
+                                <td class="volume" data-usd="454" data-cny="2872" data-btc="0.0546" data-native="53298">2,872 </td>
+                                <td>0.01%</td>
+                                <td>2</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>10 </td> 
+                                
+                                <td> <a href="/exchange/bigone/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171227/c350e2c4a0e54c9baab7d6cabaf24e1d_15_15.png"   alt="BigOne" >
+                                    BigOne 
+                                    </a>  
+                                </td>
+                                <td>DTA/ETH </td>
+                                <td class="price" data-usd="?" data-cny="?" data-btc="?" data-native="?">?</td>
+                                <td>?</td>
+                                <td class="volume" data-usd="?" data-cny="?" data-btc="?" data-native="?">? </td>
+                                <td>0.00%</td>
+                                <td>2</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                            <tr >
+                                <td>11 </td> 
+                                
+                                <td> <a href="/exchange/bigone/" target="_blank" >
+                                        <img src="//static.feixiaohao.com/platimages/20171227/c350e2c4a0e54c9baab7d6cabaf24e1d_15_15.png"   alt="BigOne" >
+                                    BigOne 
+                                    </a>  
+                                </td>
+                                <td>DTA/BTC </td>
+                                <td class="price" data-usd="?" data-cny="?" data-btc="?" data-native="?">?</td>
+                                <td>?</td>
+                                <td class="volume" data-usd="?" data-cny="?" data-btc="?" data-native="?">? </td>
+                                <td>0.00%</td>
+                                <td>9</td>
+                                    <td><div class="addto disactive" onclick="addfocus();"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pageList">
+                        <a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a  href='#' class='btn btn-white'    >></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box325">
+                <div class="padding5 backbox">
+                    <h2>
+                            <img src="//static.feixiaohao.com/coin/20180117/2e57596002a94182b0da08a238d026cb_2.png" alt="DATALogo">
+DATA
+                        <input type="hidden" id="coincode" value="data"><input type="hidden" id="coinname" value="DATA">
+                    </h2>                    <div class="coinprice">
+                        0.0503<span class="tags-red">-1.87%</span>
+                    </div>
+                    <div>$0.007949&nbsp;&nbsp;0.00000095BTC</div>
+                    <div class="m15"></div>
+                    <ul class="info">
+                        <li>24H<span>0.0545</span></li>
+                        <li>24H<span>0.0497</span></li>
+                        <li>24H<span>39,182,155<span class="tag-vol">102</span></span></li>
+                    </ul>
+                    <a href="/currencies/data/"></a>
+                </div>
+            </div>
+            <div class="box box325">
+                <div class="plantListsSpread">
+
+                </div>
+            </div>
+            <div class="box box325">
+                <div class="boxTit">
+                    <h2>DTA</h2>
+                </div>
+                <div class="padding5">
+                    <ul class="baseInfoList">
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">DATA/DTA</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text"></span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">6</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">2018-01-23</span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+--                            </span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+                                        <a href="https://www.data.eco/"  rel="nofollow"  target="_blank">1</a>                            </span>
+                        </li>
+                        <li>
+                            <span class="info"></span>
+                            <span class="text">
+--                            </span>
+                        </li>
+
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m30"></div>
+    <footer class="clear">
+    <div class="w1200">
+        <a class="logo2" href="/">
+            <img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="Logo">
+        </a>
+        <div class="info">
+            <div>
+                 <a href="/aboutus/" target="_blank"></a><i class="space2"></i>
+                <a  href="/contact/" target="_blank"></a><i class="space2"></i>
+                <a href="/faq/" target="_blank">f&q</a><i class="space2"></i>
+                <a href="/declare/" target="_blank"></a>
+            </div>
+            <div><p>Copyright  feixiaohao.com 2018 | <a href="//www.miibeian.gov.cn/" target="_blank">ICP16116847-8</a></p></div>
+        </div>
+        <div class="media">
+            <div class="weCat">
+                <div class="detal">
+                    <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="" width="120"
+                         height="120">
+                </div>
+            </div>
+            
+            <a class="qq"  href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank"> 
+            </a>
+            <a class="sina" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+        </div>
+    </div>
+</footer>
+
+<div class="totop">
+ 
+    <div class="wCat2">
+        <div class="detal">
+            <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="">
+            <img src="//static.feixiaohao.com/themes/default/images/wxdyh.png"  alt="">
+            <div style="text-align: center;width: 116px;float: left;color: #fff"></div>
+            <div style="text-align: center;width: 116px;float: left;color: #fff"></div>
+        </div>
+    </div>
+    <a class="qq2" href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank">
+    </a>
+    <a class="sina2" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+    <div class="top"></div>
+</div>
+<script src="//static.feixiaohao.com/Scripts/common-1.1.js?v=1.16"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.signalR-2.2.1.min.js"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.peity.min.js"></script>
+<script src="/lcc/js"></script>
+<script type="text/javascript">
+
+    $('.line').peity("line", { width: 50, height: 15, fill: '#f5f5f5', min: 99999, strokeWidth: 1 });
+    loadglobalinfo_new();
+    startSocketHub(false);
+    $('body').on('click', '.showmarket a', function () {
+        var thiscode = $(this).attr("id");
+        $.ajax({
+            url:apiHots+ 'sitestat/?code=' + thiscode,
+            type: "GET",
+            success: function (data) {
+                return;
+            },
+            error: function () {
+                return;
+            }
+        })
+    });
+
+</script>
+
+
+ <script type="text/javascript"> 
+   autoComplete($('#input-sm'));
+</script>
+ 
+<div style="display:none"><script src="https://s19.cnzz.com/z_stat.php?id=1263003344&web_id=1263003344" language="JavaScript"></script></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?192e611c7ffa4b2f8a5047e5cf45403f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script src="//static.feixiaohao.com/Scripts/coinoutlink.js?v=1.35"></script>
+    <script src="//static.feixiaohao.com/Scripts/tablesort.js"></script>
+    <script type="text/javascript">
+        new Tablesort(document.getElementById('markets'));
+    </script>
+    <script type="text/javascript"> 
+        loadCoinMarket();//
+            //loadConcept();
+            $('.unit2 a').click(function () {
+                if ($(this).hasClass('active')) {
+                    return;
+                }
+                $('.unit2 a').removeClass('active');
+                $(this).addClass('active')
+            })
+    </script>
+</body>
+</html>

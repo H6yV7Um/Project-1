@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>非小号_专注数字货币行业大数据分析</title>
+    <meta name="keywords" content="coinmarket,数字货币数据分析,数字货币行业大数据,虚拟币数据分析" />
+    <meta name="description" content="非小号&#160;&#160;(www.feixiaohao.com)&#160;&#160;是最专业的数字货币行业大数据平台之一，专注于为数字货币用户提供数据分析，数据挖掘服务。我们拥有全球1000多个数字货币，150多家交易平台，5千多个交易对的数据资源，提供最专业的数字货币趋势分析，行情分析等多维度，全方位的分析服务" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="mobile-agent" content="format=html5; url=//m.feixiaohao.com/" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="//m.feixiaohao.com/" />
+    <link rel="canonical" href="//www.feixiaohao.com/" />  
+    <link href="//static.feixiaohao.com/themes/default/css/stylesheet_nav.css?v=1.31" rel="stylesheet">
+    <link href="//static.feixiaohao.com/themes/default/css/tablesort.css" rel="stylesheet"> 
+    <script src="//static.feixiaohao.com/Scripts/jquery-2.1.1.js"></script>
+    <link rel="shortcut icon" href="//static.feixiaohao.com/themes/default/images/fav.ico" />   
+    
+</head>
+<body> 
+<nav class="">
+    <div class="navsub">
+        <div class="minWidth" id="globalinfo">
+            
+        </div>
+    </div>
+    <div class="minWidth">
+        <ul class="leftNav">
+            <li class="logo"><a href="/"><img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="非小号的Logo"></a></li>
+            <li class="navSlide">
+                行情
+                <ul class="subNav">
+                    <li><a href="/">所有</a></li>
+                    <li><a href="/currencies/">货币</a></li>
+                    <li><a href="/assets/">代币</a></li>
+                    <li><a href="/newcoin/">最新上市</a></li>
+                    <li><a href="/concept/">概念行情</a></li>
+ <li>
+                        <a href="/charts/">
+                            市值趋势
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navSlide">
+               排行榜
+                <ul class="subNav">
+                    <li><a href="/maxchange/">涨跌幅排行榜</a></li> 
+                    <li><a href="/vol/">24小时成交额排行(币种)</a></li>
+                    <li><a href="/vol/exchange/">24小时成交额排行(交易平台)</a></li>
+                    <li><a href="/vol/monthrank/">月成交额排行</a></li>
+                </ul>
+            </li>
+            
+            <li><a  href="/exchange/">交易平台</a></li> 
+            <li><a href="/app/">APP</a> </li>
+        </ul>
+        <ul class="rightNav">
+            <li class="searchForm"  style="float: right">
+                <form action="">
+                    <input type="text" id="input-sm" placeholder="输入关键词...">
+                    <i class="icon-search"  onclick="search(document.getElementById('input-sm').value)"></i> 
+            </form>
+            </li>
+            <li class="showmarket" style="float: right">
+ 
+                   
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_btc_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">BTC/Bitfinex</a></div>
+                                <div class="num">52964.53</div>
+                                <div class="char">
+                                    <span class="line">62195,58627,57612,59295,56639,58608,58107,57576,55090,52162,51842,49667,51598,51079,52336,51779,51370,53723,53824,51824,52101,50020,50584,48080,47920,46468,51610,51856,52964.53</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_poloniex_btc_usdt" href="https://poloniex.com/exchange/#usdt_btc" target="_blank" rel="nofollow">BTC/P网</a></div>
+                                <div class="num">53110.37</div>
+                                <div class="char">
+                                    <span class="line">62740,58698,57742,59451,56680,58538,58177,57711,54959,53174,51465,50084,51336,51143,52601,51811,51315,53888,53677,51894,52372,50090,50718,48071,47854,46631,51450,51759,53110.37</span>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="tit"><a id="ticker_bitfinex_eth_usd" href="https://www.bitfinex.com/" target="_blank" rel="nofollow">ETH/Bitfinex</a></div>
+                                <div class="num">3481.27</div>
+                                <div class="char">
+                                    <span class="line">4648,4441,4391,4477,4356,4409,4354,4359,4193,3920,3817,3719,3864,3789,3866,3835,3783,3897,3869,3786,3802,3628,3554,3236,3139,2956,3361,3371,3481.27</span>
+                                </div>
+                            </div>
+
+
+
+</li>
+
+        </ul>
+    </div>
+</nav>
+<div class="m30"></div>
+
+  
+    <div class="m30"></div>
+    <div id="indexheadad" class="headAd" style="width: 1205px;margin:0 auto;">
+       
+    </div>
+    <div class="m15"></div>
+    <div class="w1200">
+        <div class="col">
+            <div class="box box860" style="min-height:880px">
+                <div class="boxTit"><h1>所有货币</h1>
+                    <div class="searchForm searchForm2">
+                        <form action="">
+                            <input type="text" id="search2" class="open" placeholder="输入关键词...">
+                            <i class="icon-search" onclick="search(document.getElementById('search2').value)"></i>
+                            <span class="searchBtn">
+                                搜索
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="boxTools">
+                    <div class="slideBtn btnlink">
+                        <a href="/">全部</a>
+                    </div> 
+                    <div class="slideBtn btnlink usercustom">
+                        <a href="/userticker/">自选行情</a>
+                    </div> 
+                    <div class="slideBtn">
+                        <button>货币</button>
+                        <ul>
+                            <li><a href="/currencies/">前100</a></li>
+                              <li class="sline"></li>
+                            <li><a href="/currencies/">根据流通市值排序</a></li>
+                            <li><a href="/currencies/marketcap-by-totalsupply/">根据总市值排序</a></li>
+                            <li><a href="/currencies/filter-nonmineable/">过滤不可挖矿</a></li>
+                            <li><a href="/currencies/filter-premined/">过滤预挖矿的</a></li>
+                            <li><a href="/currencies/filter-nonmineable_premined/">过滤不可挖矿及预挖矿的</a></li> 
+                        </ul>
+                    </div>
+                    <div class="slideBtn">
+                        <button>代币</button>
+                        <ul>
+                            <li><a href="/assets/">前100</a></li>
+                            <li class="sline"></li>
+                            <li><a href="/assets/">根据流通市值排序</a></li>
+                            <li><a href="/assets/marketcap-by-totalsupply/">根据总市值排序</a></li>
+                     </ul>
+                    </div>
+                    <div class="slideBtn unit">
+                        <button>人民币(CNY)</button>
+                        <ul>
+                                    <li><a href="#CNY" class="price-toggle" data-currency="cny">人民币(CNY)</a></li>
+                                    <li><a href="#USD" class="price-toggle" data-currency="usd">美元(USD)</a></li>
+                                    <li><a href="#BTC" class="price-toggle" data-currency="btc">比特币(BTC)</a></li>
+                                    <li><a href="#ETH" class="price-toggle" data-currency="eth">以太坊(ETH)</a></li>
+                                    <li><a href="#JPY" class="price-toggle" data-currency="jpy">日元(JPY)</a></li>
+                                    <li><a href="#KRW" class="price-toggle" data-currency="krw">韩币(KRW)</a></li>
+                                    <li><a href="#HKD" class="price-toggle" data-currency="hkd">港币(HKD)</a></li>
+                                    <li><a href="#INR" class="price-toggle" data-currency="inr">卢比(INR)</a></li>
+                                    <li><a href="#RUB" class="price-toggle" data-currency="rub">卢布(RUB)</a></li>
+                                    <li><a href="#AUD" class="price-toggle" data-currency="aud">澳元(AUD)</a></li>
+                                    <li><a href="#EUR" class="price-toggle" data-currency="eur">欧元(EUR)</a></li>
+                                    <li><a href="#CHF" class="price-toggle" data-currency="chf">法郎(CHF)</a></li>
+                                    <li><a href="#GBP" class="price-toggle" data-currency="gbp">英镑(GBP)</a></li>
+                                    <li><a href="#CAD" class="price-toggle" data-currency="cad">加元(CAD)</a></li>
+                                    <li><a href="#IDR" class="price-toggle" data-currency="idr">印尼盾(IDR)</a></li>
+                                    <li><a href="#BRL" class="price-toggle" data-currency="brl">巴西雷亚尔(BRL)</a></li>
+                                    <li><a href="#TWD" class="price-toggle" data-currency="twd">新台币(TWD)</a></li>
+                                    <li><a href="#MXN" class="price-toggle" data-currency="mxn">比索(MXN)</a></li>
+                        </ul>
+                    </div>
+                    <div style="display:none" id="currency-exchange-rates"
+                                       data-cny="0.15709191447916174"  data-usd="1"  data-btc="8313.9164954436128"  data-eth="546.32860619803364"  data-jpy="0.009459716870755412"  data-krw="0.0009329141439113357"  data-hkd="0.1274851639140495"  data-inr="0.015376335819174292"  data-rub="0.01740265390472047"  data-aud="0.7690071656087691"  data-eur="1.2266777885452829"  data-chf="1.0487544991568014"  data-gbp="1.3914379258669702"  data-cad="0.7622665844435111"  data-idr="7.260680477355024e-05"  data-brl="0.3048780487804878"  data-twd="0.03427004797806717"  data-mxn="0.053367061316085096"                                     ></div>
+                    <div class="slideBtn  btnlink  downLoadBtn">
+                        <a href="//api.feixiaohao.com/coins/download/" target="_blank">下载表格 <svg t="1513568801541" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg " p-id="1813" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12"><defs><style type="text/css"></style></defs><path d="M950.878 856.8163H73.12195918367347c-23.0504 0-41.7541 18.7037-41.7959 41.775 0 11.5148 4.096 21.3577 12.2462 29.5288 8.1711 8.1711 18.014 12.2462 29.5497 12.2462h877.756081632653c11.5357 0 21.3786-4.096 29.5497-12.2462 8.1502-8.1502 12.2253-17.9931 12.2462-29.5288C992.6322 875.52 973.9494 856.8163 950.878 856.8163z" p-id="1814"></path><path d="M491.0602 765.3251c5.2663 5.0782 12.497 7.7531 20.9398 7.7531s15.6735-2.6749 20.9398-7.7531l266.0937-256.0627c6.6038-6.353 7.8158-14.4823 3.2392-21.8384C797.696 480.0888 773.3708 480.6531 762.7755 480.6531h-104.48979591836734V104.48979591836734c0-22.7997-12.1626-41.7959-41.7959-41.7959h-208.97959183673467c-29.6333 0-41.7959 18.9962-41.7959 41.7959v376.1632653061224h-125.38775510204081c-10.5953 0-14.0225-0.5642-18.5992 6.7709-4.5976 7.3561-3.3855 15.4854 3.2183 21.8384L491.0602 765.3251z" p-id="1815"></path></svg></a>
+                        </div>
+                        <div class="pageList">
+<a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a class='btn btn-white' href='/list_2.html'>2</a><a class='btn btn-white' href='/list_3.html'>3</a><a class='btn btn-white' href='/list_4.html'>4</a><a class='btn btn-white' href='/list_5.html'>5</a><a  href='#' class='btn btn-white'    >...</a><a class='btn btn-white' href='/list_19.html'>19</a><a class='btn btn-white' href='/list_2.html'>></a>                        </div>
+                    </div>
+               
+                <div class="boxContain">
+                    <table class="table maintable" id="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th data-sort-method='none'>名称</th>
+                                <th>流通市值</th>
+                                <th>价格</th>
+                                <th>流通数量</th>
+                                <th>成交额(24h)</th>
+                                <th>涨幅(24h)</th>
+                                                                    <th width="95" data-sort-method='none'>价格趋势(7d)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="bitcoin">
+                                <td>1</td>
+                                <td>
+                                    <a href="/currencies/bitcoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/7033f2f2c2a16094bbb3bafc47205ba8_small.png" alt="BTC-比特币">BTC-比特币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="141527651258" data-cny="900922569614" data-btc="16927650">¥9,009亿 </td> 
+                                    <td><a href="/currencies/bitcoin/#markets"  target="_blank" class="price" data-usd="8361" data-cny="53222"  data-btc="1">¥53,222</a></td>
+                                    <td>1,693万</td>
+                                    <td><a href="/currencies/bitcoin/#markets"  target="_blank" class="volume" data-usd="7619906475.90461"  data-cny="48504695951.2295" data-btc="914894.258918527">¥4,850,470万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.72%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>9887,9346,9200,9431,9050,9286,9245,9178,8819,8419,8284,7949,8248,8147,8342,8225,8156,8552,8542,8222,8286,7965,8003,7637,7617,7403,8231,8236</span>
+                                    </td>
+                            </tr>
+                            <tr id="ethereum">
+                                <td>2</td>
+                                <td>
+                                    <a href="/currencies/ethereum/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/8cc736e4abd44c3d689eb1599a27edb_small.png" alt="ETH-以太坊">ETH-以太坊
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="53934643948" data-cny="343331762978" data-btc="6449289">¥3,433亿 </td> 
+                                    <td><a href="/currencies/ethereum/#markets"  target="_blank" class="price" data-usd="549" data-cny="3493"  data-btc="0.0656">¥3,493</a></td>
+                                    <td>9,828万</td>
+                                    <td><a href="/currencies/ethereum/#markets"  target="_blank" class="volume" data-usd="3047158281.39386"  data-cny="19397163319.5882" data-btc="365406.398169033">¥1,939,716万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">4.82%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>740,711,703,711,696,701,694,696,673,633,613,596,618,605,617,612,604,623,618,604,608,580,567,517,503,472,539,534</span>
+                                    </td>
+                            </tr>
+                            <tr id="ripple">
+                                <td>3</td>
+                                <td>
+                                    <a href="/currencies/ripple/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/c9eb965d2f25954f97cfd9d4d83fab6_small.png" alt="XRP-瑞波币">XRP-瑞波币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="26394312217" data-cny="168018273281" data-btc="3112757">¥1,680亿 </td> 
+                                    <td><a href="/currencies/ripple/#markets"  target="_blank" class="price" data-usd="0.6751" data-cny="4.3"  data-btc="0.00007962">¥4.3</a></td>
+                                    <td>3,909,480万*</td>
+                                    <td><a href="/currencies/ripple/#markets"  target="_blank" class="volume" data-usd="986151055.5552"  data-cny="6277541774.3663" data-btc="116502.440684263">¥627,754万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.51%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.8341,0.8038,0.8029,0.8029,0.7839,0.7882,0.7913,0.7893,0.7591,0.7224,0.7008,0.6587,0.7091,0.6773,0.7043,0.7015,0.6838,0.7024,0.6997,0.6826,0.6835,0.6477,0.6464,0.6007,0.5980,0.5520,0.6617,0.6622</span>
+                                    </td>
+                            </tr>
+                            <tr id="bitcoin-cash">
+                                <td>4</td>
+                                <td>
+                                    <a href="/currencies/bitcoin-cash/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/3f557930868d6d6eb796adbd2a98a44a_small.png" alt="BCH-比特现金">BCH-比特现金
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="16176907168" data-cny="102977337957" data-btc="1937527">¥1,030亿 </td> 
+                                    <td><a href="/currencies/bitcoin-cash/#markets"  target="_blank" class="price" data-usd="950" data-cny="6048"  data-btc="0.1138">¥6,048</a></td>
+                                    <td>1,703万<i class="ifo"><div></div></i></td>
+                                    <td><a href="/currencies/bitcoin-cash/#markets"  target="_blank" class="volume" data-usd="412127965.680743"  data-cny="2623427607.67382" data-btc="49456.182348072">¥262,343万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">3.54%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1133,1058,1052,1091,1012,1071,1076,1046,1023,970,951,897,940,918,948,928,924,1043,1005,978,1024,968,973,915,890,858,935,921</span>
+                                    </td>
+                            </tr>
+                            <tr id="litecoin">
+                                <td>5</td>
+                                <td>
+                                    <a href="/currencies/litecoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/21a647444a8feaa1db0c42cdc27974a_small.png" alt="LTC-莱特币">LTC-莱特币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="8755409771" data-cny="55734311978" data-btc="1047722">¥557亿 </td> 
+                                    <td><a href="/currencies/litecoin/#markets"  target="_blank" class="price" data-usd="157" data-cny="1001"  data-btc="0.0188">¥1,001</a></td>
+                                    <td>5,569万</td>
+                                    <td><a href="/currencies/litecoin/#markets"  target="_blank" class="volume" data-usd="630678846.786791"  data-cny="4014696811.76654" data-btc="75982.4852011541">¥401,470万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.88%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>192,181,180,181,174,178,176,176,168,164,162,156,165,161,165,164,161,169,169,163,162,156,155,148,144,139,154,153</span>
+                                    </td>
+                            </tr>
+                            <tr id="cardano">
+                                <td>6</td>
+                                <td>
+                                    <a href="/currencies/cardano/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/c719fa95bfbd9fbe8188e6f5ab3c6dea_small.png" alt="ADA-艾达币">ADA-艾达币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="4404387035" data-cny="28037006549" data-btc="529690">¥280亿 </td> 
+                                    <td><a href="/currencies/cardano/#markets"  target="_blank" class="price" data-usd="0.1699" data-cny="1.08"  data-btc="0.00002043">¥1.08</a></td>
+                                    <td>2,592,707万*</td>
+                                    <td><a href="/currencies/cardano/#markets"  target="_blank" class="volume" data-usd="266276325.638858"  data-cny="1695035206.16393" data-btc="31477.9855878174">¥169,504万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">19.22%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.2325,0.2228,0.2241,0.2285,0.2214,0.2211,0.2219,0.2273,0.2169,0.2069,0.1997,0.1807,0.1836,0.1809,0.1877,0.1811,0.1752,0.1829,0.1822,0.1763,0.1742,0.1582,0.1580,0.1408,0.1395,0.1291,0.1569,0.1601</span>
+                                    </td>
+                            </tr>
+                            <tr id="neo">
+                                <td>7</td>
+                                <td>
+                                    <a href="/currencies/neo/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/57de547cc82727fabf172eeccfc26a8_small.png" alt="NEO-小蚁">NEO-小蚁
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="4364659000" data-cny="27784109796" data-btc="524982">¥278亿 </td> 
+                                    <td><a href="/currencies/neo/#markets"  target="_blank" class="price" data-usd="67.15" data-cny="427"  data-btc="0.008077">¥427</a></td>
+                                    <td>6,500万*</td>
+                                    <td><a href="/currencies/neo/#markets"  target="_blank" class="volume" data-usd="325085086.492277"  data-cny="2069363540.85111" data-btc="38922.9529438384">¥206,936万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">16.03%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>92.46,86.36,85.32,87.45,83.26,83.81,83.32,82.76,78.67,74.45,71.61,67.25,70.14,67.50,70.10,68.22,66.31,71.10,69.59,68.28,68.62,63.85,62.81,57.27,56.04,50.38,64.31,63.17</span>
+                                    </td>
+                            </tr>
+                            <tr id="stellar">
+                                <td>8</td>
+                                <td>
+                                    <a href="/currencies/stellar/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/5f9454a9f4e07c6c12824b6e7d8e7b9e_small.png" alt="XLM-恒星币">XLM-恒星币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="4213889321" data-cny="26824355251" data-btc="506864">¥268亿 </td> 
+                                    <td><a href="/currencies/stellar/#markets"  target="_blank" class="price" data-usd="0.2278" data-cny="1.45"  data-btc="0.0000274">¥1.45</a></td>
+                                    <td>1,849,868万*</td>
+                                    <td><a href="/currencies/stellar/#markets"  target="_blank" class="volume" data-usd="113793667.692594"  data-cny="724376350.429913" data-btc="13147.8755618846">¥72,438万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">20.75%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3065,0.2908,0.2916,0.2962,0.2889,0.2891,0.2871,0.2900,0.2767,0.2641,0.2480,0.2241,0.2396,0.2333,0.2428,0.2361,0.2292,0.2367,0.2354,0.2294,0.2288,0.2084,0.2097,0.1852,0.1808,0.1747,0.2185,0.2189</span>
+                                    </td>
+                            </tr>
+                            <tr id="eos">
+                                <td>9</td>
+                                <td>
+                                    <a href="/currencies/eos/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/6f37de3906f7cfd3775a7161d71175_small.png" alt="EOS-柚子">EOS-柚子
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="3532157093" data-cny="22484652408" data-btc="420012">¥225亿 </td> 
+                                    <td><a href="/currencies/eos/#markets"  target="_blank" class="price" data-usd="4.79" data-cny="30.48"  data-btc="0.000569">¥30.48</a></td>
+                                    <td>73,777万</td>
+                                    <td><a href="/currencies/eos/#markets"  target="_blank" class="volume" data-usd="409283790.439164"  data-cny="2605374949.43904" data-btc="48733.1438124881">¥260,537万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.07%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.19,5.90,5.83,5.94,5.75,5.98,5.92,5.90,5.71,5.53,5.37,5.03,5.24,5.14,5.23,5.16,5.02,5.32,5.23,5.10,5.11,4.87,4.77,4.29,4.21,4.02,4.62,4.61</span>
+                                    </td>
+                            </tr>
+                            <tr id="iota">
+                                <td>10</td>
+                                <td>
+                                    <a href="/currencies/iota/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/656d89f1ac5be1ad86c3ade1791cce4b_small.png" alt="MIOTA-埃欧塔">MIOTA-埃欧塔
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="3412540510" data-cny="21723209125" data-btc="410453">¥217亿 </td> 
+                                    <td><a href="/currencies/iota/#markets"  target="_blank" class="price" data-usd="1.23" data-cny="7.82"  data-btc="0.000148">¥7.82</a></td>
+                                    <td>277,953万*</td>
+                                    <td><a href="/currencies/iota/#markets"  target="_blank" class="volume" data-usd="100446507.595786"  data-cny="639412333.403015" data-btc="12075.4790671073">¥63,941万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">3.77%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.41,1.31,1.32,1.33,1.30,1.32,1.31,1.31,1.24,1.15,1.12,1.07,1.11,1.06,1.10,1.08,1.07,1.14,1.13,1.11,1.14,1.07,1.14,1.10,1.17,1.10,1.23,1.20</span>
+                                    </td>
+                            </tr>
+                            <tr id="monero">
+                                <td>11</td>
+                                <td>
+                                    <a href="/currencies/monero/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/ebac80e888627b30e5cce5a13151619_small.png" alt="XMR-门罗币">XMR-门罗币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="3392108627" data-cny="21593145889" data-btc="403155">¥216亿 </td> 
+                                    <td><a href="/currencies/monero/#markets"  target="_blank" class="price" data-usd="214" data-cny="1363"  data-btc="0.0255">¥1,363</a></td>
+                                    <td>1,584万</td>
+                                    <td><a href="/currencies/monero/#markets"  target="_blank" class="volume" data-usd="85644058.0616118"  data-cny="545184380.4028" data-btc="10183.0082780167">¥54,518万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">12.28%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>286,263,261,264,254,253,252,249,238,221,216,210,222,213,215,209,206,219,222,215,215,201,201,189,185,177,207,206</span>
+                                    </td>
+                            </tr>
+                            <tr id="dash">
+                                <td>12</td>
+                                <td>
+                                    <a href="/currencies/dash/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/7fb0ef441241273db6a8e4b78f512f0_small.png" alt="DASH-达世币">DASH-达世币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="3035999968" data-cny="19326264999" data-btc="363881">¥193亿 </td> 
+                                    <td><a href="/currencies/dash/#markets"  target="_blank" class="price" data-usd="382" data-cny="2429"  data-btc="0.0457">¥2,429</a></td>
+                                    <td>795万</td>
+                                    <td><a href="/currencies/dash/#markets"  target="_blank" class="volume" data-usd="120446765.128792"  data-cny="766727972.780352" data-btc="14443.4118445509">¥76,673万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">2.09%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>547,513,501,506,493,491,490,486,479,454,428,405,429,408,421,413,411,426,435,426,424,396,391,369,371,346,388,373</span>
+                                    </td>
+                            </tr>
+                            <tr id="nem">
+                                <td>13</td>
+                                <td>
+                                    <a href="/currencies/nem/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/6d96b5f526ae524035953a610f854cc_small.png" alt="XEM-新经币">XEM-新经币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="2618280000" data-cny="16667184996" data-btc="314910">¥167亿 </td> 
+                                    <td><a href="/currencies/nem/#markets"  target="_blank" class="price" data-usd="0.2909" data-cny="1.85"  data-btc="0.00003499">¥1.85</a></td>
+                                    <td>900,000万*</td>
+                                    <td><a href="/currencies/nem/#markets"  target="_blank" class="volume" data-usd="57282833.6573041"  data-cny="364645334.213048" data-btc="6895.95832961488">¥36,465万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">16.05%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.4079,0.3826,0.3818,0.4237,0.4421,0.4405,0.4775,0.4972,0.4774,0.4184,0.3959,0.3661,0.3549,0.3465,0.3841,0.3578,0.3391,0.3452,0.3453,0.3158,0.3160,0.2872,0.2886,0.2484,0.2396,0.2253,0.2722,0.2826</span>
+                                    </td>
+                            </tr>
+                            <tr id="tether">
+                                <td>14</td>
+                                <td>
+                                    <a href="/currencies/tether/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/407fa07212739f3d783b59fe9379c62_small.png" alt="USDT-泰达币">USDT-泰达币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="2215245158" data-cny="14101586102" data-btc="266456">¥141亿 </td> 
+                                    <td><a href="/currencies/tether/#markets"  target="_blank" class="price" data-usd="0.9991" data-cny="6.36"  data-btc="0.00012">¥6.36</a></td>
+                                    <td>221,714万</td>
+                                    <td><a href="/currencies/tether/#markets"  target="_blank" class="volume" data-usd="3033779591.13731"  data-cny="19312129457.5197" data-btc="364637.763644612">¥1,931,213万</a></td>
+                                     <td class="change">
+                                         <span  class="text-red">-0.14%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.00,0.9975,0.9994,0.9996,1.00,1.00,1.00,0.9990,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.9993,1.00,0.9997,0.9984,1.00,0.9934,1.00,0.9999,1.00,1.00</span>
+                                    </td>
+                            </tr>
+                            <tr id="tron">
+                                <td>15</td>
+                                <td>
+                                    <a href="/currencies/tron/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/f0a3e16777ea7ed1e15fc80c1c74d56_small.png" alt="TRX-波场">TRX-波场
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="2046412491" data-cny="13026847994" data-btc="245898">¥130亿 </td> 
+                                    <td><a href="/currencies/tron/#markets"  target="_blank" class="price" data-usd="0.0311" data-cny="0.1981"  data-btc="0.00000374">¥0.1981</a></td>
+                                    <td>6,574,819万</td>
+                                    <td><a href="/currencies/tron/#markets"  target="_blank" class="volume" data-usd="151982717.691243"  data-cny="967476109.55524" data-btc="18395.9572487848">¥96,748万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">17.6%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0392,0.0362,0.0359,0.0368,0.0350,0.0357,0.0360,0.0356,0.0337,0.0323,0.0309,0.0294,0.0299,0.0294,0.0302,0.0300,0.0293,0.0307,0.0309,0.0299,0.0301,0.0285,0.0288,0.0260,0.0257,0.0240,0.0283,0.0289</span>
+                                    </td>
+                            </tr>
+                            <tr id="vechain">
+                                <td>16</td>
+                                <td>
+                                    <a href="/currencies/vechain/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20170819/63639ab8b44143fcbcfc96a1cb9b1bfd.png" alt="VEN-唯链">VEN-唯链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1878440583" data-cny="11957589218" data-btc="225554">¥120亿 </td> 
+                                    <td><a href="/currencies/vechain/#markets"  target="_blank" class="price" data-usd="3.71" data-cny="23.64"  data-btc="0.000446">¥23.64</a></td>
+                                    <td>50,581万</td>
+                                    <td><a href="/currencies/vechain/#markets"  target="_blank" class="volume" data-usd="36790236.2445017"  data-cny="234194592.113508" data-btc="4417.67474899677">¥23,419万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.01%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>4.12,4.05,4.02,4.20,4.12,4.18,4.34,4.38,4.08,3.92,3.80,3.55,3.75,3.69,3.77,3.77,3.81,4.00,4.01,3.96,4.03,3.73,3.68,3.38,3.26,3.05,3.68,3.59</span>
+                                    </td>
+                            </tr>
+                            <tr id="ethereum-classic">
+                                <td>17</td>
+                                <td>
+                                    <a href="/currencies/ethereum-classic/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/82b1a65720c160e6a5881c2368961c61_small.png" alt="ETC-以太经典">ETC-以太经典
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1715954839" data-cny="10923253721" data-btc="202089">¥109亿 </td> 
+                                    <td><a href="/currencies/ethereum-classic/#markets"  target="_blank" class="price" data-usd="17.06" data-cny="109"  data-btc="0.002009">¥109</a></td>
+                                    <td>10,061万</td>
+                                    <td><a href="/currencies/ethereum-classic/#markets"  target="_blank" class="volume" data-usd="257355704.952962"  data-cny="1638247062.60382" data-btc="30377.7350432106">¥163,825万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.33%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>21.57,20.65,20.41,20.70,20.09,20.09,19.98,19.96,18.66,17.67,17.15,16.36,17.92,18.12,18.48,18.06,17.60,18.34,18.25,17.70,17.73,16.62,16.65,15.51,15.26,14.71,16.69,16.42</span>
+                                    </td>
+                            </tr>
+                            <tr id="lisk">
+                                <td>18</td>
+                                <td>
+                                    <a href="/currencies/lisk/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/145799f91a9f1073712fd90dae2535_small.png" alt="LSK-应用链">LSK-应用链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1296534853" data-cny="8253351914" data-btc="155947">¥83亿 </td> 
+                                    <td><a href="/currencies/lisk/#markets"  target="_blank" class="price" data-usd="12.59" data-cny="80.15"  data-btc="0.001514">¥80.15</a></td>
+                                    <td>10,297万*</td>
+                                    <td><a href="/currencies/lisk/#markets"  target="_blank" class="volume" data-usd="28927663.3014654"  data-cny="184144826.278134" data-btc="3489.21466028017">¥18,414万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.04%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>14.97,14.29,14.06,14.46,13.79,14.22,14.02,13.94,13.23,12.36,11.54,11.07,11.80,11.55,12.81,12.95,12.36,13.70,13.45,12.81,12.79,12.12,12.32,11.53,11.33,10.36,12.04,12.20</span>
+                                    </td>
+                            </tr>
+                            <tr id="raiblocks">
+                                <td>19</td>
+                                <td>
+                                    <a href="/currencies/raiblocks/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/608f7a38a1ce54f5a1e09a42b76ef2f_small.png" alt="XRB-纳诺">XRB-纳诺
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1271861583" data-cny="8072123909" data-btc="113353">¥81亿 </td> 
+                                    <td><a href="/currencies/raiblocks/#markets"  target="_blank" class="price" data-usd="9.55" data-cny="60.58"  data-btc="0.000851">¥60.58</a></td>
+                                    <td>13,325万*</td>
+                                    <td><a href="/currencies/raiblocks/#markets"  target="_blank" class="volume" data-usd="57567706.6838312"  data-cny="366458750.437384" data-btc="7020.15602515553">¥36,646万</a></td>
+                                     <td class="change">
+                                         <span  class="text-red">-0.1%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>8.91,8.79,8.69,10.15,9.59,9.66,9.36,9.11,9.09,8.90,9.16,8.95,9.41,8.63,8.96,8.44,8.42,8.96,9.44,8.80,9.83,9.58,9.70,9.69,9.71,9.60,9.55,9.55</span>
+                                    </td>
+                            </tr>
+                            <tr id="omisego">
+                                <td>20</td>
+                                <td>
+                                    <a href="/currencies/omisego/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/343cde22866a94e9f0e2d0827dde9950_small.png" alt="OMG-嫩模币">OMG-嫩模币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1085722547" data-cny="6911384017" data-btc="130591">¥69亿 </td> 
+                                    <td><a href="/currencies/omisego/#markets"  target="_blank" class="price" data-usd="10.64" data-cny="67.73"  data-btc="0.00128">¥67.73</a></td>
+                                    <td>10,204万</td>
+                                    <td><a href="/currencies/omisego/#markets"  target="_blank" class="volume" data-usd="60578987.7166392"  data-cny="385628438.07298" data-btc="7350.95693295233">¥38,563万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">13.76%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>14.56,13.83,13.69,14.04,13.30,13.48,13.53,13.51,12.77,12.57,11.54,10.93,11.12,10.73,11.32,11.15,10.98,11.72,11.55,11.05,11.14,10.22,10.06,9.11,9.07,8.63,10.10,10.23</span>
+                                    </td>
+                            </tr>
+                            <tr id="qtum">
+                                <td>21</td>
+                                <td>
+                                    <a href="/currencies/qtum/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/537087b8919f86b1f890621913eac8f_small.png" alt="QTUM-量子链">QTUM-量子链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1074291342" data-cny="6838616397" data-btc="123937">¥68亿 </td> 
+                                    <td><a href="/currencies/qtum/#markets"  target="_blank" class="price" data-usd="14.53" data-cny="92.46"  data-btc="0.001676">¥92.46</a></td>
+                                    <td>7,396万*</td>
+                                    <td><a href="/currencies/qtum/#markets"  target="_blank" class="volume" data-usd="125392236.173615"  data-cny="798201921.62911" data-btc="14603.4504585802">¥79,820万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">14.96%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>19.48,18.47,18.42,18.63,18.18,18.24,18.20,18.19,17.46,16.69,16.06,14.94,15.59,15.38,15.80,15.40,14.79,15.67,15.34,14.94,14.87,13.93,13.97,12.36,12.19,11.34,13.28,13.45</span>
+                                    </td>
+                            </tr>
+                            <tr id="bitcoin-gold">
+                                <td>22</td>
+                                <td>
+                                    <a href="/currencies/bitcoin-gold/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/4796135adddecdcbbe8eb2718365550_small.png" alt="BTG-比特黄金">BTG-比特黄金
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="1026162833" data-cny="6532244746" data-btc="122073">¥65亿 </td> 
+                                    <td><a href="/currencies/bitcoin-gold/#markets"  target="_blank" class="price" data-usd="60.36" data-cny="384"  data-btc="0.007181">¥384</a></td>
+                                    <td>1,700万<i class="ifo"><div></div></i></td>
+                                    <td><a href="/currencies/bitcoin-gold/#markets"  target="_blank" class="volume" data-usd="27058433.1445027"  data-cny="172245867.867963" data-btc="3217.93474699369">¥17,225万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>105,94.19,99.18,102,99.22,94.95,96.36,100,88.17,83.01,78.98,72.75,72.39,72.47,73.23,64.22,63.99,67.71,65.01,62.66,65.37,60.17,59.30,55.38,56.55,52.47,58.84,58.99</span>
+                                    </td>
+                            </tr>
+                            <tr id="binance-coin">
+                                <td>23</td>
+                                <td>
+                                    <a href="/currencies/binance-coin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/76103fe938aed2122b7625e874d5d5a_small.png" alt="BNB-币安币">BNB-币安币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="892748839" data-cny="5682971284" data-btc="107380">¥57亿 </td> 
+                                    <td><a href="/currencies/binance-coin/#markets"  target="_blank" class="price" data-usd="9.02" data-cny="57.4"  data-btc="0.001084">¥57.4</a></td>
+                                    <td>9,901万</td>
+                                    <td><a href="/currencies/binance-coin/#markets"  target="_blank" class="volume" data-usd="107393230.054778"  data-cny="683633084.567523" data-btc="12908.7630176284">¥68,363万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.96%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>8.51,7.96,7.99,8.20,7.92,9.82,10.28,10.52,9.75,9.09,8.81,8.70,9.14,8.89,9.03,8.92,8.85,9.20,9.26,9.17,9.25,8.87,9.13,8.37,8.29,7.86,8.72,8.85</span>
+                                    </td>
+                            </tr>
+                            <tr id="zcash">
+                                <td>24</td>
+                                <td>
+                                    <a href="/currencies/zcash/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/8e6e5f9298e364fd9168aa5371bfa4_small.png" alt="ZEC-大零币">ZEC-大零币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="837163198" data-cny="5329129772" data-btc="96498">¥53亿 </td> 
+                                    <td><a href="/currencies/zcash/#markets"  target="_blank" class="price" data-usd="238" data-cny="1517"  data-btc="0.0275">¥1,517</a></td>
+                                    <td>351万</td>
+                                    <td><a href="/currencies/zcash/#markets"  target="_blank" class="volume" data-usd="65962244.6310785"  data-cny="419895860.648055" data-btc="7620.33924754567">¥41,990万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">11.32%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>310,292,293,300,286,289,286,284,280,261,251,242,252,244,244,242,236,246,243,234,236,224,224,214,213,206,244,239</span>
+                                    </td>
+                            </tr>
+                            <tr id="icon">
+                                <td>25</td>
+                                <td>
+                                    <a href="/currencies/icon/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/c16b29d8f1b9d9379f3e857a946965_small.png" alt="ICX">ICX
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="817978076" data-cny="5207003038" data-btc="98387">¥52亿 </td> 
+                                    <td><a href="/currencies/icon/#markets"  target="_blank" class="price" data-usd="2.12" data-cny="13.47"  data-btc="0.000255">¥13.47</a></td>
+                                    <td>38,654万</td>
+                                    <td><a href="/currencies/icon/#markets"  target="_blank" class="volume" data-usd="41569754.3903251"  data-cny="264620585.523043" data-btc="4996.17578715976">¥26,462万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">13.07%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>2.79,2.63,2.61,2.71,2.75,2.88,2.86,3.04,2.79,2.52,2.39,2.28,2.34,2.23,2.30,2.30,2.22,2.36,2.31,2.20,2.18,2.01,2.02,1.79,1.79,1.65,2.03,2.01</span>
+                                    </td>
+                            </tr>
+                            <tr id="digixdao">
+                                <td>26</td>
+                                <td>
+                                    <a href="/currencies/digixdao/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/bce876fa0dd91a8636c2539be712cc0_small.png" alt="DGD-黄金代币">DGD-黄金代币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="699304000" data-cny="4451559473" data-btc="84112">¥45亿 </td> 
+                                    <td><a href="/currencies/digixdao/#markets"  target="_blank" class="price" data-usd="350" data-cny="2226"  data-btc="0.0421">¥2,226</a></td>
+                                    <td>200万</td>
+                                    <td><a href="/currencies/digixdao/#markets"  target="_blank" class="volume" data-usd="27981965.0353575"  data-cny="178124768.597966" data-btc="3360.1567387151">¥17,812万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.19%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>365,337,333,347,326,337,328,328,311,292,314,342,352,407,368,384,416,393,406,407,392,387,364,339,316,318,344,339</span>
+                                    </td>
+                            </tr>
+                            <tr id="populous">
+                                <td>27</td>
+                                <td>
+                                    <a href="/currencies/populous/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/13ed844d516f8e1ddca8941ee7a131d_small.png" alt="PPT">PPT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="553051085" data-cny="3520557292" data-btc="66521">¥35亿 </td> 
+                                    <td><a href="/currencies/populous/#markets"  target="_blank" class="price" data-usd="14.95" data-cny="95.14"  data-btc="0.001798">¥95.14</a></td>
+                                    <td>3,700万</td>
+                                    <td><a href="/currencies/populous/#markets"  target="_blank" class="volume" data-usd="2687328.86015059"  data-cny="17106690.8735104" data-btc="322.88417061628">¥1,711万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">11.48%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>16.62,15.86,16.78,18.67,18.37,19.91,19.45,18.49,17.32,16.27,15.74,15.18,15.38,15.29,16.25,16.25,15.92,16.48,15.85,15.18,15.02,14.42,14.45,12.88,12.84,12.25,14.92,14.58</span>
+                                    </td>
+                            </tr>
+                            <tr id="steem">
+                                <td>28</td>
+                                <td>
+                                    <a href="/currencies/steem/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/8a218ff16692daeba398cb5d42176089_small.png" alt="STEEM-斯蒂姆币">STEEM-斯蒂姆币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="482748716" data-cny="3073033501" data-btc="58065">¥31亿 </td> 
+                                    <td><a href="/currencies/steem/#markets"  target="_blank" class="price" data-usd="1.9" data-cny="12.08"  data-btc="0.000228">¥12.08</a></td>
+                                    <td>25,429万*</td>
+                                    <td><a href="/currencies/steem/#markets"  target="_blank" class="volume" data-usd="3577834.41750934"  data-cny="22775420.5514791" data-btc="425.991405131382">¥2,278万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">14.01%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>2.61,2.44,2.42,2.54,2.52,2.37,2.44,2.61,2.54,2.42,2.20,2.02,2.08,2.04,2.15,2.05,1.99,2.10,2.12,1.99,2.00,1.82,1.84,1.60,1.63,1.52,1.79,1.85</span>
+                                    </td>
+                            </tr>
+                            <tr id="bytecoin-bcn">
+                                <td>29</td>
+                                <td>
+                                    <a href="/currencies/bytecoin-bcn/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20180106/c7626db6bacc4efeb60be91d3fb06ded.png" alt="BCN-字节币">BCN-字节币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="467309166" data-cny="2974749958" data-btc="56975">¥30亿 </td> 
+                                    <td><a href="/currencies/bytecoin-bcn/#markets"  target="_blank" class="price" data-usd="0.002543" data-cny="0.0162"  data-btc="3.1E-07">¥0.0162</a></td>
+                                    <td>18,379,041万</td>
+                                    <td><a href="/currencies/bytecoin-bcn/#markets"  target="_blank" class="volume" data-usd="2276718.8887268"  data-cny="14492909.3998742" data-btc="265.5316846666">¥1,449万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.33%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.003547,0.003295,0.003231,0.003322,0.003097,0.003106,0.003084,0.003082,0.002968,0.002826,0.002646,0.002549,0.002643,0.002588,0.002686,0.002652,0.002572,0.002750,0.002753,0.002657,0.002591,0.002417,0.002412,0.002333,0.002274,0.002206,0.002462,0.002502</span>
+                                    </td>
+                            </tr>
+                            <tr id="waves">
+                                <td>30</td>
+                                <td>
+                                    <a href="/currencies/waves/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/339f0f2fc87b3e9f06d4518b30292f_small.png" alt="WAVES-波币">WAVES-波币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="464720000" data-cny="2958268104" data-btc="55897">¥30亿 </td> 
+                                    <td><a href="/currencies/waves/#markets"  target="_blank" class="price" data-usd="4.65" data-cny="29.58"  data-btc="0.000559">¥29.58</a></td>
+                                    <td>10,000万*</td>
+                                    <td><a href="/currencies/waves/#markets"  target="_blank" class="volume" data-usd="23955061.1326778"  data-cny="152490732.652276" data-btc="2873.63629974202">¥15,249万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.91%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>5.96,5.55,5.53,5.72,5.47,5.65,5.56,5.60,5.44,5.15,4.97,4.70,5.01,5.20,5.22,5.02,4.89,5.15,5.15,4.95,4.97,4.67,4.68,4.29,4.25,3.95,4.39,4.51</span>
+                                    </td>
+                            </tr>
+                            <tr id="stratis">
+                                <td>31</td>
+                                <td>
+                                    <a href="/currencies/stratis/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/398a3f2ca0c529ff26c392c6de65f753_small.png" alt="STRAT">STRAT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="444744756" data-cny="2831111693" data-btc="53494">¥28亿 </td> 
+                                    <td><a href="/currencies/stratis/#markets"  target="_blank" class="price" data-usd="4.5" data-cny="28.66"  data-btc="0.000542">¥28.66</a></td>
+                                    <td>9,878万*</td>
+                                    <td><a href="/currencies/stratis/#markets"  target="_blank" class="volume" data-usd="11870773.8887095"  data-cny="75565785.3432835" data-btc="1423.95520228788">¥7,557万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">16.14%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.01,5.57,5.39,5.61,5.32,5.50,5.45,5.47,5.19,4.96,4.75,4.41,4.58,4.52,4.82,4.61,4.51,4.74,4.73,4.50,4.49,4.20,4.12,3.79,3.78,3.76,4.35,4.30</span>
+                                    </td>
+                            </tr>
+                            <tr id="verge">
+                                <td>32</td>
+                                <td>
+                                    <a href="/currencies/verge/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/bf92f4740fe5519edd4e7decaeefdcd_small.png" alt="XVG">XVG
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="441293668" data-cny="2809143100" data-btc="52991">¥28亿 </td> 
+                                    <td><a href="/currencies/verge/#markets"  target="_blank" class="price" data-usd="0.0305" data-cny="0.1942"  data-btc="0.00000366">¥0.1942</a></td>
+                                    <td>1,446,505万</td>
+                                    <td><a href="/currencies/verge/#markets"  target="_blank" class="volume" data-usd="13291950.5047292"  data-cny="84612569.327948" data-btc="1596.2056483432">¥8,461万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.63%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0401,0.0380,0.0376,0.0383,0.0363,0.0370,0.0360,0.0367,0.0350,0.0326,0.0311,0.0290,0.0304,0.0302,0.0306,0.0322,0.0307,0.0326,0.0331,0.0326,0.0314,0.0293,0.0289,0.0274,0.0266,0.0247,0.0296,0.0293</span>
+                                    </td>
+                            </tr>
+                            <tr id="maker">
+                                <td>33</td>
+                                <td>
+                                    <a href="/currencies/maker/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/e87a50389327af9e5c5c8f3a8ad1b3_small.png" alt="MKR">MKR
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="418980379" data-cny="2667103399" data-btc="50395">¥27亿 </td> 
+                                    <td><a href="/currencies/maker/#markets"  target="_blank" class="price" data-usd="678" data-cny="4314"  data-btc="0.0815">¥4,314</a></td>
+                                    <td>62万</td>
+                                    <td><a href="/currencies/maker/#markets"  target="_blank" class="volume" data-usd="339642.308629412"  data-cny="2161930.3986962" data-btc="40.8725957393071">¥216万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.72%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>858,810,806,823,787,815,811,803,776,765,742,716,730,725,734,736,700,735,724,713,717,685,679,616,605,595,661,665</span>
+                                    </td>
+                            </tr>
+                            <tr id="ht">
+                                <td>34</td>
+                                <td>
+                                    <a href="/currencies/ht/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20180123/68450a0c1b824c92ba23aa630ee47a2f.png" alt="HT-火币全球积分">HT-火币全球积分
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="418026647" data-cny="2661032225" data-btc="50102">¥27亿 </td> 
+                                    <td><a href="/currencies/ht/#markets"  target="_blank" class="price" data-usd="1.39" data-cny="8.87"  data-btc="0.000167">¥8.87</a></td>
+                                    <td>30,000万*</td>
+                                    <td><a href="/currencies/ht/#markets"  target="_blank" class="volume" data-usd="77941918.3225553"  data-cny="496154869.466691" data-btc="9343.40289672599">¥49,615万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">2.92%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.76,1.65,1.66,1.66,1.61,1.66,1.66,1.62,1.57,1.50,1.49,1.41,1.48,1.47,1.51,1.49,1.46,1.55,1.54,1.50,1.51,1.44,1.44,1.34,1.32,1.30,1.39,1.37</span>
+                                    </td>
+                            </tr>
+                            <tr id="status">
+                                <td>35</td>
+                                <td>
+                                    <a href="/currencies/status/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/c2738ff7ddedd8e1d7b9cba681ae4a9_small.png" alt="SNT">SNT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="399581092" data-cny="2543613357" data-btc="48066">¥25亿 </td> 
+                                    <td><a href="/currencies/status/#markets"  target="_blank" class="price" data-usd="0.1151" data-cny="0.7329"  data-btc="0.00001385">¥0.7329</a></td>
+                                    <td>347,048万</td>
+                                    <td><a href="/currencies/status/#markets"  target="_blank" class="volume" data-usd="136125853.945447"  data-cny="866536343.991341" data-btc="15999.7062263433">¥86,654万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">37.43%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.1432,0.1367,0.1352,0.1375,0.1347,0.1335,0.1356,0.1365,0.1316,0.1271,0.1212,0.1070,0.1100,0.1071,0.1107,0.1069,0.1057,0.1092,0.1087,0.1044,0.1040,0.0947,0.0935,0.0841,0.0810,0.0779,0.0993,0.1114</span>
+                                    </td>
+                            </tr>
+                            <tr id="exchange-union">
+                                <td>36</td>
+                                <td>
+                                    <a href="/currencies/exchange-union/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/3248ef159cc81bbf34b8c590cf2174_small.png" alt="XUC-雪币">XUC-雪币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="399520107" data-cny="2543225142" data-btc="48088">¥25亿 </td> 
+                                    <td><a href="/currencies/exchange-union/#markets"  target="_blank" class="price" data-usd="6.15" data-cny="39.13"  data-btc="0.00074">¥39.13</a></td>
+                                    <td>6,500万</td>
+                                    <td><a href="/currencies/exchange-union/#markets"  target="_blank" class="volume" data-usd="619507.105912775"  data-cny="3943596.38411169" data-btc="74.2730099900543">¥394万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.5%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.57,6.50,6.42,6.51,6.54,6.47,6.39,6.54,6.40,6.18,6.10,6.07,5.85,6.12,6.14,6.02,6.28,5.94,5.93,5.81,5.84,5.73,5.60,5.78,5.72,5.68,5.59,5.98</span>
+                                    </td>
+                            </tr>
+                            <tr id="siacoin">
+                                <td>37</td>
+                                <td>
+                                    <a href="/currencies/siacoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b59281aabb8a9c68612d3bc8b92b8227_small.png" alt="SC-云储币">SC-云储币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="370181496" data-cny="2356464349" data-btc="44505">¥24亿 </td> 
+                                    <td><a href="/currencies/siacoin/#markets"  target="_blank" class="price" data-usd="0.0111" data-cny="0.071"  data-btc="0.00000134">¥0.071</a></td>
+                                    <td>3,321,235万</td>
+                                    <td><a href="/currencies/siacoin/#markets"  target="_blank" class="volume" data-usd="7825611.10854226"  data-cny="49815492.6497843" data-btc="939.798853465372">¥4,982万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">13.72%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0147,0.0142,0.0142,0.0147,0.0140,0.0143,0.0140,0.0140,0.0133,0.0126,0.0120,0.0113,0.0116,0.0116,0.0118,0.0117,0.0114,0.0119,0.0119,0.0114,0.0111,0.0100,0.009894,0.009378,0.009561,0.009128,0.0108,0.0108</span>
+                                    </td>
+                            </tr>
+                            <tr id="dogecoin">
+                                <td>38</td>
+                                <td>
+                                    <a href="/currencies/dogecoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/9eadc479725f4546c3405c7ef81d9a_small.png" alt="DOGE-狗狗币">DOGE-狗狗币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="369781814" data-cny="2353920095" data-btc="43200">¥24亿 </td> 
+                                    <td><a href="/currencies/dogecoin/#markets"  target="_blank" class="price" data-usd="0.003256" data-cny="0.0207"  data-btc="3.8E-07">¥0.0207</a></td>
+                                    <td>11,355,820万</td>
+                                    <td><a href="/currencies/dogecoin/#markets"  target="_blank" class="volume" data-usd="12668465.712159"  data-cny="80643193.7781224" data-btc="1489.08532144827">¥8,064万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">3.13%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.004172,0.004023,0.003977,0.004069,0.003927,0.003977,0.003927,0.003930,0.003834,0.003709,0.003634,0.003383,0.003523,0.003539,0.003576,0.003540,0.003511,0.003630,0.003550,0.003490,0.003540,0.003340,0.003317,0.003123,0.003116,0.002813,0.003168,0.003186</span>
+                                    </td>
+                            </tr>
+                            <tr id="bitshares">
+                                <td>39</td>
+                                <td>
+                                    <a href="/currencies/bitshares/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/6226398a9dbb123ffea428ab342689e_small.png" alt="BTS-比特股">BTS-比特股
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="356126134" data-cny="2266992131" data-btc="42824">¥23亿 </td> 
+                                    <td><a href="/currencies/bitshares/#markets"  target="_blank" class="price" data-usd="0.1364" data-cny="0.8682"  data-btc="0.0000164">¥0.8682</a></td>
+                                    <td>261,124万*</td>
+                                    <td><a href="/currencies/bitshares/#markets"  target="_blank" class="volume" data-usd="17722949.3493206"  data-cny="112816282.632079" data-btc="2114.80330735258">¥11,282万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">4.09%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.1747,0.1621,0.1610,0.1685,0.1619,0.1634,0.1635,0.1650,0.1610,0.1516,0.1444,0.1375,0.1477,0.1447,0.1525,0.1517,0.1491,0.1537,0.1507,0.1476,0.1491,0.1408,0.1393,0.1289,0.1249,0.1149,0.1324,0.1325</span>
+                                    </td>
+                            </tr>
+                            <tr id="decred">
+                                <td>40</td>
+                                <td>
+                                    <a href="/currencies/decred/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/14bc7ba3638f1045e5d8dceb822844a8_small.png" alt="DCR">DCR
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="350181411" data-cny="2229149806" data-btc="42120">¥22亿 </td> 
+                                    <td><a href="/currencies/decred/#markets"  target="_blank" class="price" data-usd="50.3" data-cny="320"  data-btc="0.00605">¥320</a></td>
+                                    <td>696万</td>
+                                    <td><a href="/currencies/decred/#markets"  target="_blank" class="volume" data-usd="1160685.83976519"  data-cny="7388577.85019295" data-btc="139.422676031367">¥739万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.26%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>63.56,58.88,58.99,61.61,58.43,60.40,59.41,60.13,58.26,55.10,52.07,48.94,50.90,54.39,54.58,54.90,54.28,55.74,55.87,53.30,52.93,49.47,49.21,46.25,46.58,44.94,50.77,49.94</span>
+                                    </td>
+                            </tr>
+                            <tr id="aeternity">
+                                <td>41</td>
+                                <td>
+                                    <a href="/currencies/aeternity/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/6524611e7f3bc9cff8437c3448ad_small.png" alt="AE">AE
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="333839110" data-cny="2125119623" data-btc="40154">¥21亿 </td> 
+                                    <td><a href="/currencies/aeternity/#markets"  target="_blank" class="price" data-usd="1.43" data-cny="9.12"  data-btc="0.000172">¥9.12</a></td>
+                                    <td>23,302万</td>
+                                    <td><a href="/currencies/aeternity/#markets"  target="_blank" class="volume" data-usd="17056043.6915855"  data-cny="108573657.326002" data-btc="2042.64529059175">¥10,857万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">2.03%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.86,1.77,1.76,1.80,1.74,1.78,1.71,1.73,1.68,1.61,1.59,1.56,1.58,1.57,1.63,1.63,1.58,1.64,1.64,1.61,1.60,1.53,1.52,1.39,1.29,1.20,1.34,1.37</span>
+                                    </td>
+                            </tr>
+                            <tr id="augur">
+                                <td>42</td>
+                                <td>
+                                    <a href="/currencies/augur/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/87bb917165e64a8083e5f439d1ce6174_small.png" alt="REP">REP
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="333570600" data-cny="2123410368" data-btc="40122">¥21亿 </td> 
+                                    <td><a href="/currencies/augur/#markets"  target="_blank" class="price" data-usd="30.32" data-cny="193"  data-btc="0.003647">¥193</a></td>
+                                    <td>1,100万</td>
+                                    <td><a href="/currencies/augur/#markets"  target="_blank" class="volume" data-usd="3387065.92326951"  data-cny="21561121.654338" data-btc="407.550397148323">¥2,156万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">1.86%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>37.22,34.76,34.73,35.79,36.03,35.95,38.39,37.77,35.14,33.56,31.39,30.70,31.15,31.24,32.11,31.81,32.75,33.39,33.69,32.54,32.67,30.69,31.13,29.29,28.84,26.62,29.20,29.71</span>
+                                    </td>
+                            </tr>
+                            <tr id="bytom">
+                                <td>43</td>
+                                <td>
+                                    <a href="/currencies/bytom/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/423491dab9a4909690db8e3ce5aa6f_small.png" alt="BTM-比原链">BTM-比原链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="328788416" data-cny="2092968417" data-btc="35239">¥21亿 </td> 
+                                    <td><a href="/currencies/bytom/#markets"  target="_blank" class="price" data-usd="0.3331" data-cny="2.12"  data-btc="0.0000357">¥2.12</a></td>
+                                    <td>98,700万</td>
+                                    <td><a href="/currencies/bytom/#markets"  target="_blank" class="volume" data-usd="19790651.1340739"  data-cny="125981347.924138" data-btc="2133.98357394326">¥12,598万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">1.73%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3889,0.3641,0.3613,0.3730,0.3724,0.3725,0.3735,0.3888,0.3701,0.3580,0.3530,0.3424,0.3500,0.3503,0.3559,0.3545,0.3582,0.3602,0.3646,0.3565,0.3677,0.3515,0.3460,0.3285,0.3224,0.2986,0.3228,0.3192</span>
+                                    </td>
+                            </tr>
+                            <tr id="walton">
+                                <td>44</td>
+                                <td>
+                                    <a href="/currencies/walton/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20180212/acac5d2e58734558a609aaf4e1fd1bbc.png" alt="WTC-沃尔顿链">WTC-沃尔顿链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="301655615" data-cny="1920249151" data-btc="36642">¥19亿 </td> 
+                                    <td><a href="/currencies/walton/#markets"  target="_blank" class="price" data-usd="12.12" data-cny="77.12"  data-btc="0.001472">¥77.12</a></td>
+                                    <td>2,490万*</td>
+                                    <td><a href="/currencies/walton/#markets"  target="_blank" class="volume" data-usd="5637362.00017805"  data-cny="35885751.9118772" data-btc="685.360867382564">¥3,589万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">11.58%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>27.62,27.23,27.09,27.09,15.34,15.78,15.58,15.46,14.58,13.70,13.36,12.23,12.94,12.89,13.05,13.07,13.09,13.71,13.54,12.95,12.89,11.87,11.71,10.87,10.56,10.11,12.21,11.75</span>
+                                    </td>
+                            </tr>
+                            <tr id="aion">
+                                <td>45</td>
+                                <td>
+                                    <a href="/currencies/aion/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/7b83bdd297773e931bc731abad4bf0_small.png" alt="AION">AION
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="285201141" data-cny="1815504903" data-btc="34304">¥18亿 </td> 
+                                    <td><a href="/currencies/aion/#markets"  target="_blank" class="price" data-usd="2.69" data-cny="17.13"  data-btc="0.000324">¥17.13</a></td>
+                                    <td>10,598万</td>
+                                    <td><a href="/currencies/aion/#markets"  target="_blank" class="volume" data-usd="13845075.9497141"  data-cny="88133599.9732889" data-btc="1664.63805703319">¥8,813万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">18.23%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>2.56,2.32,2.31,2.41,2.30,2.36,2.38,2.46,2.32,2.16,2.06,2.12,2.15,2.19,2.76,2.61,2.64,2.80,2.65,2.58,2.53,2.38,2.29,2.18,2.17,1.97,2.56,2.56</span>
+                                    </td>
+                            </tr>
+                            <tr id="komodo">
+                                <td>46</td>
+                                <td>
+                                    <a href="/currencies/komodo/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/f07c3f4faf1cfdcecc82bbb63b244d1f_small.png" alt="KMD-科莫多币">KMD-科莫多币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="285131140" data-cny="1815059298" data-btc="34296">¥18亿 </td> 
+                                    <td><a href="/currencies/komodo/#markets"  target="_blank" class="price" data-usd="2.74" data-cny="17.45"  data-btc="0.00033">¥17.45</a></td>
+                                    <td>10,402万</td>
+                                    <td><a href="/currencies/komodo/#markets"  target="_blank" class="volume" data-usd="2210455.31763514"  data-cny="14071095.4154745" data-btc="264.706796580031">¥1,407万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">14.76%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.77,3.60,3.56,3.68,3.49,3.50,3.47,3.59,3.36,3.31,3.12,2.87,2.97,2.98,3.00,2.90,2.91,3.03,2.99,2.83,2.85,2.63,2.62,2.31,2.38,2.18,2.51,2.61</span>
+                                    </td>
+                            </tr>
+                            <tr id="zilliqa">
+                                <td>47</td>
+                                <td>
+                                    <a href="/currencies/zilliqa/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20180125/285d0deab3cf4da2b8f88818e12a6db2.png" alt="ZIL">ZIL
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="277793631" data-cny="1768350917" data-btc="33423">¥18亿 </td> 
+                                    <td><a href="/currencies/zilliqa/#markets"  target="_blank" class="price" data-usd="0.0421" data-cny="0.2677"  data-btc="0.00000506">¥0.2677</a></td>
+                                    <td>660,533万</td>
+                                    <td><a href="/currencies/zilliqa/#markets"  target="_blank" class="volume" data-usd="15706103.0667041"  data-cny="99980340.2857656" data-btc="1883.37440550474">¥9,998万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.69%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0514,0.0463,0.0462,0.0482,0.0459,0.0451,0.0457,0.0478,0.0446,0.0424,0.0403,0.0406,0.0416,0.0407,0.0418,0.0410,0.0411,0.0451,0.0435,0.0435,0.0438,0.0413,0.0412,0.0376,0.0376,0.0352,0.0396,0.0405</span>
+                                    </td>
+                            </tr>
+                            <tr id="ardor">
+                                <td>48</td>
+                                <td>
+                                    <a href="/currencies/ardor/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/a7214c8b7a3fe6d14e3627506bdf5ba_small.png" alt="ARDR-阿朵币">ARDR-阿朵币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="274750835" data-cny="1748981390" data-btc="33047">¥17亿 </td> 
+                                    <td><a href="/currencies/ardor/#markets"  target="_blank" class="price" data-usd="0.275" data-cny="1.75"  data-btc="0.00003308">¥1.75</a></td>
+                                    <td>99,900万*</td>
+                                    <td><a href="/currencies/ardor/#markets"  target="_blank" class="volume" data-usd="3727269.07319675"  data-cny="23726676.7389731" data-btc="445.782836207633">¥2,373万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">12.67%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3069,0.2904,0.2917,0.2993,0.2978,0.3054,0.3192,0.3552,0.3214,0.3224,0.2935,0.2661,0.2715,0.2684,0.2850,0.2803,0.2983,0.3071,0.3125,0.2906,0.2908,0.2650,0.2653,0.2355,0.2358,0.2191,0.2565,0.2631</span>
+                                    </td>
+                            </tr>
+                            <tr id="ark">
+                                <td>49</td>
+                                <td>
+                                    <a href="/currencies/ark/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/abfc93a085fd5fc6ec2df6c273e1feb_small.png" alt="ARK">ARK
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="258624592" data-cny="1646326565" data-btc="31107">¥16亿 </td> 
+                                    <td><a href="/currencies/ark/#markets"  target="_blank" class="price" data-usd="2.55" data-cny="16.25"  data-btc="0.000307">¥16.25</a></td>
+                                    <td>10,133万*</td>
+                                    <td><a href="/currencies/ark/#markets"  target="_blank" class="volume" data-usd="4962255.94454163"  data-cny="31588232.6661339" data-btc="595.439720634997">¥3,159万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.73%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.52,3.29,3.25,3.58,3.30,3.43,3.48,3.50,3.20,2.98,2.83,2.71,2.80,2.75,2.83,2.84,2.79,2.94,2.92,2.76,2.76,2.54,2.54,2.34,2.29,2.06,2.40,2.46</span>
+                                    </td>
+                            </tr>
+                            <tr id="cryptonex">
+                                <td>50</td>
+                                <td>
+                                    <a href="/currencies/cryptonex/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/66c659558367259fe12c7e630e0458e_small.png" alt="CNX">CNX
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="255402554" data-cny="1625816038" data-btc="30720">¥16亿 </td> 
+                                    <td><a href="/currencies/cryptonex/#markets"  target="_blank" class="price" data-usd="5.65" data-cny="35.99"  data-btc="0.00068">¥35.99</a></td>
+                                    <td>4,517万</td>
+                                    <td><a href="/currencies/cryptonex/#markets"  target="_blank" class="volume" data-usd="198094.264097735"  data-cny="1261008.65696664" data-btc="23.066558746295">¥126万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">6.32%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.69,6.33,6.25,6.46,6.19,6.40,6.33,6.10,6.06,5.80,5.64,5.47,5.61,5.42,5.57,5.65,5.59,5.88,5.69,5.49,5.69,5.29,5.53,5.05,5.24,5.02,5.55,5.57</span>
+                                    </td>
+                            </tr>
+                            <tr id="elastos">
+                                <td>51</td>
+                                <td>
+                                    <a href="/currencies/elastos/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20180130/29271c8e9ba747d6a93419729947f389.png" alt="ELA-亦来云">ELA-亦来云
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="237328321" data-cny="1510760890" data-btc="28410">¥15亿 </td> 
+                                    <td><a href="/currencies/elastos/#markets"  target="_blank" class="price" data-usd="36.51" data-cny="232"  data-btc="0.004371">¥232</a></td>
+                                    <td>650万</td>
+                                    <td><a href="/currencies/elastos/#markets"  target="_blank" class="volume" data-usd="22505614.8275969"  data-cny="143263992.308019" data-btc="2694.49132735823">¥14,326万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.94%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>51.31,48.09,48.20,48.29,46.56,48.01,47.40,46.81,45.08,42.97,41.42,40.81,42.11,43.33,46.21,43.96,43.72,45.21,45.89,42.85,42.56,40.38,39.48,34.80,33.29,30.65,35.12,36.65</span>
+                                    </td>
+                            </tr>
+                            <tr id="0x">
+                                <td>52</td>
+                                <td>
+                                    <a href="/currencies/0x/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/cf695e11d06ede25328d8b57bfa48e16_small.png" alt="ZRX-0x协议">ZRX-0x协议
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="232077790" data-cny="1477337588" data-btc="27916">¥15亿 </td> 
+                                    <td><a href="/currencies/0x/#markets"  target="_blank" class="price" data-usd="0.4477" data-cny="2.85"  data-btc="0.00005385">¥2.85</a></td>
+                                    <td>51,839万</td>
+                                    <td><a href="/currencies/0x/#markets"  target="_blank" class="volume" data-usd="9725324.3868162"  data-cny="61907587.610012" data-btc="1164.54108255196">¥6,191万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">12.11%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.6959,0.6376,0.6240,0.6525,0.6077,0.6258,0.5933,0.5989,0.5784,0.5453,0.5201,0.4705,0.4992,0.4897,0.4892,0.4804,0.4847,0.5070,0.5180,0.4909,0.4895,0.4654,0.4523,0.3859,0.3932,0.3573,0.4244,0.4375</span>
+                                    </td>
+                            </tr>
+                            <tr id="hshare">
+                                <td>53</td>
+                                <td>
+                                    <a href="/currencies/hshare/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/fcaaa7c80d2d8065cc875570b2804a_small.png" alt="HSR-红烧肉">HSR-红烧肉
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="227703684" data-cny="1449493340" data-btc="27303">¥14亿 </td> 
+                                    <td><a href="/currencies/hshare/#markets"  target="_blank" class="price" data-usd="5.4" data-cny="34.34"  data-btc="0.000647">¥34.34</a></td>
+                                    <td>4,221万</td>
+                                    <td><a href="/currencies/hshare/#markets"  target="_blank" class="volume" data-usd="45054425.395068"  data-cny="286802955.738343" data-btc="5407.83182040824">¥28,680万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">4.64%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.57,6.28,6.21,6.29,6.18,6.39,6.31,6.32,6.18,5.97,5.79,5.63,5.76,5.57,5.77,5.70,5.69,5.87,5.86,5.75,5.72,5.47,5.28,5.00,5.03,4.87,5.22,5.26</span>
+                                    </td>
+                            </tr>
+                            <tr id="monacoin">
+                                <td>54</td>
+                                <td>
+                                    <a href="/currencies/monacoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/50bc22bb2ba7724c1fb2667714c14db_small.png" alt="MONA-萌奈币">MONA-萌奈币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="227516261" data-cny="1448300263" data-btc="27365">¥14亿 </td> 
+                                    <td><a href="/currencies/monacoin/#markets"  target="_blank" class="price" data-usd="3.91" data-cny="24.9"  data-btc="0.00047">¥24.9</a></td>
+                                    <td>5,817万</td>
+                                    <td><a href="/currencies/monacoin/#markets"  target="_blank" class="volume" data-usd="3146021.1774875"  data-cny="20026627.0095303" data-btc="378.071497840534">¥2,003万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">20.13%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>4.32,4.16,4.18,4.34,4.19,4.23,4.25,4.28,4.20,4.05,3.91,3.77,3.90,3.81,3.88,3.88,3.75,3.91,3.88,3.77,3.74,3.56,3.55,3.19,3.24,2.92,3.34,3.82</span>
+                                    </td>
+                            </tr>
+                            <tr id="kcs">
+                                <td>55</td>
+                                <td>
+                                    <a href="/currencies/kcs/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20171012/0c1c81789fab436bac5ff40f2d379acc.png" alt="KCS">KCS
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="224597193" data-cny="1429718349" data-btc="27036">¥14亿 </td> 
+                                    <td><a href="/currencies/kcs/#markets"  target="_blank" class="price" data-usd="2.47" data-cny="15.7"  data-btc="0.000297">¥15.7</a></td>
+                                    <td>9,104万</td>
+                                    <td><a href="/currencies/kcs/#markets"  target="_blank" class="volume" data-usd="1029859.32326222"  data-cny="6555775.49409916" data-btc="123.713387883144">¥656万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">20.65%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.43,3.45,3.20,3.34,3.35,3.24,3.41,3.30,3.29,3.10,2.82,2.71,2.64,2.67,2.27,2.64,2.53,2.41,2.44,2.36,2.33,2.19,2.23,2.06,2.01,1.87,2.25,2.32</span>
+                                    </td>
+                            </tr>
+                            <tr id="veritaseum">
+                                <td>56</td>
+                                <td>
+                                    <a href="/currencies/veritaseum/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/7f964fe7f4dabf709c10a156ec2e8848_small.png" alt="VERI">VERI
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="223248927" data-cny="1421135695" data-btc="26853">¥14亿 </td> 
+                                    <td><a href="/currencies/veritaseum/#markets"  target="_blank" class="price" data-usd="110" data-cny="698"  data-btc="0.0132">¥698</a></td>
+                                    <td>204万</td>
+                                    <td><a href="/currencies/veritaseum/#markets"  target="_blank" class="volume" data-usd="410289.556982575"  data-cny="2611780.23288399" data-btc="48.836868880575">¥261万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.59%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>175,155,155,160,153,153,154,160,146,129,133,126,123,117,129,133,121,122,120,116,119,113,106,98.36,97.26,89.98,103,109</span>
+                                    </td>
+                            </tr>
+                            <tr id="electroneum">
+                                <td>57</td>
+                                <td>
+                                    <a href="/currencies/electroneum/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/ea17f4a178c1d4d967683e63303d9517_small.png" alt="ETN">ETN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="216642052" data-cny="1379078310" data-btc="26058">¥14亿 </td> 
+                                    <td><a href="/currencies/electroneum/#markets"  target="_blank" class="price" data-usd="0.0335" data-cny="0.2133"  data-btc="0.00000403">¥0.2133</a></td>
+                                    <td>646,592万</td>
+                                    <td><a href="/currencies/electroneum/#markets"  target="_blank" class="volume" data-usd="3054438.78976677"  data-cny="19443641.0054643" data-btc="367.832001231465">¥1,944万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">24.21%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0520,0.0468,0.0465,0.0461,0.0435,0.0534,0.0504,0.0526,0.0471,0.0440,0.0403,0.0391,0.0397,0.0378,0.0383,0.0344,0.0345,0.0368,0.0375,0.0358,0.0361,0.0331,0.0328,0.0300,0.0270,0.0279,0.0339,0.0336</span>
+                                    </td>
+                            </tr>
+                            <tr id="digibyte">
+                                <td>58</td>
+                                <td>
+                                    <a href="/currencies/digibyte/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/493422684b1d148f574fdff2d6c28fd_small.png" alt="DGB-极特币">DGB-极特币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="213786291" data-cny="1360899393" data-btc="25683">¥14亿 </td> 
+                                    <td><a href="/currencies/digibyte/#markets"  target="_blank" class="price" data-usd="0.0214" data-cny="0.1362"  data-btc="0.00000257">¥0.1362</a></td>
+                                    <td>999,328万</td>
+                                    <td><a href="/currencies/digibyte/#markets"  target="_blank" class="volume" data-usd="3906630.05302246"  data-cny="24868434.9244791" data-btc="469.087004763236">¥2,487万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">15.06%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0296,0.0276,0.0280,0.0277,0.0263,0.0267,0.0263,0.0263,0.0251,0.0236,0.0226,0.0205,0.0218,0.0214,0.0223,0.0221,0.0216,0.0223,0.0227,0.0215,0.0216,0.0202,0.0203,0.0182,0.0182,0.0168,0.0202,0.0205</span>
+                                    </td>
+                            </tr>
+                            <tr id="pivx">
+                                <td>59</td>
+                                <td>
+                                    <a href="/currencies/pivx/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/deb663235aceff65661da155afd1b9f_small.png" alt="PIVX-普维币">PIVX-普维币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="199470782" data-cny="1269771157" data-btc="23993">¥13亿 </td> 
+                                    <td><a href="/currencies/pivx/#markets"  target="_blank" class="price" data-usd="3.57" data-cny="22.75"  data-btc="0.00043">¥22.75</a></td>
+                                    <td>5,580万*</td>
+                                    <td><a href="/currencies/pivx/#markets"  target="_blank" class="volume" data-usd="1662606.27131389"  data-cny="10583652.7413038" data-btc="199.444603135721">¥1,058万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.7%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>4.79,4.52,4.43,4.57,4.36,4.48,4.53,4.58,4.40,4.17,3.94,3.71,3.80,3.77,3.93,3.93,3.86,4.01,3.94,3.84,3.83,3.68,3.67,3.18,3.16,2.93,3.39,3.51</span>
+                                    </td>
+                            </tr>
+                            <tr id="syscoin">
+                                <td>60</td>
+                                <td>
+                                    <a href="/currencies/syscoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/368270314e69e2329bcd8f56b56f6a9_small.png" alt="SYS-系统币">SYS-系统币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="194321323" data-cny="1236991246" data-btc="23373">¥12亿 </td> 
+                                    <td><a href="/currencies/syscoin/#markets"  target="_blank" class="price" data-usd="0.3655" data-cny="2.33"  data-btc="0.00004396">¥2.33</a></td>
+                                    <td>53,169万</td>
+                                    <td><a href="/currencies/syscoin/#markets"  target="_blank" class="volume" data-usd="1966207.74807138"  data-cny="12516288.6617237" data-btc="236.250228405591">¥1,252万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.47%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.5338,0.4719,0.4764,0.4872,0.4610,0.4812,0.4785,0.4742,0.4538,0.4221,0.3906,0.3528,0.3698,0.3643,0.3609,0.3455,0.3593,0.3868,0.4120,0.3870,0.3826,0.3487,0.3603,0.3292,0.3245,0.2926,0.3514,0.3588</span>
+                                    </td>
+                            </tr>
+                            <tr id="basic-attention-token">
+                                <td>61</td>
+                                <td>
+                                    <a href="/currencies/basic-attention-token/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b3f0caf182f7dece9346ab992fdd8e4_small.png" alt="BAT-注意力币">BAT-注意力币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="192275000" data-cny="1223964968" data-btc="23130">¥12亿 </td> 
+                                    <td><a href="/currencies/basic-attention-token/#markets"  target="_blank" class="price" data-usd="0.1923" data-cny="1.22"  data-btc="0.00002313">¥1.22</a></td>
+                                    <td>100,000万</td>
+                                    <td><a href="/currencies/basic-attention-token/#markets"  target="_blank" class="volume" data-usd="5112806.99933457"  data-cny="32546582.9372699" data-btc="611.995100513744">¥3,255万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.49%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.2781,0.2637,0.2599,0.2657,0.2508,0.2538,0.2482,0.2470,0.2373,0.2295,0.2208,0.1986,0.1988,0.2023,0.1969,0.1976,0.1973,0.2022,0.2006,0.1993,0.1992,0.1901,0.1923,0.1756,0.1715,0.1601,0.1852,0.1867</span>
+                                    </td>
+                            </tr>
+                            <tr id="factom">
+                                <td>62</td>
+                                <td>
+                                    <a href="/currencies/factom/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/5f6f3462b35b375e1ff3a273c237feb_small.png" alt="FCT-公证通">FCT-公证通
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="190954549" data-cny="1215559373" data-btc="22968">¥12亿 </td> 
+                                    <td><a href="/currencies/factom/#markets"  target="_blank" class="price" data-usd="21.84" data-cny="139"  data-btc="0.002626">¥139</a></td>
+                                    <td>875万*</td>
+                                    <td><a href="/currencies/factom/#markets"  target="_blank" class="volume" data-usd="4323820.45558413"  data-cny="27524143.8741121" data-btc="498.657297487822">¥2,752万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.04%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>28.35,26.82,26.03,27.58,25.78,26.49,26.97,26.62,25.38,23.99,23.06,22.58,23.00,21.60,22.10,21.29,21.65,24.40,28.04,23.32,23.12,22.20,22.00,20.00,19.77,17.65,21.53,20.83</span>
+                                    </td>
+                            </tr>
+                            <tr id="gas">
+                                <td>63</td>
+                                <td>
+                                    <a href="/currencies/gas/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/80231f60f12c9721e1cb1f4a4035afbb_small.png" alt="GAS">GAS
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="190791147" data-cny="1214519204" data-btc="22948">¥12亿 </td> 
+                                    <td><a href="/currencies/gas/#markets"  target="_blank" class="price" data-usd="19.21" data-cny="122"  data-btc="0.00231">¥122</a></td>
+                                    <td>993万</td>
+                                    <td><a href="/currencies/gas/#markets"  target="_blank" class="volume" data-usd="6061193.52546086"  data-cny="38583739.6250219" data-btc="726.427359699697">¥3,858万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">12.06%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>27.58,25.45,24.26,25.11,24.22,24.53,23.98,23.51,22.21,21.21,20.45,19.08,20.58,19.17,20.34,19.81,19.86,21.20,20.90,20.64,20.06,18.74,18.64,16.65,16.73,15.06,18.19,18.56</span>
+                                    </td>
+                            </tr>
+                            <tr id="revain">
+                                <td>64</td>
+                                <td>
+                                    <a href="/currencies/revain/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b81d159ff484a42a886357d4d7c542e_small.png" alt="R">R
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="186331390" data-cny="1186129729" data-btc="22413">¥12亿 </td> 
+                                    <td><a href="/currencies/revain/#markets"  target="_blank" class="price" data-usd="1.01" data-cny="6.43"  data-btc="0.000122">¥6.43</a></td>
+                                    <td>18,445万</td>
+                                    <td><a href="/currencies/revain/#markets"  target="_blank" class="volume" data-usd="7975071.06292109"  data-cny="50766909.8653252" data-btc="955.318563404526">¥5,077万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.11%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.12,1.06,1.08,1.11,1.09,1.12,1.21,1.21,1.14,1.11,1.05,1.03,1.06,1.05,1.07,1.04,1.06,1.10,1.02,1.03,1.08,1.04,0.9890,0.9257,0.9294,0.8668,0.9827,0.9990</span>
+                                    </td>
+                            </tr>
+                            <tr id="golem-network-tokens">
+                                <td>65</td>
+                                <td>
+                                    <a href="/currencies/golem-network-tokens/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/5c1869ca78174dadbbb2abce35f3868d_small.png" alt="GNT">GNT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="185656665" data-cny="1181834632" data-btc="22333">¥12亿 </td> 
+                                    <td><a href="/currencies/golem-network-tokens/#markets"  target="_blank" class="price" data-usd="0.2225" data-cny="1.42"  data-btc="0.00002677">¥1.42</a></td>
+                                    <td>83,426万</td>
+                                    <td><a href="/currencies/golem-network-tokens/#markets"  target="_blank" class="volume" data-usd="7516543.82162238"  data-cny="47848056.333825" data-btc="901.616652051555">¥4,785万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.15%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3248,0.3061,0.2996,0.3089,0.3000,0.3030,0.3073,0.2975,0.2909,0.2584,0.2499,0.2335,0.2415,0.2436,0.2510,0.2465,0.2421,0.2557,0.2538,0.2441,0.2438,0.2311,0.2235,0.2011,0.2005,0.1858,0.2096,0.2158</span>
+                                    </td>
+                            </tr>
+                            <tr id="qash">
+                                <td>66</td>
+                                <td>
+                                    <a href="/currencies/qash/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/3485ad4c83aa5f99a09f6df72b18ab71_small.png" alt="QASH">QASH
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="183673700" data-cny="1169211672" data-btc="22092">¥12亿 </td> 
+                                    <td><a href="/currencies/qash/#markets"  target="_blank" class="price" data-usd="0.5248" data-cny="3.34"  data-btc="0.00006312">¥3.34</a></td>
+                                    <td>35,000万</td>
+                                    <td><a href="/currencies/qash/#markets"  target="_blank" class="volume" data-usd="5042168.42348257"  data-cny="32096561.3143202" data-btc="591.907380344315">¥3,210万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.97%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.7040,0.6581,0.6542,0.6697,0.6396,0.6653,0.6548,0.6480,0.6202,0.6126,0.5894,0.5579,0.5725,0.5691,0.5853,0.5666,0.5546,0.5780,0.5732,0.5483,0.5513,0.5244,0.5085,0.4592,0.4564,0.4301,0.5137,0.5128</span>
+                                    </td>
+                            </tr>
+                            <tr id="dragonchain">
+                                <td>67</td>
+                                <td>
+                                    <a href="/currencies/dragonchain/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/a8d7bd39476b1b8015667731c145f975_small.png" alt="DRGN-龙链">DRGN-龙链
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="175629469" data-cny="1118004511" data-btc="21124">¥11亿 </td> 
+                                    <td><a href="/currencies/dragonchain/#markets"  target="_blank" class="price" data-usd="0.7366" data-cny="4.69"  data-btc="0.0000886">¥4.69</a></td>
+                                    <td>23,842万</td>
+                                    <td><a href="/currencies/dragonchain/#markets"  target="_blank" class="volume" data-usd="2725702.0556168"  data-cny="17350763.3112152" data-btc="327.331884064883">¥1,735万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">16.9%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.18,1.08,1.09,1.09,1.05,1.05,1.05,1.06,1.01,0.9302,0.8544,0.8017,0.8501,0.7948,0.8046,0.8075,0.7740,0.8322,0.8265,0.7635,0.7585,0.6939,0.6881,0.6112,0.6118,0.5401,0.7359,0.7171</span>
+                                    </td>
+                            </tr>
+                            <tr id="bitquence">
+                                <td>68</td>
+                                <td>
+                                    <a href="/currencies/bitquence/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/d824b19484321f47fe6df2763da6f16_small.png" alt="BQX">BQX
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="171122330" data-cny="1089313416" data-btc="20573">¥11亿 </td> 
+                                    <td><a href="/currencies/bitquence/#markets"  target="_blank" class="price" data-usd="2.3" data-cny="14.62"  data-btc="0.000276">¥14.62</a></td>
+                                    <td>7,453万*</td>
+                                    <td><a href="/currencies/bitquence/#markets"  target="_blank" class="volume" data-usd="6145706.57633116"  data-cny="39121724.3529811" data-btc="738.849162523172">¥3,912万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.31%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.54,3.23,3.23,3.32,3.22,3.23,3.20,3.12,2.93,2.82,2.70,2.51,2.67,2.50,2.58,2.53,2.52,2.79,2.73,2.58,2.61,2.46,2.31,2.10,1.93,1.97,2.24,2.23</span>
+                                    </td>
+                            </tr>
+                            <tr id="funfair">
+                                <td>69</td>
+                                <td>
+                                    <a href="/currencies/funfair/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/6af17f3f248fac49cdd69a89677c17_small.png" alt="FUN">FUN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="169815813" data-cny="1080996521" data-btc="20447">¥11亿 </td> 
+                                    <td><a href="/currencies/funfair/#markets"  target="_blank" class="price" data-usd="0.0369" data-cny="0.2347"  data-btc="0.00000444">¥0.2347</a></td>
+                                    <td>460,507万</td>
+                                    <td><a href="/currencies/funfair/#markets"  target="_blank" class="volume" data-usd="1529854.13863043"  data-cny="9738509.22249875" data-btc="183.88586243498">¥974万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.01%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0489,0.0454,0.0452,0.0466,0.0444,0.0452,0.0445,0.0449,0.0427,0.0392,0.0367,0.0358,0.0393,0.0371,0.0383,0.0379,0.0370,0.0395,0.0389,0.0386,0.0386,0.0358,0.0360,0.0322,0.0326,0.0294,0.0350,0.0351</span>
+                                    </td>
+                            </tr>
+                            <tr id="loopring">
+                                <td>70</td>
+                                <td>
+                                    <a href="/currencies/loopring/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/798a23ef854c3047781bc11592b9ce70_small.png" alt="LRC-路印协议">LRC-路印协议
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="167423761" data-cny="1065769439" data-btc="20137">¥11亿 </td> 
+                                    <td><a href="/currencies/loopring/#markets"  target="_blank" class="price" data-usd="0.2927" data-cny="1.86"  data-btc="0.0000352">¥1.86</a></td>
+                                    <td>57,207万</td>
+                                    <td><a href="/currencies/loopring/#markets"  target="_blank" class="volume" data-usd="1689397.62850675"  data-cny="10754198.4418635" data-btc="203.107257884005">¥1,075万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">6.41%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3687,0.3560,0.3460,0.3552,0.3574,0.3432,0.3435,0.3360,0.3300,0.3154,0.3013,0.3034,0.3138,0.3143,0.3063,0.3055,0.3090,0.3257,0.3203,0.3148,0.3152,0.2939,0.2899,0.2608,0.2625,0.2520,0.2832,0.2832</span>
+                                    </td>
+                            </tr>
+                            <tr id="zcoin">
+                                <td>71</td>
+                                <td>
+                                    <a href="/currencies/zcoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b160f7b1b26ed64305aa6a7cd5e2e77_small.png" alt="XZC-小零币">XZC-小零币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="148884269" data-cny="947752591" data-btc="17908">¥9.48亿 </td> 
+                                    <td><a href="/currencies/zcoin/#markets"  target="_blank" class="price" data-usd="34.31" data-cny="218"  data-btc="0.004127">¥218</a></td>
+                                    <td>434万</td>
+                                    <td><a href="/currencies/zcoin/#markets"  target="_blank" class="volume" data-usd="2023215.17730891"  data-cny="12879180.8541977" data-btc="243.349072403847">¥1,288万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.6%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>44.25,42.54,41.09,43.03,40.90,41.90,41.20,41.27,39.87,37.70,35.86,34.27,36.52,34.38,35.80,34.92,35.17,36.95,37.18,36.16,36.09,34.82,35.14,32.49,31.74,28.68,32.69,34.45</span>
+                                    </td>
+                            </tr>
+                            <tr id="gxshares">
+                                <td>72</td>
+                                <td>
+                                    <a href="/currencies/gxshares/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/3b84fa5ccd2d7314d49d2e244e3657_small.png" alt="GXS-公信宝">GXS-公信宝
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="148451405" data-cny="944997112" data-btc="18123">¥9.45亿 </td> 
+                                    <td><a href="/currencies/gxshares/#markets"  target="_blank" class="price" data-usd="2.47" data-cny="15.75"  data-btc="0.000302">¥15.75</a></td>
+                                    <td>6,000万*</td>
+                                    <td><a href="/currencies/gxshares/#markets"  target="_blank" class="volume" data-usd="4873774.79250225"  data-cny="31024988.1965182" data-btc="596.378883618943">¥3,102万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">0.68%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.07,2.96,2.88,3.00,2.85,2.88,2.91,3.02,2.94,2.87,2.80,2.73,2.80,2.70,2.67,2.75,2.71,2.79,2.70,2.67,2.69,2.58,2.52,2.35,2.35,2.19,2.49,2.48</span>
+                                    </td>
+                            </tr>
+                            <tr id="kyber-network">
+                                <td>73</td>
+                                <td>
+                                    <a href="/currencies/kyber-network/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/882efe3292aa38a09ee164020dc230_small.png" alt="KNC">KNC
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="146836405" data-cny="934716503" data-btc="17661">¥9.35亿 </td> 
+                                    <td><a href="/currencies/kyber-network/#markets"  target="_blank" class="price" data-usd="1.09" data-cny="6.97"  data-btc="0.000132">¥6.97</a></td>
+                                    <td>13,413万</td>
+                                    <td><a href="/currencies/kyber-network/#markets"  target="_blank" class="volume" data-usd="7896098.26813145"  data-cny="50264192.7450678" data-btc="947.350575738364">¥5,026万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">14.44%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.38,1.28,1.26,1.35,1.32,1.30,1.27,1.34,1.27,1.21,1.13,1.03,1.08,1.08,1.12,1.10,1.10,1.14,1.14,1.10,1.12,1.04,1.05,0.9414,0.9233,0.8390,0.9732,0.9861</span>
+                                    </td>
+                            </tr>
+                            <tr id="emercoin">
+                                <td>74</td>
+                                <td>
+                                    <a href="/currencies/emercoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/dfbecc7ea2cf9c42e86e69e5e6c41d54_small.png" alt="EMC-崛起币">EMC-崛起币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="146396921" data-cny="931918880" data-btc="17608">¥9.32亿 </td> 
+                                    <td><a href="/currencies/emercoin/#markets"  target="_blank" class="price" data-usd="3.53" data-cny="22.46"  data-btc="0.000424">¥22.46</a></td>
+                                    <td>4,150万</td>
+                                    <td><a href="/currencies/emercoin/#markets"  target="_blank" class="volume" data-usd="1002136.513008"  data-cny="6379300.40085904" data-btc="118.670022726335">¥638万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.16%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>4.00,3.72,3.68,3.77,3.70,3.71,3.65,3.55,3.39,3.28,3.13,2.99,3.04,3.30,3.43,3.34,3.36,3.47,3.63,3.56,3.68,3.48,3.66,3.18,3.23,3.07,3.41,3.40</span>
+                                    </td>
+                            </tr>
+                            <tr id="reddcoin">
+                                <td>75</td>
+                                <td>
+                                    <a href="/currencies/reddcoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/71f35ee2cedaad6cac14dc346a02068_small.png" alt="RDD-蜗牛币">RDD-蜗牛币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="141215480" data-cny="898935381" data-btc="16977">¥8.99亿 </td> 
+                                    <td><a href="/currencies/reddcoin/#markets"  target="_blank" class="price" data-usd="0.004908" data-cny="0.0312"  data-btc="5.9E-07">¥0.0312</a></td>
+                                    <td>2,877,415万*</td>
+                                    <td><a href="/currencies/reddcoin/#markets"  target="_blank" class="volume" data-usd="5863743.27667791"  data-cny="37326830.6029247" data-btc="704.189590228664">¥3,733万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.18%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.006946,0.006431,0.006263,0.006560,0.006323,0.006582,0.006786,0.006555,0.006229,0.005888,0.005593,0.005231,0.005487,0.005304,0.005488,0.005363,0.005347,0.005536,0.005474,0.005245,0.005324,0.004816,0.004894,0.004301,0.004258,0.003768,0.004572,0.004631</span>
+                                    </td>
+                            </tr>
+                            <tr id="dentacoin">
+                                <td>76</td>
+                                <td>
+                                    <a href="/currencies/dentacoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/e8bd8c50c676d1907c3a07d76b1ddc_small.png" alt="DCN">DCN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="140355448" data-cny="893460675" data-btc="16261">¥8.93亿 </td> 
+                                    <td><a href="/currencies/dentacoin/#markets"  target="_blank" class="price" data-usd="0.000432" data-cny="0.002747"  data-btc="5E-08">¥0.002747</a></td>
+                                    <td>32,522,661万</td>
+                                    <td><a href="/currencies/dentacoin/#markets"  target="_blank" class="volume" data-usd="100600.182188506"  data-cny="640390.581290389" data-btc="11.7907177978524">¥64万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">9.38%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.00061089,0.00056338,0.00053034,0.00054051,0.00051410,0.00052912,0.00051894,0.00049639,0.00048600,0.00048781,0.00046501,0.00044498,0.00045901,0.00046146,0.00047916,0.00048209,0.00048688,0.00046976,0.00044962,0.00045513,0.00045821,0.00042900,0.00041520,0.00040317,0.00039002,0.00036671,0.00040883,0.00041687</span>
+                                    </td>
+                            </tr>
+                            <tr id="nebulas">
+                                <td>77</td>
+                                <td>
+                                    <a href="/currencies/nebulas/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20171020/d77d2392823c4a6b90f07402227a8a6c.png" alt="NAS-星云币">NAS-星云币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="138363882" data-cny="880782962" data-btc="15873">¥8.81亿 </td> 
+                                    <td><a href="/currencies/nebulas/#markets"  target="_blank" class="price" data-usd="4.61" data-cny="29.36"  data-btc="0.000529">¥29.36</a></td>
+                                    <td>3,000万*</td>
+                                    <td><a href="/currencies/nebulas/#markets"  target="_blank" class="volume" data-usd="10664044.8497434"  data-cny="67884110.299963" data-btc="1225.72363135582">¥6,788万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.83%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>6.42,6.10,6.09,6.12,6.02,6.04,6.08,6.05,5.81,5.60,5.49,5.16,5.36,5.20,5.14,5.16,5.00,5.29,5.27,5.03,5.46,5.02,4.83,4.18,4.11,3.67,4.52,4.48</span>
+                                    </td>
+                            </tr>
+                            <tr id="byteball">
+                                <td>78</td>
+                                <td>
+                                    <a href="/currencies/byteball/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/26391fae17bf4ed19f3b787a368d35_small.png" alt="GBYTE-字节雪球">GBYTE-字节雪球
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="136037327" data-cny="865972812" data-btc="16363">¥8.66亿 </td> 
+                                    <td><a href="/currencies/byteball/#markets"  target="_blank" class="price" data-usd="211" data-cny="1342"  data-btc="0.0254">¥1,342</a></td>
+                                    <td>65万*</td>
+                                    <td><a href="/currencies/byteball/#markets"  target="_blank" class="volume" data-usd="1051814.65703571"  data-cny="6695536.56229204" data-btc="126.320267318849">¥670万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">18.4%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>302,278,274,272,257,255,256,245,235,225,220,203,192,207,195,198,195,207,213,210,207,188,194,174,177,169,196,211</span>
+                                    </td>
+                            </tr>
+                            <tr id="chainlink">
+                                <td>79</td>
+                                <td>
+                                    <a href="/currencies/chainlink/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b3465b2fbca1db5ce64e45887443717_small.png" alt="LINK">LINK
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="134291500" data-cny="854859402" data-btc="16152">¥8.55亿 </td> 
+                                    <td><a href="/currencies/chainlink/#markets"  target="_blank" class="price" data-usd="0.3837" data-cny="2.44"  data-btc="0.00004615">¥2.44</a></td>
+                                    <td>35,000万</td>
+                                    <td><a href="/currencies/chainlink/#markets"  target="_blank" class="volume" data-usd="10108139.6566614"  data-cny="64345384.6116203" data-btc="1213.70772156184">¥6,435万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.94%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.5455,0.5192,0.5055,0.5284,0.5161,0.5372,0.5531,0.5470,0.5089,0.4748,0.4438,0.4218,0.4334,0.4090,0.4218,0.4254,0.4211,0.4395,0.4345,0.4170,0.4187,0.3848,0.3799,0.3404,0.3285,0.2863,0.3655,0.3604</span>
+                                    </td>
+                            </tr>
+                            <tr id="salt">
+                                <td>80</td>
+                                <td>
+                                    <a href="/currencies/salt/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/e866f1779e2bb5474da453e9fd3c2_small.png" alt="SALT">SALT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="133212997" data-cny="847993975" data-btc="16023">¥8.48亿 </td> 
+                                    <td><a href="/currencies/salt/#markets"  target="_blank" class="price" data-usd="2.39" data-cny="15.2"  data-btc="0.000287">¥15.2</a></td>
+                                    <td>5,577万</td>
+                                    <td><a href="/currencies/salt/#markets"  target="_blank" class="volume" data-usd="5684216.92003262"  data-cny="36184019.6478654" data-btc="681.721607050691">¥3,618万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.31%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>3.24,3.12,3.03,3.09,3.07,3.03,3.07,3.20,3.05,2.90,2.73,2.66,2.67,2.67,2.76,2.68,2.65,2.79,2.75,2.61,2.58,2.37,2.40,2.09,2.13,1.98,2.32,2.30</span>
+                                    </td>
+                            </tr>
+                            <tr id="kin">
+                                <td>81</td>
+                                <td>
+                                    <a href="/currencies/kin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/3364587811bb36ecefac67924a8918a_small.png" alt="KIN">KIN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="132524244" data-cny="843609580" data-btc="15122">¥8.44亿 </td> 
+                                    <td><a href="/currencies/kin/#markets"  target="_blank" class="price" data-usd="0.000175" data-cny="0.001116"  data-btc="2E-08">¥0.001116</a></td>
+                                    <td>75,609,756万</td>
+                                    <td><a href="/currencies/kin/#markets"  target="_blank" class="volume" data-usd="193651.856081835"  data-cny="1232729.63808306" data-btc="23.2292820283479">¥123万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">2.74%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.00024074,0.00021973,0.00022380,0.00023199,0.00022409,0.00022338,0.00022703,0.00023967,0.00021411,0.00019912,0.00018572,0.00018786,0.00021554,0.00020627,0.00018148,0.00019658,0.00018395,0.00019483,0.00019774,0.00019590,0.00019367,0.00018461,0.00018095,0.00016869,0.00016454,0.00015074,0.00017691,0.00017992</span>
+                                    </td>
+                            </tr>
+                            <tr id="nxt">
+                                <td>82</td>
+                                <td>
+                                    <a href="/currencies/nxt/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/11ae272b4ac07427879912dfa69fb56b_small.png" alt="NXT-未来币">NXT-未来币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="128333530" data-cny="816932752" data-btc="15435">¥8.17亿 </td> 
+                                    <td><a href="/currencies/nxt/#markets"  target="_blank" class="price" data-usd="0.1285" data-cny="0.8178"  data-btc="0.00001545">¥0.8178</a></td>
+                                    <td>99,900万*</td>
+                                    <td><a href="/currencies/nxt/#markets"  target="_blank" class="volume" data-usd="2868942.17383336"  data-cny="18262825.1958801" data-btc="346.598171736135">¥1,826万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.37%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.1659,0.1569,0.1544,0.1566,0.1504,0.1523,0.1532,0.1588,0.1548,0.1476,0.1371,0.1296,0.1360,0.1332,0.1377,0.1356,0.1338,0.1394,0.1371,0.1334,0.1334,0.1261,0.1287,0.1197,0.1179,0.1108,0.1270,0.1248</span>
+                                    </td>
+                            </tr>
+                            <tr id="maidsafecoin">
+                                <td>83</td>
+                                <td>
+                                    <a href="/currencies/maidsafecoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/a5516178816087931dcffe578289928_small.png" alt="MAID-互联网币">MAID-互联网币
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="128039749" data-cny="815062630" data-btc="15400">¥8.15亿 </td> 
+                                    <td><a href="/currencies/maidsafecoin/#markets"  target="_blank" class="price" data-usd="0.2829" data-cny="1.8"  data-btc="0.00003403">¥1.8</a></td>
+                                    <td>45,255万</td>
+                                    <td><a href="/currencies/maidsafecoin/#markets"  target="_blank" class="volume" data-usd="1129312.1405319"  data-cny="7188862.29291699" data-btc="132.487545478685">¥719万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.31%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.3320,0.3002,0.3089,0.3228,0.3050,0.3254,0.3263,0.3225,0.3148,0.3005,0.2824,0.2679,0.2845,0.2841,0.2922,0.2863,0.2832,0.2971,0.2987,0.2849,0.2906,0.2802,0.2727,0.2517,0.2540,0.2426,0.2822,0.2835</span>
+                                    </td>
+                            </tr>
+                            <tr id="power-ledger">
+                                <td>84</td>
+                                <td>
+                                    <a href="/currencies/power-ledger/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/2b849115d6ce290857c03c2f9c98c3_small.png" alt="POWR">POWR
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="125569240" data-cny="799336111" data-btc="15103">¥7.99亿 </td> 
+                                    <td><a href="/currencies/power-ledger/#markets"  target="_blank" class="price" data-usd="0.345" data-cny="2.2"  data-btc="0.0000415">¥2.2</a></td>
+                                    <td>36,393万</td>
+                                    <td><a href="/currencies/power-ledger/#markets"  target="_blank" class="volume" data-usd="7670097.4176714"  data-cny="48825539.131111" data-btc="918.066104558887">¥4,883万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">13.1%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.4622,0.4223,0.4289,0.4355,0.4324,0.4313,0.4444,0.4888,0.4646,0.4679,0.4180,0.3762,0.3899,0.3821,0.3989,0.3828,0.3787,0.3927,0.3890,0.3777,0.3758,0.3464,0.3404,0.2967,0.2927,0.2793,0.3179,0.3340</span>
+                                    </td>
+                            </tr>
+                            <tr id="particl">
+                                <td>85</td>
+                                <td>
+                                    <a href="/currencies/particl/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/9c8cc4fa44ab23f92b721217c34173fc_small.png" alt="PART">PART
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="121086911" data-cny="770802949" data-btc="14564">¥7.71亿 </td> 
+                                    <td><a href="/currencies/particl/#markets"  target="_blank" class="price" data-usd="13.61" data-cny="86.62"  data-btc="0.001637">¥86.62</a></td>
+                                    <td>890万*</td>
+                                    <td><a href="/currencies/particl/#markets"  target="_blank" class="volume" data-usd="474512.558678437"  data-cny="3020604.59478092" data-btc="57.0007456227415">¥302万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">2.12%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>21.62,18.80,19.18,19.84,19.08,18.49,17.19,17.90,16.14,15.52,14.73,12.98,13.93,13.99,13.93,14.34,14.28,15.78,15.80,14.99,15.09,13.45,13.61,12.68,13.62,11.90,13.79,13.29</span>
+                                    </td>
+                            </tr>
+                            <tr id="bancor">
+                                <td>86</td>
+                                <td>
+                                    <a href="/currencies/bancor/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/b1796f96e8bad35068a3a1366e9b752e_small.png" alt="BNT">BNT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="117151528" data-cny="745751482" data-btc="14091">¥7.46亿 </td> 
+                                    <td><a href="/currencies/bancor/#markets"  target="_blank" class="price" data-usd="2.92" data-cny="18.59"  data-btc="0.000351">¥18.59</a></td>
+                                    <td>4,012万</td>
+                                    <td><a href="/currencies/bancor/#markets"  target="_blank" class="volume" data-usd="2516469.8377965"  data-cny="16019091.7202657" data-btc="296.422628786036">¥1,602万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">4.29%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>4.07,3.86,3.80,3.90,3.81,3.81,3.77,3.76,3.62,3.45,3.29,3.20,3.29,3.22,3.29,3.26,3.19,3.34,3.30,3.21,3.24,3.09,3.04,2.75,2.73,2.58,2.85,2.85</span>
+                                    </td>
+                            </tr>
+                            <tr id="neblio">
+                                <td>87</td>
+                                <td>
+                                    <a href="/currencies/neblio/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/1b706c808387347f614a78c84555633b_small.png" alt="NEBL">NEBL
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="116621905" data-cny="742380061" data-btc="14027">¥7.42亿 </td> 
+                                    <td><a href="/currencies/neblio/#markets"  target="_blank" class="price" data-usd="9.03" data-cny="57.47"  data-btc="0.001086">¥57.47</a></td>
+                                    <td>1,292万*</td>
+                                    <td><a href="/currencies/neblio/#markets"  target="_blank" class="volume" data-usd="11930699.3836579"  data-cny="75947253.0665217" data-btc="1435.01292049602">¥7,595万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.67%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>13.14,11.71,11.74,12.14,11.48,11.75,11.44,11.49,10.92,10.38,9.94,9.57,9.60,9.42,10.30,9.91,9.81,10.81,10.15,9.71,9.73,9.02,9.08,8.13,7.79,6.94,8.39,8.41</span>
+                                    </td>
+                            </tr>
+                            <tr id="polymath-network">
+                                <td>88</td>
+                                <td>
+                                    <a href="/currencies/polymath-network/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/dbe0244658d18cb9d843815f87d130a7_small.png" alt="POLY">POLY
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="116349719" data-cny="740647406" data-btc="13994">¥7.41亿 </td> 
+                                    <td><a href="/currencies/polymath-network/#markets"  target="_blank" class="price" data-usd="0.4848" data-cny="3.09"  data-btc="0.00005831">¥3.09</a></td>
+                                    <td>24,000万</td>
+                                    <td><a href="/currencies/polymath-network/#markets"  target="_blank" class="volume" data-usd="1890095.1512812"  data-cny="12031778.7044422" data-btc="227.134594862365">¥1,203万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.66%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.7399,0.6966,0.6742,0.6982,0.6574,0.6807,0.6792,0.6886,0.6526,0.5965,0.5797,0.5624,0.5914,0.5695,0.6030,0.5908,0.5620,0.5936,0.5778,0.5683,0.5614,0.5419,0.4979,0.4511,0.4407,0.3835,0.4368,0.4399</span>
+                                    </td>
+                            </tr>
+                            <tr id="tenx">
+                                <td>89</td>
+                                <td>
+                                    <a href="/currencies/tenx/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/698a412367df1078f01789486d99f7f_small.png" alt="PAY">PAY
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="116195707" data-cny="739667011" data-btc="13918">¥7.4亿 </td> 
+                                    <td><a href="/currencies/tenx/#markets"  target="_blank" class="price" data-usd="1.11" data-cny="7.07"  data-btc="0.000133">¥7.07</a></td>
+                                    <td>10,466万</td>
+                                    <td><a href="/currencies/tenx/#markets"  target="_blank" class="volume" data-usd="7222687.14125942"  data-cny="45977035.1656928" data-btc="865.328675377136">¥4,598万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">3.06%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.39,1.38,1.34,1.38,1.42,1.45,1.41,1.39,1.27,1.21,1.17,1.14,1.17,1.16,1.17,1.18,1.12,1.24,1.23,1.11,1.26,1.18,1.12,1.13,1.04,1.03,1.13,1.02</span>
+                                    </td>
+                            </tr>
+                            <tr id="cindicator">
+                                <td>90</td>
+                                <td>
+                                    <a href="/currencies/cindicator/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/692dfcfb3f6fe1f667f35fe24a7eea7_small.png" alt="CND">CND
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="114369374" data-cny="728041124" data-btc="13751">¥7.28亿 </td> 
+                                    <td><a href="/currencies/cindicator/#markets"  target="_blank" class="price" data-usd="0.0791" data-cny="0.5035"  data-btc="0.00000951">¥0.5035</a></td>
+                                    <td>144,598万</td>
+                                    <td><a href="/currencies/cindicator/#markets"  target="_blank" class="volume" data-usd="15934310.6649439"  data-cny="101433041.406794" data-btc="1914.91045921278">¥10,143万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">10.96%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0941,0.0857,0.0833,0.0877,0.0818,0.0819,0.0825,0.0831,0.0793,0.0727,0.0708,0.0651,0.0672,0.0656,0.0722,0.0707,0.0728,0.0808,0.0815,0.0808,0.0968,0.0837,0.0875,0.0699,0.0688,0.0637,0.0742,0.0749</span>
+                                    </td>
+                            </tr>
+                            <tr id="nexus">
+                                <td>91</td>
+                                <td>
+                                    <a href="/currencies/nexus/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/8ebc183c7b42dbf4241ed82cdbfda38_small.png" alt="NXS">NXS
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="112298784" data-cny="714860369" data-btc="13508">¥7.15亿 </td> 
+                                    <td><a href="/currencies/nexus/#markets"  target="_blank" class="price" data-usd="2" data-cny="12.73"  data-btc="0.000241">¥12.73</a></td>
+                                    <td>5,616万</td>
+                                    <td><a href="/currencies/nexus/#markets"  target="_blank" class="volume" data-usd="1727955.66330633"  data-cny="10999647.3659294" data-btc="207.524415035373">¥1,100万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.03%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>2.82,2.58,2.50,2.52,2.48,2.49,2.47,2.23,2.19,1.98,1.92,1.78,1.77,1.89,2.27,2.25,2.12,2.25,2.16,2.08,2.02,1.88,1.87,1.72,1.76,1.60,1.96,1.90</span>
+                                    </td>
+                            </tr>
+                            <tr id="request-network">
+                                <td>92</td>
+                                <td>
+                                    <a href="/currencies/request-network/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/8d116012b086eeeeff4fbe4c8727a5_small.png" alt="REQ">REQ
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="107430768" data-cny="683872040" data-btc="12923">¥6.84亿 </td> 
+                                    <td><a href="/currencies/request-network/#markets"  target="_blank" class="price" data-usd="0.1621" data-cny="1.03"  data-btc="0.0000195">¥1.03</a></td>
+                                    <td>66,271万</td>
+                                    <td><a href="/currencies/request-network/#markets"  target="_blank" class="volume" data-usd="3454331.00353306"  data-cny="21989234.8687991" data-btc="413.989138947456">¥2,199万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.11%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.2187,0.2057,0.2031,0.2131,0.2042,0.2062,0.2050,0.2082,0.2061,0.1987,0.1840,0.1713,0.1759,0.1684,0.1732,0.1759,0.1750,0.1849,0.1817,0.1756,0.1741,0.1659,0.1668,0.1487,0.1466,0.1329,0.1586,0.1593</span>
+                                    </td>
+                            </tr>
+                            <tr id="unitedbitcoin">
+                                <td>93</td>
+                                <td>
+                                    <a href="/currencies/unitedbitcoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20171211/f7544e74df7e44188e69173f9944dcb3.png" alt="UBTC-比特联储">UBTC-比特联储
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="107063874" data-cny="681524415" data-btc="11706">¥6.82亿 </td> 
+                                    <td><a href="/currencies/unitedbitcoin/#markets"  target="_blank" class="price" data-usd="17.84" data-cny="114"  data-btc="0.001951">¥114</a></td>
+                                    <td>600万*<i class="ifo"><div></div></i></td>
+                                    <td><a href="/currencies/unitedbitcoin/#markets"  target="_blank" class="volume" data-usd="3164435.44542586"  data-cny="20143476.4959192" data-btc="372.149614163825">¥2,014万</a></td>
+                                     <td class="change">
+                                         <span  class="text-red">-6.62%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>33.86,32.30,31.39,31.76,31.73,32.23,31.53,31.88,29.86,28.71,27.23,25.04,26.31,24.29,25.95,25.78,24.50,25.11,25.16,24.54,24.70,23.66,22.69,19.39,18.59,16.28,18.12,19.05</span>
+                                    </td>
+                            </tr>
+                            <tr id="minexcoin">
+                                <td>94</td>
+                                <td>
+                                    <a href="/currencies/minexcoin/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/15d74d70db9820e5fa8ed59b9caa29e_small.png" alt="MNX">MNX
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="103762307" data-cny="660519718" data-btc="12481">¥6.61亿 </td> 
+                                    <td><a href="/currencies/minexcoin/#markets"  target="_blank" class="price" data-usd="29.82" data-cny="190"  data-btc="0.003587">¥190</a></td>
+                                    <td>348万</td>
+                                    <td><a href="/currencies/minexcoin/#markets"  target="_blank" class="volume" data-usd="205252.4771"  data-cny="1306575.69347547" data-btc="24.68784847">¥131万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">8.44%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>30.71,27.93,28.94,28.91,27.38,27.20,28.12,27.93,26.84,25.79,24.18,23.51,24.62,24.49,27.25,25.86,25.61,27.37,29.94,28.06,29.28,29.47,30.31,27.78,27.52,26.03,30.06,29.39</span>
+                                    </td>
+                            </tr>
+                            <tr id="iconomi">
+                                <td>95</td>
+                                <td>
+                                    <a href="/currencies/iconomi/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/a9d5ea72de589488cb5ee6e58f837e0_small.png" alt="ICN">ICN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="103256357" data-cny="657298992" data-btc="12420">¥6.57亿 </td> 
+                                    <td><a href="/currencies/iconomi/#markets"  target="_blank" class="price" data-usd="1.04" data-cny="6.59"  data-btc="0.000125">¥6.59</a></td>
+                                    <td>9,974万</td>
+                                    <td><a href="/currencies/iconomi/#markets"  target="_blank" class="volume" data-usd="965104.430177887"  data-cny="6143565.27117841" data-btc="115.71036398445">¥614万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">0.61%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.54,1.38,1.37,1.40,1.37,1.40,1.37,1.36,1.32,1.24,1.14,1.07,1.12,1.07,1.12,1.16,1.15,1.23,1.20,1.29,1.24,1.10,1.09,1.01,0.9658,0.8893,1.04,1.03</span>
+                                    </td>
+                            </tr>
+                            <tr id="medishares">
+                                <td>96</td>
+                                <td>
+                                    <a href="/currencies/medishares/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/20171208/342ead9f412b42a5bc691cd9ee58cc96.png" alt="MDS">MDS
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="100363035" data-cny="638880972" data-btc="12026">¥6.39亿 </td> 
+                                    <td><a href="/currencies/medishares/#markets"  target="_blank" class="price" data-usd="0.1004" data-cny="0.6389"  data-btc="0.00001203">¥0.6389</a></td>
+                                    <td>100,000万</td>
+                                    <td><a href="/currencies/medishares/#markets"  target="_blank" class="volume" data-usd="9885369.46205137"  data-cny="62927296.3820109" data-btc="1184.48541911036">¥6,293万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.87%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.1260,0.1169,0.1177,0.1179,0.1154,0.1140,0.1138,0.1154,0.1160,0.1095,0.1019,0.0940,0.0962,0.0933,0.0957,0.0959,0.0920,0.1122,0.1166,0.1062,0.1118,0.1138,0.1014,0.0939,0.0858,0.0894,0.0964,0.0974</span>
+                                    </td>
+                            </tr>
+                            <tr id="dent">
+                                <td>97</td>
+                                <td>
+                                    <a href="/currencies/dent/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/f020d2aa1cfb2f21154aebf5e36c43b4_small.png" alt="DENT">DENT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="99760389" data-cny="635044708" data-btc="11995">¥6.35亿 </td> 
+                                    <td><a href="/currencies/dent/#markets"  target="_blank" class="price" data-usd="0.009398" data-cny="0.0598"  data-btc="0.00000113">¥0.0598</a></td>
+                                    <td>1,061,476万</td>
+                                    <td><a href="/currencies/dent/#markets"  target="_blank" class="volume" data-usd="1410013.5308476"  data-cny="8975723.13220584" data-btc="168.914125011908">¥898万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">7.29%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.0161,0.0151,0.0149,0.0150,0.0145,0.0144,0.0143,0.0142,0.0132,0.0128,0.0114,0.0106,0.0111,0.0108,0.0113,0.0110,0.0111,0.0116,0.0116,0.0106,0.0107,0.009924,0.0101,0.008672,0.008082,0.007045,0.008946,0.008838</span>
+                                    </td>
+                            </tr>
+                            <tr id="enigma-project">
+                                <td>98</td>
+                                <td>
+                                    <a href="/currencies/enigma-project/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/ea57227c885f353bc5439a40b519b8_small.png" alt="ENG">ENG
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="98225468" data-cny="625273862" data-btc="11814">¥6.25亿 </td> 
+                                    <td><a href="/currencies/enigma-project/#markets"  target="_blank" class="price" data-usd="1.31" data-cny="8.36"  data-btc="0.000158">¥8.36</a></td>
+                                    <td>7,484万</td>
+                                    <td><a href="/currencies/enigma-project/#markets"  target="_blank" class="volume" data-usd="7956629.3047459"  data-cny="50649515.1651488" data-btc="954.680277507476">¥5,065万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">5.49%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>1.90,1.86,1.83,1.87,1.85,1.85,1.85,1.82,1.74,1.62,1.55,1.41,1.48,1.39,1.44,1.41,1.39,1.50,1.49,1.41,1.43,1.34,1.32,1.19,1.20,1.04,1.22,1.24</span>
+                                    </td>
+                            </tr>
+                            <tr id="sirin-labs-token">
+                                <td>99</td>
+                                <td>
+                                    <a href="/currencies/sirin-labs-token/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/d2b36ca3fdc504c434edf5b83867c58_small.png" alt="SRN">SRN
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="97495645" data-cny="620628027" data-btc="11727">¥6.21亿 </td> 
+                                    <td><a href="/currencies/sirin-labs-token/#markets"  target="_blank" class="price" data-usd="0.4253" data-cny="2.71"  data-btc="0.00005115">¥2.71</a></td>
+                                    <td>22,926万</td>
+                                    <td><a href="/currencies/sirin-labs-token/#markets"  target="_blank" class="volume" data-usd="12463806.4962761"  data-cny="79340853.0137752" data-btc="1498.51657220231">¥7,934万</a></td>
+                                     <td class="change">
+                                         <span  class="text-red">-1.15%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>0.6191,0.6053,0.6311,0.6156,0.6015,0.5872,0.6090,0.6005,0.5677,0.5487,0.5215,0.4943,0.4961,0.5374,0.5766,0.5407,0.5265,0.5344,0.5245,0.5044,0.5033,0.4782,0.4680,0.4057,0.4282,0.3585,0.4401,0.4157</span>
+                                    </td>
+                            </tr>
+                            <tr id="genesis-vision">
+                                <td>100</td>
+                                <td>
+                                    <a href="/currencies/genesis-vision/"  target="_blank">
+                                        <img src="//static.feixiaohao.com/coin/a13bc2895ce4d7f98f18b7cc3cee5a36_small.png" alt="GVT">GVT
+                                    </a>
+                                </td>
+                                
+                                <td  class="market-cap" data-usd="96895931" data-cny="616810428" data-btc="11655">¥6.17亿 </td> 
+                                    <td><a href="/currencies/genesis-vision/#markets"  target="_blank" class="price" data-usd="26" data-cny="166"  data-btc="0.003127">¥166</a></td>
+                                    <td>373万</td>
+                                    <td><a href="/currencies/genesis-vision/#markets"  target="_blank" class="volume" data-usd="12414771.8556029"  data-cny="79028713.2012083" data-btc="1492.50690468349">¥7,903万</a></td>
+                                     <td class="change">
+                                         <span  class="text-green">11.65%</span>
+                                    </td>
+                                                                    <td class="char">
+                                            <span class="line2" data-peity='{"stroke": "#3ca316"}'>33.93,31.47,31.12,32.92,29.15,29.68,29.33,28.03,26.98,25.17,23.80,21.18,25.05,22.87,23.20,23.79,22.61,25.26,26.95,25.42,27.37,24.94,24.30,22.70,21.54,20.12,24.80,25.36</span>
+                                    </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="boxTools">
+                 
+                    <div class="pageList"> 
+<a  href='#' class='btn btn-white'    ><</a> <a href='#' class='btn btn-white active' >1</a><a class='btn btn-white' href='/list_2.html'>2</a><a class='btn btn-white' href='/list_3.html'>3</a><a class='btn btn-white' href='/list_4.html'>4</a><a class='btn btn-white' href='/list_5.html'>5</a><a  href='#' class='btn btn-white'    >...</a><a class='btn btn-white' href='/list_19.html'>19</a><a class='btn btn-white' href='/list_2.html'>></a>                    </div>
+                </div> 
+                <div class="tips">备注：* 不可挖矿&nbsp;&nbsp;&nbsp;&nbsp;** 有预挖矿&nbsp;&nbsp;&nbsp;&nbsp;IFO表示该币由其它币分叉而来。 </div>
+            </div>
+
+            <div class="box box325">
+                <div class="boxTit"><h2>各大交易所最新公告</h2><a href="/notice/" target="_blank" class="more" title="更多"></a></div>
+                <div class="boxContain" style="height: 200px;overflow: hidden;padding-buttom:10px" id="artList">
+                    <ul class="artList" style="padding: 0">
+                                <li>
+                                    <a href="https://www.huobi.pro/zh-cn/notice_detail/?id=1196" target="_blank" rel="nofollow" title="【火币Pro】HADAX第二期第一轮投票结果公布及第二轮投票开启通知">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20171115/65e8aa3023b44970b936887a914d1ab4_15_15.png" alt="HADAX第二期第一轮投票结果公布及第二轮投票开启通知">HADAX第二期第一轮投票结果公布及第二轮投票开启通知
+                                        </span><span class="time">03-19 16:13</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.uncoinex.com/news/detail/120" target="_blank" rel="nofollow" title="【澳洲U网】关于BBC上线澳洲U网公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20171025/c05793356a1746829cfae32a4b32d64b_15_15.png" alt="关于BBC上线澳洲U网公告">关于BBC上线澳洲U网公告
+                                        </span><span class="time">03-19 14:15</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://topbtc.com/home/art/index/id/331.html" target="_blank" rel="nofollow" title="【TOPBTC】关于ETP、CSD延迟上线的公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20171024/738816c168e14f8f8df282d3387b2692_15_15.png" alt="关于ETP、CSD延迟上线的公告">关于ETP、CSD延迟上线的公告
+                                        </span><span class="time">03-19 13:16</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://bit-z.zendesk.com/hc/en-us/articles/360002055393-GAME-GameCredits-Wallet-Upgrade-Completed-" target="_blank" rel="nofollow" title="【Bit-Z】GAME(GameCredits) Wallet Upgrade (Completed)">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20170912/7a17686634274eac9924b0d11bece2b5_15_15.png" alt="GAME(GameCredits) Wallet Upgrade (Completed)">GAME(GameCredits) Wallet Upgrade (Completed)
+                                        </span><span class="time">03-19 12:51</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://binance.zendesk.com/hc/zh-cn/articles/360001838712-ONT活动结束公告" target="_blank" rel="nofollow" title="【币安网】ONT活动结束公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20170805/fc88d4f22dec4d67b374e6d46aab7380_15_15.png" alt="ONT活动结束公告">ONT活动结束公告
+                                        </span><span class="time">03-19 11:19</span>
+                                    </a>
+                                </li>
+
+                    </ul>  
+                     <ul class="artList" style="padding: 0">
+                                <li>
+                                    <a href="https://dragonex.im/news/article/627" target="_blank" rel="nofollow" title="【DragonEx】DragonEx平台3月18日龙币分红公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20180205/18408b4c721b42398264b2b96937030d_15_15.png" alt="DragonEx平台3月18日龙币分红公告">DragonEx平台3月18日龙币分红公告
+                                        </span><span class="time">03-19 10:11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.bite.ceo/i/blog_c_172.jsp" target="_blank" rel="nofollow" title="【CEO交易所】香港CEO交易所 启用全球加速域名公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20171027/783a2e5b58044914beffaa5c19ba2767_15_15.png" alt="香港CEO交易所 启用全球加速域名公告">香港CEO交易所 启用全球加速域名公告
+                                        </span><span class="time">03-18 14:11</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://dragonex.im/news/article/626" target="_blank" rel="nofollow" title="【DragonEx】DragonEx平台3月17日龙币分红公告">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20180205/18408b4c721b42398264b2b96937030d_15_15.png" alt="DragonEx平台3月17日龙币分红公告">DragonEx平台3月17日龙币分红公告
+                                        </span><span class="time">03-18 10:30</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://bit-z.zendesk.com/hc/en-us/articles/360002055393-GAME-GameCredits-Wallet-Upgrade" target="_blank" rel="nofollow" title="【Bit-Z】GAME(GameCredits) Wallet Upgrade">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20170912/7a17686634274eac9924b0d11bece2b5_15_15.png" alt="GAME(GameCredits) Wallet Upgrade">GAME(GameCredits) Wallet Upgrade
+                                        </span><span class="time">03-17 20:18</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://dragonex.im/news/article/625" target="_blank" rel="nofollow" title="【DragonEx】DragonEx项目2018年进度简报（3.10-3.16）">
+                                        <span class="tit">
+                                            <img src="//static.feixiaohao.com/platimages/20180205/18408b4c721b42398264b2b96937030d_15_15.png" alt="DragonEx项目2018年进度简报（3.10-3.16）">DragonEx项目2018年进度简报（3.10-3.16）
+                                        </span><span class="time">03-17 17:37</span>
+                                    </a>
+                                </li>
+
+                    </ul>
+                </div>
+            </div> 
+            <div class="box box325">
+                <div class="banner">
+                    <div class="bannerIner">
+
+                    </div>
+                    <div class="bannerPoin">
+
+                    </div>
+                </div>
+                </div>
+                <div class="box box325">
+                    <div class="tabTit">
+                        <h3 class="active tit" style="width: 40%">涨幅榜</h3>
+                        <h3 class="tit" style="width: 40%">跌幅榜</h3>
+                        <a href="/maxchange/" target="_blank" class="more" title="更多"></a>
+                    </div>
+                    <div class="tabBody padding5 loading" style="height:385px">
+                        <ul class="tabTit-a" id="maxchange_up">
+                            <li>1小时</li>
+                            <li  class="active">24小时</li>
+                            <li>1周</li>
+                        </ul>
+
+                        <div class="m15"></div>
+                    </div>
+                    <div class="tabBody padding5 loading" style="display: none;height:385px">
+                        <ul class="tabTit-a" id="maxchange_down">
+                            <li class="active">1小时</li>
+                            <li>24小时</li>
+                            <li>1周</li>
+                        </ul>
+
+                        <div class="m15"></div>
+                    </div>
+                </div> 
+                <div class="box box325">
+                    <div class="boxTit">
+                        <h2>热门概念</h2>
+                        <a class="more" href="/concept/" target="_blank"></a>
+                    </div>
+                    <div class="unit2 coinhotconcept">
+                        <div id="hotconcept">
+                        </div>
+                    </div>
+                    <div class="m15"></div>
+                    <div class="boxContain" style="height:395px">
+                        <table class="table3 Hotidea">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>价格</th>
+                                    <th>涨跌幅</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hotconceptCoinTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="box box325 outlink3">
+                </div>
+                <div class="box box325">
+                    <div class="boxTit"><h2>成交量排行榜</h2><a href="/vol/" target="_blank" class="more" title="更多"></a></div>
+                    <div class="tabBody padding5  loading" style="height:385px">
+                        <ul class="tabTit-a">
+                            <li class="active" style="width:133px">币种</li>
+                            <li class="" style="width:133px">交易所</li>
+                        </ul>
+                        <table class="table table-rank noBg" id="vol_coin"></table>
+                        <table class="table table-rank noBg" style="display: none" id="vol_exchange"></table>
+
+                    </div>
+                </div>
+                <div class="box box325">
+                    <div class="boxTit">
+                        <h2>最近上市</h2><a href="/newcoin/" target="_blank" class="more" title="更多"></a>
+                    </div>
+                    <div class="boxContain padding5 loading" style="height:417px">
+                        <table class="table noBg" id="newCoin"></table>
+
+                    </div>
+                </div>
+                <div class="box box325">
+                    <div class="boxTit"><h2>网址导航</h2><a href="/daohang/" target="_blank" class="more" title="更多"></a></div>
+                    <div class="boxContain">
+                        <ul class="linksList"></ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="m30"></div>
+
+ <div class="fLink clear">
+    <div class="w1200">
+        <h3>友情链接</h3>
+
+                <a href="http://robot.feixiaohao.com" target="_blank" title="非小号智能机器人">非小号智能机器人</a>
+                <a href="http://www.huoxing24.com/" target="_blank" title="火星财经">火星财经</a>
+                <a href="http://www.bitett.com" target="_blank" title="比特头条">比特头条</a>
+                <a href="http://www.coingogo.com/" target="_blank" title="币源社区">币源社区</a>
+                <a href="http://www.bcex.ca/" target="_blank" title="BCEX">BCEX</a>
+                <a href="http://uncoinex.com/" target="_blank" title="澳洲U网">澳洲U网</a>
+                <a href="http://www.btctrade.im/" target="_blank" title="比特币交易网">比特币交易网</a>
+                <a href="http://www.bixingxing.com" target="_blank" title="比特币导航">比特币导航</a>
+                <a href="http://topbtc.com/" target="_blank" title="TopBtc">TopBtc</a>
+                <a href="http://www.qukuaiwang.com.cn" target="_blank" title="区块网">区块网</a>
+                <a href="http://www.chainnews.com" target="_blank" title="链闻">链闻</a>
+                <a href="http://www.weilaicaijing.com/" target="_blank" title="未来财经">未来财经</a>
+    </div>
+</div>
+ 
+ <footer class="clear">
+    <div class="w1200">
+        <a class="logo2" href="/">
+            <img src="//static.feixiaohao.com/themes/default/images/logo.png" alt="非小号的Logo">
+        </a>
+        <div class="info">
+            <div>
+                 <a href="/aboutus/" target="_blank">关于我们</a><i class="space2"></i>
+                <a  href="/contact/" target="_blank">联系我们</a><i class="space2"></i>
+                <a href="/faq/" target="_blank">常见问题（f&q）</a><i class="space2"></i>
+                <a href="/declare/" target="_blank">免责声明</a>
+                                    <i class="space2"></i><a  href="//m.feixiaohao.com/?browsemode=mobile">访问手机版</a>
+            </div>
+            <div><p>©Copyright  feixiaohao.com 2018 | 备案号：<a href="//www.miibeian.gov.cn/" target="_blank">粤ICP备16116847号-8</a></p></div>
+        </div>
+        <div class="media">
+            <div class="weCat">
+                <div class="detal">
+                    <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="非小号微信公众号" width="120"
+                         height="120">
+                </div>
+            </div>
+            
+            <a class="qq"  href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank"> 
+            </a>
+            <a class="sina" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+        </div>
+    </div>
+</footer>
+
+<div class="totop">
+ 
+    <div class="wCat2">
+        <div class="detal">
+            <img src="//static.feixiaohao.com/themes/default/images/fwh.jpg"  alt="非小号微信服务号">
+            <img src="//static.feixiaohao.com/themes/default/images/wxdyh.png"  alt="币联社公众号">
+            <div style="text-align: center;width: 116px;float: left;color: #fff">非小号微信服务号</div>
+            <div style="text-align: center;width: 116px;float: left;color: #fff">币联社公众号</div>
+        </div>
+    </div>
+    <a class="qq2" href="//wpa.qq.com/msgrd?v=3&uin=1162544794&site=qq&menu=yes" target="_blank">
+    </a>
+    <a class="sina2" href='//www.weibo.com/u/6363391733' target='_blank'></a> 
+    <div class="top"></div>
+</div>
+<script src="//static.feixiaohao.com/Scripts/common-1.1.js?v=1.16"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.signalR-2.2.1.min.js"></script>
+<script src="//static.feixiaohao.com/Scripts/jquery.peity.min.js"></script>
+<script src="/lcc/js"></script>
+<script type="text/javascript">
+
+    $('.line').peity("line", { width: 50, height: 15, fill: '#f5f5f5', min: 99999, strokeWidth: 1 });
+    loadglobalinfo_new();
+    startSocketHub(true);
+    $('body').on('click', '.showmarket a', function () {
+        var thiscode = $(this).attr("id");
+        $.ajax({
+            url:apiHots+ 'sitestat/?code=' + thiscode,
+            type: "GET",
+            success: function (data) {
+                return;
+            },
+            error: function () {
+                return;
+            }
+        })
+    });
+
+</script>
+
+
+ <script type="text/javascript"> 
+   autoComplete($('#input-sm'));
+</script>
+ 
+<div style="display:none"><script src="https://s19.cnzz.com/z_stat.php?id=1263003344&web_id=1263003344" language="JavaScript"></script></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?192e611c7ffa4b2f8a5047e5cf45403f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  
+    <script src="//static.feixiaohao.com/Scripts/jquery.color.js"></script>
+    <script src="//static.feixiaohao.com/Scripts/tablesort.js"></script> 
+    <script src="//static.feixiaohao.com/Scripts/fxh3.js?v=1.96"></script> 
+
+    <script type="text/javascript">
+        new Tablesort(document.getElementById('table'));
+ $('.line2').peity('line', { width: 80, height: 20, fill: 'none', strokeWidth: 1, min: 2500, stroke: '#3499da' })    </script>
+
+   
+    <script>
+        var mun = 0;
+        var scroll1 = null;
+        function scroll() {
+            scroll1 = setInterval(function () {
+                mun--;
+                $('.artList').eq(0).css('margin-top', mun + 'px');
+                if (mun == -200) {
+                    $('.artList').eq(0).appendTo('#artList');
+                    $('.artList').css('margin-top', '0')
+                    setTimeout(function () {
+                        mun = 0;
+                        clearInterval(scroll1);
+                        scroll()
+                    }, 75)
+                }
+            }, 80)
+        }
+        scroll();
+        $('.artList').mouseover(function () {
+            clearInterval(scroll1);
+        })
+        $('.artList').mouseout(function () {
+            scroll()
+        }) 
+
+    </script>
+    <script type="text/javascript"> 
+        loadindexdaohang();
+        loadHomeNewCoin();
+        loadHomeVolRank();
+        loadHomeCoinMaxChange();
+        loadconcept(0);
+        autoComplete($('#search2'));
+    </script>
+</body>
+</html>

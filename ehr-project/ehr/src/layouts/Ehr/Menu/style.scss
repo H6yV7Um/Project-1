@@ -1,0 +1,140 @@
+$name: layoutEhrMenu;
+
+.#{$name}{
+    color: #fff;
+    padding-bottom: 40px;
+    .#{$name}-user{
+        display: flex;
+        background-color: #413040;
+        border-bottom: 0.8px solid #2E222C;
+        .#{$name}-user-avatar{
+            margin: 10px 15px;
+        }
+        .#{$name}-user-info{
+            display: flex;
+            flex: 1;
+            .#{$name}-user-name{
+                flex: 1;
+                display: flex;
+                align-items: center;
+            }
+            .#{$name}-user-ehr{
+                background-color: #382937;
+                border-left: 0.8px solid #2E222C;
+                transition: background-color 200ms;
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                color: #b6adb5;
+                cursor: pointer;
+                &:active{
+                    background-color: #2E222C;
+                }
+                .#{$name}-user-icon{
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+    .#{$name}-menu{
+        margin-top: 30px;
+        color: #fff;
+        .am-list-body{
+            border-top: 0.8px solid #2E222C;
+            &:after{
+                border-bottom: 0.8px solid #2E222C;
+            }
+            div:not(:last-child) .am-list-line:after{
+                border-bottom: 0.8px solid #2E222C;
+            }
+            .am-list-thumb{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .#{$name}-menu-item-global,.#{$name}-menu-item-promotion,.#{$name}-menu-item-performance{
+                .am-list-thumb{
+                    padding-left: 16px;
+                    padding-right: 14px;
+                }
+            }
+        }
+        &-item{
+            background-color: #473445;
+            cursor: pointer;
+            .am-list-line .am-list-content{
+                color: #fff;
+            }
+            &-check .am-list-line .am-list-content{
+                color: #db94c3;
+            }
+            .#{$name}-menu-icon{
+                width: 27px;
+                text-align: center;
+            }
+            .#{$name}-menu-extra{
+                display: block;
+                margin-top: -1px;
+                color: #cd83b5;
+                font-size: 12px;
+            }
+            &-global{
+                .#{$name}-menu-icon{
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+            &-performance{
+                .#{$name}-menu-icon{
+                    color: #9de9ff;
+                    font-size: 21px;
+                }
+            }
+            &-recruit{
+                .#{$name}-menu-icon{
+                    color: #ffb0ae;
+                    font-size: 21px;
+                }
+            }
+            &-become{
+                .#{$name}-menu-icon{
+                    color: #abc6ff;
+                    font-size: 18px;
+                }
+            }
+            &-leave{
+                .#{$name}-menu-icon{
+                    color: #f9eabf;
+                    font-size: 19px;
+                }
+            }
+            &-promotion{
+                .#{$name}-menu-icon{
+                    color: #dab5ff;
+                    font-size: 20px;
+                }
+            }
+            &-train{
+                .#{$name}-menu-icon{
+                    color: #c6ffd2;
+                    font-size: 21px;
+                }
+            }
+            &-input{
+                .#{$name}-menu-icon{
+                    color: #f9f9f9;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .#{$name}-title{
+        font-size: 12px;
+        color: #b6adb5;
+        background-color: #4E394C;
+        text-align: center;
+        position: fixed;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
+}

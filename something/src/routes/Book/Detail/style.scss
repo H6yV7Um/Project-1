@@ -1,0 +1,333 @@
+.Book-Detail{
+    padding-bottom: 15px;
+    .book-info{
+        padding-left: 130px;
+        .cover{
+            float: left;
+            margin-left: -130px;
+        }
+        .name{
+            float: left;
+            margin-top: -5px;
+            font-size: 18px;
+        }
+        .author{
+            width: 100%;
+            height: 14px;
+            float: left;
+            overflow: hidden;
+            text-align: right;
+            color: #999;
+            font-size: 12px;
+            >div{
+                float: right;
+                &:after{
+                    content: "";
+                    width: 30px;
+                    height: 0.8px;
+                    display: block;
+                    margin-top: -10px;
+                    margin-left: -40px;
+                    background-color: #999;
+                }
+            }
+        }
+        .user{
+            float: left;
+            width: 100%;
+            margin-top: 15px;
+            //color: #5bb4da;
+            //overflow: hidden;
+            //text-overflow: ellipsis;
+            //white-space: nowrap;
+            .user-label{
+                float: left;
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+            .user-avatar{
+                float: left;
+            }
+            .user-name{
+                float: left;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        .score{
+            float: left;
+            margin-top: 16px;
+            .score-label{
+                float: left;
+                margin-top: 6px;
+                margin-right: 20px;
+            }
+            .rate{
+                float: left;
+            }
+        }
+        .time{
+            width: 100%;
+            height: 13px;
+            float: left;
+            margin-top: 9px;
+            //text-align: right;
+            color: #999;
+            font-size: 12px;
+        }
+    }
+
+    .operation-border{
+        height: 62px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .operation{
+        width: 100%;
+        position: static;
+        //padding: 8px 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: #fff;
+        transition: background-color,padding-top,padding-bottom 500ms;
+        .component-Col{
+            text-align: center;
+            //&:first-child{
+            //    text-align: left;
+            //}
+            //&:last-child{
+            //    text-align: right;
+            //}
+            .component-Button{
+                display: inline-block;
+            }
+        }
+        .icon-forward{
+            font-size: 18px;
+            color: #333;
+            &.choose{
+                color: #ff3433;
+            }
+        }
+        .icon-score{
+            font-size: 16px;
+            color: #333;
+            &.choose{
+                color: #ff3433;
+            }
+        }
+        .icon-collection{
+            color: #333;
+            &.choose{
+                color: #ff3433;
+            }
+        }
+        .icon-like{
+            font-size: 16px;
+            color: #333;
+            &.choose{
+                color: #ff3433;
+            }
+        }
+    }
+    .operation-fixed.component-ScrollFixed-fixed{
+        width: 100%;
+        .operation{
+            padding-top: 0;
+            padding-bottom: 1px;
+            background-color: #f8f8f8;
+            border-bottom: 0.8px solid #b5b5b5;
+        }
+    }
+    .sns-border{
+        .sns-show{
+            border-top: 0.8px dashed #ddd;
+            padding-top: 5px;
+            padding-bottom: 8px;
+            .sns-icon-forward{
+                margin-top: 3px;
+                font-size: 15px;
+                color: #000;
+            }
+            .sns-icon-collection{
+                margin-top: 5px;
+                font-size: 16px;
+                color: #333;
+            }
+            .sns-icon-like{
+                margin-top: 6px;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        .sns-lock{
+            text-align: center;
+            margin-top: -13px;
+            font-size: 15px;
+            color: #B4B4B4;
+            transition: color 200ms;
+            cursor: pointer;
+            >i{
+                display: block;
+                margin-top: -4px;
+                &:active{
+                    color: #333;
+                }
+            }
+        }
+
+    }
+
+    .tags{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -0.5px;
+        margin-bottom: -8px;
+        .ant-tag{
+            margin-bottom: 8px;
+        }
+    }
+
+    .profile{
+        margin-top: -4px;
+        margin-bottom: -5px;
+    }
+
+    .recommend-extra-more{
+        margin-top: 1px;
+        font-size: 20px;
+        color: #B4B4B4;
+        padding-left: 15px;
+        cursor: pointer;
+        transition: color 200ms;
+        &:active{
+            color: #000;
+        }
+        >i{
+            display: block;
+        }
+    }
+
+    .reviews-extra-order{
+        float: left;
+        margin-top: 4.5px;
+        font-size: 13px;
+        padding-left: 15px;
+        cursor: pointer;
+        color: #B4B4B4;
+        transition: color 200ms;
+        &:active{
+            color: #000;
+        }
+        >i{
+            display: block;
+        }
+    }
+    .reviews-extra-follow{
+        float: left;
+        .followed-review,.follow-review{
+            height: 12px;
+            display: block;
+            float: left;
+            margin-top: -4px;
+            font-size: 18px;
+        }
+        .follow-review{
+            color: #A4A4A4;
+        }
+        .followed-review{
+            color: #ff3433;
+        }
+        .follow-review-msg{
+            float: left;
+            margin-top: 1.5px;
+            font-size: 12px;
+            color: #999;
+            transition: color 200ms;
+            &:active{
+                color: #000;
+            }
+        }
+    }
+
+    .wonderful-review{
+        .component-Review:last-child .component-Review-reply-get-border{
+            margin-bottom: -15px;
+        }
+        .wonderful-review-more{
+            border-top: 0.8px dashed #ddd;
+            height: 20px;
+            margin-bottom: -15px;
+            text-align: center;
+            font-size: 15px;
+            color: #B4B4B4;
+            transition: color 200ms;
+            cursor: pointer;
+            >i{
+                display: block;
+                margin-top: 3px;
+                &:active{
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .common-review{
+        .component-Review:last-child .component-Review-reply-get-border{
+            margin-bottom: -15px;
+        }
+        .common-review-list-loading{
+            margin-bottom: -15px;
+        }
+    }
+
+}
+
+.Book-Detail-review-modal{
+    .review-border{
+        background-color: #f2f2f2;
+        .review-remind{
+            margin-top: 15px;
+        }
+        .review-button{
+            margin-top: 30px;
+        }
+    }
+}
+
+.Book-Detail-score-modal{
+    .score-border{
+        background-color: #f2f2f2;
+        .score-button{
+            margin-top: 30px;
+        }
+    }
+}
+
+.Book-Detail-forward-modal{
+    .forward-border{
+        background-color: #f2f2f2;
+        .forward-button{
+            margin-top: 30px;
+        }
+    }
+}
+
+.Book-Detail-reply-modal{
+    .reply-border{
+        background-color: #f2f2f2;
+        .reply-button{
+            margin-top: 30px;
+        }
+    }
+}
+
+.Book-Detail-reviewForward-modal{
+    .reviewForward-border{
+        background-color: #f2f2f2;
+        .reviewForward-button{
+            margin-top: 30px;
+        }
+    }
+}

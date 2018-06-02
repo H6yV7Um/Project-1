@@ -1,0 +1,33 @@
+$name: appComponentDingdingDepartmentsPickerItem;
+
+.#{$name}{
+    .#{$name}-choose:active {
+        background-color: #ddd;
+    }
+    .#{$name}-clear{
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        color: #C6C6C6;
+        font-size: 16px;
+        transition: color 200ms;
+        cursor: pointer;
+        &:active{
+            color: #333;
+        }
+    }
+    .#{$name}-departments{
+        .am-list-content{
+            margin-bottom: -8px;
+            .#{$name}-department{
+                float: left;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .am-list-item .am-list-line .am-list-extra{
+        flex-basis: 28px;
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+}

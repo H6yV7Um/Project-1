@@ -1,0 +1,156 @@
+$name: Index;
+.#{$name} {
+    background: #EDEDED;
+    .#{$name}-main {
+        margin-top: 40px;
+        .#{$name}-section {
+            margin: 0 auto;
+            padding-bottom: 22px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .#{$name}-card-container {
+                width: 100%;
+                margin: 0 auto;
+                border: 1px solid #dddddd;
+                border-radius: 10px;
+                background: white;
+                .#{$name}-card-container-header {
+                    height: 60px;
+                    border-bottom: 1px solid #dddddd;
+                    line-height: 60px;
+                    padding: 0 46px;
+                    > span {
+                        float: left;
+                        font-size: 14px;
+                        color: #666666;
+                    }
+                    > a {
+                        float: right;
+                        font-size: 14px;
+                        color: #666666;
+                    }
+                }
+                .#{$name}-cards{
+                    .#{$name}-cards-a{
+                        border-right: 1px solid #dddddd;
+                    }
+                    .#{$name}-cards-b{
+                        border-right: 1px solid #dddddd;
+                    }
+                    .#{$name}-cards-c{
+                        border-right: 1px solid #dddddd;
+                    }
+                    .#{$name}-cards-d{
+
+                    }
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    height: 0;
+                    clear: both;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 736px){
+    .#{$name} {
+        .#{$name}-main {
+            margin-top: 0px;
+            .#{$name}-section {
+                padding-left: 0;
+                padding-right: 0;
+                .#{$name}-card-container {
+                    border: none;
+                    border-radius: 0;
+                    .#{$name}-card-container-header {
+                        > span {
+                        }
+                        > a {
+                        }
+                    }
+                    .#{$name}-cards{
+                        .#{$name}-cards-a{
+                            border-right: none;
+                            border-bottom: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-b{
+                            border-right: none;
+                            border-bottom: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-c{
+                            border-right: none;
+                            border-bottom: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-d{
+                            border-bottom: 1px solid #dddddd;
+                        }
+                    }
+                    &:after{
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 737px) and (max-width: 991px){
+    .#{$name} {
+        .#{$name}-main {
+            .#{$name}-section {
+                .#{$name}-card-container {
+                    .#{$name}-card-container-header {
+                        > span {
+                        }
+                        > a {
+                        }
+                    }
+                    .#{$name}-cards{
+                        .#{$name}-cards-a{
+                            border-right: 1px solid #dddddd;
+                            border-bottom: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-b{
+                            border-right: none;
+                            border-bottom: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-c{
+                            border-right: 1px solid #dddddd;
+                        }
+                        .#{$name}-cards-d{
+
+                        }
+                    }
+                    &:after{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen  and (min-width: 1441px) {
+    .#{$name} {
+        .#{$name}-main {
+            margin-top: 40px;
+            .#{$name}-section {
+                .#{$name}-card-container {
+                    width: 1410px;
+                    .#{$name}-card-container-header {
+                        > span {
+                        }
+                        > a {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

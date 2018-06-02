@@ -1,0 +1,16 @@
+.Book-Library{
+    .books-more{
+        margin-top: 1px;
+        font-size: 20px;
+        color: #B4B4B4;
+        padding-left: 15px;
+        cursor: pointer;
+        transition: color 200ms;
+        &:active{
+            color: #000;
+        }
+        >i{
+            display: block;
+        }
+    }
+}

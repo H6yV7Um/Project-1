@@ -1,0 +1,253 @@
+.layout-topaside {
+  height: 100%;
+}
+
+.layout-topaside .layout-wrapper {
+  padding: 0 50px;
+}
+
+.layout-topaside .layout-header {
+  background: #404040;
+  height: 64px;
+}
+
+.layout-topaside .layout-logo {
+  width: 92px;
+  height: 27px;
+  margin: 20px 24px 16px 0;
+  float: left;
+  background:url(../../../assets/logo.png) no-repeat;
+}
+
+.layout-topaside .layout-subheader {
+  height: 48px;
+  border-bottom: 1px solid #e9e9e9;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.layout-topaside .layout-container {
+  background: #fff;
+  margin: 0;
+  position: relative;
+  padding: 24px 0;
+  overflow: hidden;
+  border-radius: 4px;
+  min-height: 600px;
+}
+
+.layout-topaside .layout-sider {
+  width: 224px;
+  float: left;
+  background:#fff;
+}
+
+.layout-topaside .layout-content {
+  border-left: 1px solid #e9e9e9;
+  padding: 0 24px;
+  overflow: auto;
+  position: relative;
+  left: -1px;
+}
+
+.layout-topaside .layout-footer {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+.ant-breadcrumb
+{
+  line-height: 50px;
+}
+.avatar
+{
+  float: right;
+  border-radius: 5px;
+  height: 50px;
+  width: 130px;
+  background:#333;
+  margin-top:7px;
+}
+.avatar img
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  margin: 7px;
+  float: left;
+}
+.avatar .info
+{
+  margin:7px;
+  line-height: 35px;
+  text-align:center;
+  color:#fff;
+  float: left;
+}
+.nav-text
+{
+  font-size:14px;
+}
+.anticon
+{
+  font-size:14px;
+}
+.layout-loading
+{
+  width: 50px;
+  margin:300px auto;
+  text-align:center;
+  background:#fff;
+}
+.layout-main
+{
+  width:940px;
+  background:#fff;
+  overflow: hidden
+}
+.h1
+{
+  font-size:18px;
+  color:#000;
+}
+.TableLoading
+{
+  width:50px;
+  margin:0 auto;
+}
+
+.ant-table-wrapper
+{
+  background:#fff;
+  padding-top:0 20px;
+}
+.editable-row-text {
+  padding: 5px;
+}
+
+.editable-row-operations a {
+  margin-right: 8px;
+}
+.table-container
+{
+  margin: 20px 0;
+  border-radius: 5px;
+  border:1px solid #F4F4F4;
+  padding:20px;
+  margin-top:20px
+}
+.firstlevel .ant-table-expanded-row:hover
+{
+  background:#fff
+}
+.firstlevel .ant-table-expanded-row:hover>td
+{
+  background:#fff
+}
+.firstlevel .ant-table-expanded-row > td:last-child {
+  padding: 0 48px 0 8px;
+}
+
+.firstlevel .ant-table-expanded-row > td:last-child .ant-table-thead th {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.firstlevel .ant-table-expanded-row > td:last-child .ant-table-thead th:first-child {
+  padding-left: 0;
+}
+
+.firstlevel .ant-table-expanded-row > td:last-child .ant-table-row td:first-child {
+  padding-left: 0;
+}
+
+.firstlevel .ant-table-expanded-row .ant-table-row:last-child td {
+  border: none;
+}
+
+.firstlevel .ant-table-expanded-row .ant-table-thead > tr > th {
+  background: none;
+}
+
+.firstlevel .table-operation a:not(:last-child) {
+  margin-right: 24px;
+}
+.secondlevel
+{
+  background: transparent;
+  border:1px solid #eee;
+  margin:20px;
+}
+
+.secondlevel table thead th span
+{
+  padding:10px; 
+}
+.secondlevel table td
+{
+  padding:10px !important;
+}
+
+
+.organizationtree
+{
+  background:#fefefe;
+  margin-top:10px;
+}
+.organizationtree .buttonBar
+{
+  display: none
+}
+.organizationtree .buttonBar button{
+  margin-left: 10px;
+}
+.organizationtree .row
+{
+  width:500px;
+  line-height: 35px;
+}
+.organizationtree .row:hover .buttonBar
+{
+  display: inline
+}
+.organizationtree .ant-tree-switcher
+{
+  margin-top:10px !important;
+}
+.titleBox
+{
+  
+}
+.titleBox .extra
+{
+  text-align: right
+}
+.customField
+{
+  padding-top:20px;
+  cursor:move;
+  transition: background 0.2s;
+}
+.customField .ant-form-explain
+{
+  line-height: 35px
+}
+.customField:hover
+{
+  background:#f6f6f6;
+  transition: background 0.2s
+}
+.customField .delete,.customField .edit, .groupTitle .delete,.groupTitle .edit{
+  display:none
+}
+.customField:hover .delete,.customField:hover .edit, .groupTitle:hover .delete,.groupTitle:hover .edit{
+  display:block;
+  line-height: 22px;
+}
+.groupTitle
+{
+  background:#f6f6f6;
+  padding:10px 20px;
+  border-bottom:1px solid #eee
+}

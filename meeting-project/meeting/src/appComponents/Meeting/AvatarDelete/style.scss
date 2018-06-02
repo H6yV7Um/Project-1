@@ -1,0 +1,40 @@
+$name: app-components-meeting-avatar-delete;
+.#{$name}{
+    .#{$name}-avatar-container{
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+        .#{$name}-avatar{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -14px;
+            .#{$name}-delete{
+                position: relative;
+                top: -47px;
+                right: -18px;
+                color: #DDDDDD;
+                > i{
+                    color: #7B7B7B;
+                    background: #FFF;
+                    border: 1px solid #e1e1e1;
+                    border-radius: 50%;
+                }
+                > i:hover{
+                    color: #0091e4;
+                }
+            }
+        }
+
+        > span{
+            display: block;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+}

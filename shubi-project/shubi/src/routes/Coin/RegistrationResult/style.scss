@@ -1,0 +1,151 @@
+$name: index-component-success;
+body{
+    padding: 0;
+    margin: 0;
+}
+.#{$name} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    .#{$name}-container {
+        width: 406px;
+        height: 404px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 9px 30px -6px rgba(0, 0, 0, .2), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 10px 20px -10px rgba(0, 0, 0, .04);
+        background: url('../../../assets/login/containerBg.png') repeat;
+        border: 1px solid #ddd;
+        .#{$name}-title{
+            height: 66px;
+            color: #333333;
+            font-size: 18px;
+            text-align: center;
+            background: url('../../../assets/login/icon.png');
+            background-size: auto 66px;
+            line-height: 66px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            //border-bottom: 1px solid #ddd;
+            box-shadow: 0 1px 4px rgba(0,0,0,.08);
+        }
+        .#{$name}-logo-container{
+            height: 270px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .#{$name}-logo{
+                >div{
+                    color: #666666;
+                    font-size: 24px;
+                    margin-top: 24px;
+                }
+            }
+        }
+        .#{$name}-back{
+            height: 66px;
+            position: absolute;
+            width: 80%;
+            bottom: 0;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 14px;
+            color: #1469AF;
+            border-top: 1px solid #ddd;
+            line-height: 66px;
+            >a:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+@media (max-width: 736px) and (max-device-width: 736px){
+    .#{$name} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        .#{$name}-container {
+            width: auto;
+            height: 303px;
+            background-size: auto 303px;
+            .#{$name}-title{
+                height: 49.5px;
+                font-size: 18px;
+                background-size: auto 49.5px;
+                line-height: 49.5px;
+            }
+            .#{$name}-logo-container{
+                height: 202.5px;
+                .#{$name}-logo{
+                    >div{
+                        color: #666666;
+                        font-size: 20px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+            .#{$name}-back{
+                height: 49.5px;
+                line-height: 49.5px;
+            }
+        }
+    }
+}
+
+//@media screen and (orientation: landscape) {
+//    .#{$name} {
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        margin: 0 auto;
+//        height: 100vh;
+//        position: relative;
+//        width: 390px;
+//        .#{$name}-container {
+//            width: auto;
+//            height: 202px;
+//            background-size: auto 202px;
+//            .#{$name}-title{
+//                height: 33px;
+//                font-size: 18px;
+//                background-size: auto 33px;
+//                line-height: 33px;
+//            }
+//            .#{$name}-logo-container{
+//                height: 135px;
+//                .#{$name}-logo{
+//                    >div{
+//                        color: #666666;
+//                        font-size: 20px;
+//                        margin-top: 6px;
+//                    }
+//                }
+//            }
+//            .#{$name}-back{
+//                height: 33px;
+//                line-height: 33px;
+//            }
+//        }
+//    }
+//}
+
+
+// PC端样式
+@media (min-width: 1440px) {
+    .#{$name}{
+        width: 1410px;
+    }
+}

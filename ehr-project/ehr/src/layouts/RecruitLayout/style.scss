@@ -1,0 +1,24 @@
+$name: RecruitLayout;
+
+.#{$name}{
+    overflow: auto;
+    .#{$name}-container {
+        width: 100%;
+        .#{$name}-menu {
+            float: left;
+            width: 19%;
+            height: 100%;
+            background-color: #fff;
+        }
+        .#{$name}-pagination {
+            display: none;
+        }
+        .#{$name}-content {
+            overflow: auto;
+            float: right;
+            width: 79%;
+            height: 100%;
+            background-color: #fff;
+        }
+    }
+}

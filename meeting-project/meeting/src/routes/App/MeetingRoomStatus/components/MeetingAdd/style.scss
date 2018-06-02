@@ -1,0 +1,62 @@
+$name: app-components-meeting-add;
+.#{$name}{
+    position: relative;
+    display: inline-block;
+    top: 82px;
+    width: 400px;
+    .#{$name}-container{
+        width: 400px;
+        label{
+            color: #222;
+            font-size: 13px;
+        }
+        .#{$name}-go-left{
+            width: 300px;
+            margin-left: 130px;
+            color: #f5222d;
+            font-size: 14px;
+            padding-bottom: 8px;
+        }
+        .#{$name}-form-title{
+            width: 208px;
+            margin-left: 58px;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .#{$name}-custom-container{
+            display: flex;
+            align-items: center;
+            padding-bottom: 5px;
+            &>span:first-child{
+                width: 132px;
+                text-align: right;
+                color: #222;
+                font-size: 13px;
+            }
+        }
+        .#{$name}-custom-add-participants-container{
+            &>span:first-child{
+                display: inline-block;
+                width: 132px;
+                text-align: right;
+                color: #222;
+                font-size: 13px;
+            }
+            &>a:first-child{
+                font-size: 13px;
+            }
+        }
+        .#{$name}-participants-container{
+            width: 280px;
+            margin-left: 130px;
+            margin-top: 15px;
+        }
+        .#{$name}-show-more{
+            	display: inline-block;
+            	text-align: right;
+                font-size: 12px;
+                margin-left: 130px;
+                padding-bottom: 5px;
+        }
+    }
+}

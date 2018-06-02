@@ -1,0 +1,44 @@
+.IndexLayout-Footer{
+    border-top: 0.8px solid #B5B5B5;
+    background-color: #F8F8F8;
+    .menu{
+        width: 20%;
+        i,span{
+            color: #373737;
+            display: block;
+            font-size: 26px;
+        }
+        a{
+            font-size: 12px;
+            color: #000;
+        }
+    }
+    .menu.index{
+        i,span{
+            font-size: 28px;
+            margin-top: 1px;
+        }
+    }
+    .menu.qr{
+        svg{
+            width: 21px;
+            height: 21px;
+        }
+    }
+    .menu.add{
+        i,span{
+            font-size: 30px;
+            margin-top: 14px;
+        }
+    }
+    .menu.message{
+        i,span{
+            font-size: 24px;
+        }
+    }
+    .menu.set{
+        i,span{
+            font-size: 25px;
+        }
+    }
+}

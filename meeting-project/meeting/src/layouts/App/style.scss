@@ -1,0 +1,52 @@
+$name: layoutApp;
+.#{$name} {
+    @import "./AntdOverwrite.scss";
+    .#{$name}-body {
+        //background-color: #dddddd;
+        background-color: white;
+        width: 100%;
+        //min-height: 100%;
+        float: left;
+    }
+    .#{$name}-pagination {
+        display: none;
+    }
+    .#{$name}-logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .#{$name}-logo-image {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .#{$name}-logo-title {
+
+        }
+    }
+    .ant-tabs-bar {
+        position: fixed;
+        top: 0;
+        height: 80px;
+        z-index: 1000;
+        opacity: 1;
+        background: #ffffff;
+        width: 100%;
+    }
+    .ant-tabs-content {
+        z-index: 1;
+        padding-top: 80px;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .#{$name} {
+        width: 1080px;
+    }
+    body {
+        overflow-y: hidden;
+    }
+}
+

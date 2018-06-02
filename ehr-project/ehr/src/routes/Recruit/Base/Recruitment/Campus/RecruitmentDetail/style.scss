@@ -1,0 +1,245 @@
+$program-color : #F25246;
+$arts-color : #FFA200;
+$project-color : #3CB8EB;
+$marketing-color : #00ba84;
+$operations-color : #ff7340;
+$support-color : #FF5E79;
+
+.RecruitmentDetail{
+    width: 100%;
+    height: 100%;
+    //margin-top: -1%;
+    padding-bottom: 50px;
+    overflow: auto;
+    .header{
+        width: 100%;
+        height: 16%;
+        position: relative;
+        >img{
+            display: block;
+            width: 100%;
+        }
+        .title{
+            position: absolute;
+            top: 21%;
+            width: 100%;
+            font-size: 22px;
+            text-align: center;
+            color: #fff;
+        }
+        .sub-title{
+            position: absolute;
+            top: 55%;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+    .program-color-bg{
+        background-color: $program-color;
+    }
+    .arts-color-bg{
+        background-color: $arts-color;
+    }
+    .project-color-bg{
+        background-color: $project-color;
+    }
+    .marketing-color-bg{
+        background-color: $marketing-color;
+    }
+    .operations-color-bg{
+        background-color: $operations-color;
+    }
+    .support-color-bg{
+        background-color: $support-color;
+    }
+    .item{
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        .header{
+            width: 100%;
+            height: auto;
+            padding-top: 10px;
+            .wrapper{
+                display: flex;
+                align-items: center;
+                height: 35px;
+                width: 60%;
+                border-radius: 0 20px 20px 0;
+                padding-left: 15px;
+                .wrapper-logo{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                }
+                .wrapper-title{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #fff;
+                    >div{
+                        display: inline;
+                    }
+                }
+            }
+            .wrapper-normal{
+                display: flex;
+                align-items: center;
+                height: 35px;
+                width: 60%;
+                border-radius: 0 20px 20px 0;
+                padding-left: 15px;
+                .wrapper-logo{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                }
+                .wrapper-title{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: normal;
+                    padding-left: 5px;
+                    >div{
+                        display: inline;
+                    }
+                }
+            }
+            .program-color-bg{
+                background-color: $program-color;
+            }
+            .arts-color-bg{
+                background-color: $arts-color;
+            }
+            .project-color-bg{
+                background-color: $project-color;
+            }
+            .marketing-color-bg{
+                background-color: $marketing-color;
+            }
+            .operations-color-bg{
+                background-color: $operations-color;
+            }
+            .support-color-bg{
+                background-color: $support-color;
+            }
+            .program-color-normal{
+                border: 0.8px solid $program-color;
+                border-left: none;
+                .wrapper-title{
+                    >div{
+                        margin-left: -5px;
+                        color: $program-color;
+                    }
+                }
+            }
+            .arts-color-normal{
+                border: 0.8px solid $arts-color;
+                border-left: none;
+                .wrapper-title{
+                    >div{
+                        margin-left: -5px;
+                        color: $arts-color;
+                    }
+                }
+            }.project-color-normal{
+                 border: 0.8px solid $project-color;
+                 border-left: none;
+                 .wrapper-title{
+                     >div{
+                         margin-left: -5px;
+                         color: $project-color;
+                     }
+                 }
+             }.marketing-color-normal{
+                  border: 0.8px solid $marketing-color;
+                  border-left: none;
+                  .wrapper-title{
+                      >div{
+                          margin-left: -5px;
+                          color: $marketing-color;
+                      }
+                  }
+              }.operations-color-normal{
+                   border: 0.8px solid $operations-color;
+                   border-left: none;
+                   .wrapper-title{
+                       >div{
+                           margin-left: -5px;
+                           color: $operations-color;
+                       }
+                   }
+               }.support-color-normal{
+                    border: 0.8px solid $support-color;
+                    border-left: none;
+                    .wrapper-title{
+                        >div{
+                            margin-left: -5px;
+                            color: $support-color;
+                        }
+                    }
+                }
+        }
+        .content{
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            .duty-content{
+                ul{
+                    list-style-type: none;
+                    color: #000;
+                    margin-left: 15px;
+                    padding-left: 0;
+                    margin-right: 5px;
+                    li{
+                        padding-right: 7px;
+                        display: flex;
+                        .num{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .words{
+                    list-style-type: none;
+                    color: #000;
+                    margin-left: 15px;
+                    padding-left: 0;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .item:last-child{
+        margin-bottom: 15px;
+    }
+    .ni-container{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 25%;
+        opacity: 0.3;
+        z-index: 0;
+        .ni{
+            width: 100%;
+            display: block;
+        }
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background-attachment: fixed;
+        .am-button-primary{
+            width: 100%;
+            border: none;
+            border-radius: 0;
+        }
+    }
+}

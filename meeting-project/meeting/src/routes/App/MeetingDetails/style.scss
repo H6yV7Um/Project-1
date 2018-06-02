@@ -1,0 +1,162 @@
+$name: app-meeting-details;
+.#{$name}{
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+    .#{$name}-container{
+        width:100%;
+        height:800px;
+        >p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            >i{
+                position: relative;
+                font-size: 19px;
+                top: 1px;
+                margin-right: 6px;
+                cursor: pointer;
+            }
+            >i:hover{
+                color: #1890ff;
+            }
+        }
+        /*会议详情*/
+        .#{$name}-content-container{
+            width: 100%;
+            background-color: #fff;
+            padding: 10px 0 10px 10px;
+            .#{$name}-meeting-room-image{
+                > img{
+                    width: 200px;
+                }
+                float: left;
+                padding-right: 10px;
+            }
+            .#{$name}-meeting-content{
+                width: calc(100% - 228px);
+                float: left;
+                > p{
+                    padding: 2px;
+
+                }
+                p:nth-child(2){
+                    > span{
+                        float: left;
+                    }
+                    > div{
+                        margin-left: 39px;
+                    }
+                }
+                p:last-child > div{
+                    margin-left: 39px;
+                }
+                p:first-child > span:first-child{
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+                p:first-child>span:nth-child(2){
+                    margin-left: 5px;
+                }
+                p:first-child>span:nth-child(3){
+                    margin-left: 8px;
+                    > span{
+                        margin-left: 5px;
+                    }
+                }
+                p:first-child > span:last-child{
+                    float: right;
+                }
+                p:last-child > span{
+                    float: left;
+                }
+                .#{$name}-theme-approvalStatus-passed{
+                    float: right;
+                    color: #259F6C;
+                }
+                .#{$name}-theme-approvalStatus-pending{
+                    float: right;
+                    color: #ff9800;
+                }
+                .#{$name}-theme-approvalStatus-refused{
+                    float: right;
+                    color: #ff9800;
+                }
+                .#{$name}-theme-approvalStatus-cancelled{
+                    float: right;
+                    color: #ff9800;
+                }
+            }
+            &:after{
+                content: '';
+                clear: both;
+                display: block;
+                height: 0;
+            }
+        }
+        /*会议主持人 会议发起人*/
+        .#{$name}-meeting-host-sponsor{
+            width: 100%;
+            margin-top: 5px;
+            &:after{
+                content: '';
+                clear: both;
+                display: block;
+                height: 0;
+            }
+            .#{$name}-meeting-host-common{
+                width: 50%;
+                margin-top: 5px;
+                > p{
+                    padding-bottom: 5px;
+                }
+                .#{$name}-meeting-message{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #fff;
+                    .#{$name}-meeting-message-info{
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+                }
+            }
+            .#{$name}-meeting-host{
+                @extend .#{$name}-meeting-host-common;
+                float: left;
+                padding-right: 10px;
+            }
+            .#{$name}-meeting-sponsor{
+                @extend .#{$name}-meeting-host-common;
+                float: right;
+            }
+        }
+
+        /*参会人员*/
+        .#{$name}-meeting-participants{
+            p:first-child{
+                padding: 10px 0;
+            }
+            > span{
+                cursor: pointer;
+                margin-right: 5px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+        /*操作按钮*/
+        .#{$name}-meeting-operation-btn-box{
+            padding: 20px;
+            display: flex;
+            .#{$name}-meeting-operation-btn{
+                width: 300px;
+                font-size: 14px;
+                margin: 0 auto;
+                height: 32px;
+                color: #fff;
+                background: #f54d42;
+            }
+        }
+    }
+}

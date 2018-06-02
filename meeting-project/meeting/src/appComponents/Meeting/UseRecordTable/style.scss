@@ -1,0 +1,36 @@
+$name: app-components-meeting-user-record-table;
+
+.#{$name}{
+
+    .#{$name}-theme-details{
+        text-decoration: none;
+        cursor: pointer;
+        color: #0099FF;
+    }
+    .custom-filter-dropdown{
+        box-shadow: none;
+    }
+
+    .#{$name}-theme-approvalStatus-passed{
+        color: #259F6C;
+    }
+    .#{$name}-theme-approvalStatus-pending{
+        color: #ff9800;
+    }
+    .#{$name}-theme-approvalStatus-refused{
+        color: #999;
+    }
+    .#{$name}-theme-approvalStatus-cancelled{
+        color: #999;
+    }
+
+    .#{$name}-operation-btns{
+        border: none;
+        color: #09f;
+        background-color: transparent;
+        outline: none;
+    }
+    .#{$name}-operation-btns:hover{
+        cursor: pointer;
+    }
+}

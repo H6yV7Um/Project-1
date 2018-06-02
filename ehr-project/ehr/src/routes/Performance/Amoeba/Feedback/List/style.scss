@@ -1,0 +1,9 @@
+$name: routePerformanceAmoebaFeedbackList;
+
+.#{$name}{
+    margin-top: -1px;
+    .#{$name}-message{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

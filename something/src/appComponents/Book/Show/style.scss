@@ -1,0 +1,36 @@
+$name: appComponent-Book-Show;
+
+.#{$name}{
+    &.#{$name}-normal{
+        width: 115px;
+        font-size: 14px;
+        .ant-rate{
+            margin-top: -5px;
+        }
+    }
+    &.#{$name}-small{
+        width: 75px;
+        font-size: 12px;
+        .ant-rate{
+            margin-top: -10px;
+        }
+    }
+    &.#{$name}-x-small{
+        width: 55px;
+        font-size: 10px;
+        .ant-rate{
+            margin-top: -13px;
+        }
+    }
+    .#{$name}-name{
+        margin-top: 5px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .ant-rate{
+        width: 100%;
+        text-align: center;
+    }
+}

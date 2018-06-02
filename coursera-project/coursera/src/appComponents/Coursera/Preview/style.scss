@@ -1,0 +1,15 @@
+$name: coursera-preview;
+.#{$name} {
+    &:after{
+        cursor: pointer;
+    }
+    .#{$name}-img{
+        display: inline-block;
+        border:1px solid #dddddd;
+        border-radius: 3px;
+
+    }
+    .am-modal.am-modal-transparent .am-modal-content .am-modal-body {
+        padding: 0 5px 5px;
+    }
+}
